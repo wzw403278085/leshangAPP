@@ -1,0 +1,10 @@
+@font-face {
+   	font-family: icon;
+    src: url("../font/iconfont.css"),url("../font/iconfont.eot"),url("../font/iconfont.svg"),url("../font/iconfont.ttf"),url("../font/iconfont.woff");
+}
+.fl{float: left;}
+.fr{float: right;}
+ul{list-style: none;}
+a{text-decoration: none;}
+.clear:after{content: ''; display: block; clear: both;}
+input,textarea{border: none; outline: none; background: transparent;}

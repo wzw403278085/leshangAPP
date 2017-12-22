@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的拼团</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <link rel="stylesheet" href="../css/css/public.css">
+    <link rel="stylesheet" href="../css/css/shoucang.css">
+  
+    <link rel="stylesheet" href="../fontt/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/icons-extra.css">
+	<style>
+		.mui-content{
+			 background: #fff;
+			 width: 90%;
+			 margin: 4rem auto;
+			 padding: 0 0 1rem 0;
+		}
+	</style>
+</head>
+
+<body id="kefu">
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">在线客服</h1>
+    <a class="mui-icon-extra mui-icon-extra-custom mui-icon-right-nav mui-pull-right"></a>
+</header>
+<div class="mui-content">
+    <h4 class="title">常见问题</h4>
+
+    <ul class="kefu">
+        <li>
+            <span class="mui-icon-extra mui-icon-extra-new"></span>
+            优惠券
+        </li>
+        <li>
+            <span class="mui-icon-extra mui-icon-extra-gold"></span>
+            退款/退货
+        </li>
+        <li>
+            <span class="mui-icon-extra mui-icon-extra-peoples"></span>
+            搭配购折扣
+        </li>
+        <li>
+            <span class="mui-icon-extra mui-icon-extra-express"></span>
+            售货服务
+        </li>
+    </ul>
+</div>
+<script>
+	 document.getElementById("kefu").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"../index/wcd.html",
+            id:"wcd",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

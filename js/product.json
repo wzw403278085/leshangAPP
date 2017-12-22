@@ -1,0 +1,42 @@
+{
+  "status":1,
+  "result":{
+    "totalMoney":89,
+    "list":[
+      {
+        "id":1,
+        "productName":"金羚（JINLING）换气扇浴室排风扇卫生间排气扇抽风机厨房油烟6",
+        "productPrice":99,
+        "imgPath" : "https://img10.360buyimg.com/n5/jfs/t3100/84/6521411379/307689/cdfb2a78/58a69c71N39f813f9.jpg",
+        "Number":5,
+        "parts":{
+          "partsId":901,
+          "partsName":"打火机"
+        }
+      },
+      {
+        "id":2,
+        "productName":"元宝",
+        "productPrice":500,
+        "imgPath" : "https://img12.360buyimg.com/n5/jfs/t4420/350/3587809672/106212/6bfdbeb4/59000fa2N78944014.jpg",
+        "Number":1,
+        "parts":{
+          "partsId":901,
+          "partsName":"手链"
+        }
+      },
+      {
+        "id":3,
+        "productName":"电热蚊香液黑客 蚊香水/电蚊香液体蚊香水无味400小时驱蚊水",
+        "productPrice":12,
+        "imgPath" : "https://img11.360buyimg.com/n5/jfs/t5116/351/62077577/295096/1f7dc6d5/58f80ca8N6b3bca1d.jpg",
+        "Number":5,
+        "parts":{
+          "partsId":901,
+          "partsName":"打火机"
+        }
+      }
+    ]
+  }
+
+}

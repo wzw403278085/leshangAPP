@@ -1,0 +1,1623 @@
+{
+	"@platforms": ["android", "iPhone", "iPad"],
+	"id": "H53440E6E",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "乐裳购物",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "guide.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Accelerometer": {
+            "description": "访问加速度感应器"
+        },
+        "Audio": {
+            "description": "访问麦克风"
+        },
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Camera": {
+            "description": "访问摄像头"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Device": {
+            "description": "访问设备信息"
+        },
+        "Downloader": {
+            "description": "文件下载管理"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "File": {
+            "description": "访问本地文件系统"
+        },
+        "Gallery": {
+            "description": "访问系统相册"
+        },
+        "Geolocation": {
+            "description": "访问位置信息"
+        },
+         "Invocation": {
+            "description": "使用Native.js能力"
+        },
+        "Messaging": {
+            "description": "访问通讯能力"
+        },
+        "Orientation": {
+            "description": "访问方向感应器"
+        },
+        "Proximity": {
+            "description": "访问距离感应器"
+        },
+        "Storage": {
+            "description": "管理应用本地数据"
+        },
+        
+        "Uploader": {
+            "description": "管理文件上传任务"
+        },
+        "Runtime": {
+            "description": "访问运行期环境"
+        },
+        "XMLHttpRequest": {
+            "description": "跨域网络访问"
+        },
+        "Zip": {
+            "description": "文件压缩与解压缩"
+        },
+        "Barcode": {
+            "description": "管理二维码扫描插件"
+        },
+        "Maps": {
+            "description": "管理地图插件"
+        },
+        "Speech": {
+            "description": "管理语音识别插件"
+        },
+        "Webview":{
+        	"description": "窗口管理"
+        },
+        "NativeUI":{
+        	"description": "原生UI控件"
+        },
+        "Navigator":{
+        	"description": "浏览器信息"
+        },
+        "NativeObj":{
+        	"description": "原生对象"
+        }
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+			},
+			"orientation": ["portrait-primary", "portrait-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png","retina8":"unpackage/res/icons/180x180.png","settings-retina8":"unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png","retina55":"C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png","retina47":"C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png","retina55l":"C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png"
+					},
+					"ipad": {
+						"portrait": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": "C:/Users/11/Desktop/♦/刘苗——乐裳APP/页面ipg/启动引导页/启动页.png"
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "C:/Users/Administrator/Desktop/个人整理/引导页png/启动页-480.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "C:/Users/Administrator/Desktop/个人整理/引导页png/启动页-720.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "C:/Users/Administrator/Desktop/个人整理/引导页png/启动页-1080.png"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"guide.html": {
+				"resources": [
+					"img/guide/pic(2).png",
+					"js/mui.min.js",
+					"img/guide/shouce.png",
+					"img/guide/pic(1).png",
+					"css/mui.min.css",
+					"img/guide/dapei.png",
+					"img/guide/nocare.png",
+					"img/guide/pic.png",
+					"css/guide.css"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"index.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"js/castapp.js",
+					"home.html",
+					"css/mui_style.css",
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"css/mui_common.css",
+					"/js/mui.min.js",
+					"list_stroll.html"
+				],
+				"refer": [
+					"user.html",
+					"list_shopping.html",
+					"my.html",
+					"list_shoppingCart.html"
+				],
+				"priority": 0
+			},
+			"home.html": {
+				"resources": [
+					"img/home/banner.png",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"css/mui_style.css",
+					"fonts/mui.ttf",
+					"img/home/style.png",
+					"img/home/test.png",
+					"img/home/wen.png",
+					"img/home/cloud.png",
+					"img/home/red.png",
+					"img/home/money.png",
+					"img/home/left.png",
+					"css/home.css",
+					"css/mui_common.css",
+					"js/slider.js",
+					"img/home/choice_ru.png",
+					"img/home/bao.png",
+					"img/home/art3.png",
+					"js/jquery.3.2.1.js",
+					"img/home/beauty_three.png",
+					"img/home/touxiang1.png",
+					"img/home/art2.png",
+					"img/home/beauty_one.png",
+					"img/home/shan.png",
+					"img/home/xie.png",
+					"img/home/retro2.png",
+					"img/home/bu.png",
+					"img/home/recommend3.png",
+					"img/home/recommend2.png",
+					"img/home/niu.png",
+					"img/home/retro3.png",
+					"img/home/lianyi.png",
+					"img/home/recommend.png",
+					"img/home/kuo.png",
+					"img/home/art1.png",
+					"img/home/retro.png",
+					"img/home/beauty_four.png",
+					"img/home/choice_maoshan.png",
+					"img/home/recommend1.png",
+					"img/home/beauty_two.png",
+					"img/home/shisang.png",
+					"img/home/retro1.png",
+					"img/home/kua.png",
+					"img/index/home/beauty_one.png",
+					"img/index/home/retro2.png",
+					"img/index/home/niu.png",
+					"img/index/home/test.png",
+					"img/index/home/bu.png",
+					"img/index/home/choice_maoshan.png",
+					"img/index/home/beauty_four.png",
+					"img/index/home/recommend3.png",
+					"img/index/home/bao.png",
+					"img/index/home/cloud.png",
+					"img/index/home/art2.png",
+					"img/index/home/banner.png",
+					"img/index/home/art3.png",
+					"img/index/home/wen.png",
+					"img/index/home/recommend2.png",
+					"img/index/home/touxiang1.png",
+					"img/index/home/retro.png",
+					"img/index/home/style.png",
+					"img/index/home/shisang.png",
+					"img/index/home/left.png",
+					"img/index/home/money.png",
+					"img/index/home/shan.png",
+					"img/index/home/art1.png",
+					"img/index/home/retro3.png",
+					"img/index/home/kuo.png",
+					"img/index/home/retro1.png",
+					"img/index/home/kua.png",
+					"img/index/home/choice_ru.png",
+					"img/index/home/beauty_two.png",
+					"img/index/home/recommend.png",
+					"img/index/home/lianyi.png",
+					"img/index/home/recommend1.png",
+					"img/index/home/beauty_three.png",
+					"img/index/home/xie.png",
+					"img/index/home/red.png",
+					"css/index/home.css",
+					"js/home.js",
+					"font/iconfont.ttf",
+					"font/iconfont.svg"
+				],
+				"refer": [
+					"store.html",
+					"newpeople.html",
+					"index/search_item.html",
+					"index/today.html",
+					"index/test1.html",
+					"index/manual.html",
+					"index/sspd.html",
+					"index/lxys.html",
+					"index/spxq.html",
+					"index/tksjx.html",
+					"index/newpeople.html",
+					"index/info.html",
+					"index/wcd.html"
+				],
+				"priority": 0
+			},
+			"user.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"list_shopping.html": {
+				"resources": [
+					"js/mui.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"store.html": {
+				"resources": [
+					"img/store/inspiration2.png",
+					"img/store/single2.png",
+					"img/store/teach.png",
+					"img/store/inspiration1.png",
+					"img/store/store.png",
+					"img/store/single1.png",
+					"css/store.css",
+					"img/store/single.png",
+					"img/store/single3.png",
+					"img/store/inspiration4.png",
+					"img/store/banner.png",
+					"img/store/eyes.jpg",
+					"img/store/inspiration3.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"newpeople.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/newpeople/day1.png",
+					"img/newpeople/small.png",
+					"img/newpeople/snap1.png",
+					"img/newpeople/day2.png",
+					"img/newpeople/new_banner.png",
+					"fonts/mui.ttf",
+					"css/newpeople.css",
+					"img/newpeople/snap3.png",
+					"img/newpeople/hot1.png",
+					"img/newpeople/day3.png",
+					"img/newpeople/snap4.png",
+					"img/newpeople/day4.png",
+					"js/mui.min.js",
+					"img/newpeople/hot2.png",
+					"img/newpeople/hot3.png",
+					"css/mui.min.css",
+					"css/mui_common.css",
+					"img/newpeople/snap2.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/guide.html": {
+				"resources": [
+					"img/guide/pic(2).png",
+					"css/guide.css",
+					"js/mui.min.js",
+					"img/guide/shouce.png",
+					"img/guide/pic(1).png",
+					"css/mui.min.css",
+					"img/guide/dapei.png",
+					"img/guide/nocare.png",
+					"img/guide/pic.png"
+				],
+				"refer": [
+					"index/index.html"
+				],
+				"priority": 0
+			},
+			"index/index.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"js/castapp.js",
+					"index/home.html",
+					"js/mui.min.js"
+				],
+				"refer": [
+					"stroll/list_stroll.html",
+					"index/stroll/list_stroll.html",
+					"shop/list_shopping.html"
+				],
+				"priority": 0
+			},
+			"index/home.html": {
+				"resources": [
+					"img/index/home/beauty_one.png",
+					"img/index/home/retro2.png",
+					"img/index/home/niu.png",
+					"img/index/home/test.png",
+					"img/index/home/bu.png",
+					"js/jquery.3.2.1.js",
+					"img/index/home/choice_maoshan.png",
+					"img/index/home/beauty_four.png",
+					"img/index/home/recommend3.png",
+					"img/index/home/bao.png",
+					"img/index/home/cloud.png",
+					"img/index/home/art2.png",
+					"img/index/home/banner.png",
+					"img/index/home/art3.png",
+					"img/index/home/wen.png",
+					"img/index/home/recommend2.png",
+					"img/index/home/touxiang1.png",
+					"img/index/home/retro.png",
+					"img/index/home/style.png",
+					"img/index/home/shisang.png",
+					"img/index/home/left.png",
+					"img/index/home/money.png",
+					"img/index/home/shan.png",
+					"img/index/home/art1.png",
+					"fonts/mui.ttf",
+					"img/index/home/retro3.png",
+					"img/index/home/kuo.png",
+					"img/index/home/retro1.png",
+					"img/index/home/kua.png",
+					"img/index/home/choice_ru.png",
+					"img/index/home/beauty_two.png",
+					"img/index/home/recommend.png",
+					"img/index/home/lianyi.png",
+					"img/index/home/recommend1.png",
+					"img/index/home/xie.png",
+					"img/index/home/beauty_three.png",
+					"img/index/home/red.png",
+					"css/index/home.css",
+					"js/index/home.js",
+					"font/iconfont.ttf",
+					"js/mui.min.js",
+					"font/iconfont.svg",
+					"css/mui_common.css",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"index/manual.html",
+					"index/newpeople.html",
+					"index/wcd.html",
+					"index/sspd.html",
+					"index/lxys.html",
+					"index/tksjx.html",
+					"index/spxq.html",
+					"index/search_item.html",
+					"index/today.html",
+					"index/info.html",
+					"index/test1.html"
+				],
+				"priority": 0
+			},
+			"index/manual.html": {
+				"resources": [
+					"img/index/manual/tide_2.png",
+					"img/index/manual/tide_4.png",
+					"img/index/manual/sty1.png",
+					"img/index/manual/water.png",
+					"img/index/manual/sty4.png",
+					"css/index/manual.css",
+					"img/index/manual/go.png",
+					"img/index/manual/style_2.png",
+					"img/index/manual/thin.png",
+					"img/index/manual/style_1.png",
+					"img/index/manual/tide_3.png",
+					"img/index/manual/sty5.png",
+					"img/index/manual/sty.png",
+					"img/index/manual/sty3.png",
+					"img/index/manual/korea.png",
+					"img/index/manual/style_3.png",
+					"img/index/manual/sty2.png",
+					"img/index/manual/tide_1.png",
+					"font/iconfont.ttf",
+					"js/jquery.3.2.1.js",
+					"js/mui.min.js",
+					"font/iconfont.svg",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"index/water.html",
+					"index/bgysm.html",
+					"list_shoppingCart.html"
+				],
+				"priority": 0
+			},
+			"index/water.html": {
+				"resources": [
+					"img/index/store/inspiration2.png",
+					"css/index/water.css",
+					"img/index/store/single3.png",
+					"img/index/store/single.png",
+					"img/index/store/teach.png",
+					"img/index/store/single2.png",
+					"img/index/store/banner.png",
+					"img/index/store/inspiration3.png",
+					"img/index/store/single1.png",
+					"img/index/store/inspiration1.png",
+					"img/index/store/inspiration4.png",
+					"img/index/store/store.png",
+					"img/index/store/eyes.jpg",
+					"font/iconfont.svg",
+					"css/mui.min.css",
+					"css/mui_common.css"
+				],
+				"refer": [
+					"list_shoppingCart.html"
+				],
+				"priority": 0
+			},
+			"index/newpeople.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/index/newpeople/snap2.png",
+					"img/index/newpeople/new_banner.png",
+					"img/index/newpeople/hot3.png",
+					"fonts/mui.ttf",
+					"css/index/newpeople.css",
+					"img/index/newpeople/snap3.png",
+					"img/index/newpeople/snap1.png",
+					"img/index/newpeople/day2.png",
+					"img/index/newpeople/snap4.png",
+					"img/index/newpeople/small.png",
+					"img/index/newpeople/hot1.png",
+					"img/index/newpeople/day4.png",
+					"js/mui.min.js",
+					"img/index/newpeople/day1.png",
+					"css/mui.min.css",
+					"css/mui_common.css",
+					"img/index/newpeople/hot2.png",
+					"img/index/newpeople/day3.png"
+				],
+				"refer": [
+					"index/newpack.html",
+					"list_shoppingCart.html"
+				],
+				"priority": 0
+			},
+			"index/newpack.html": {
+				"resources": [
+					"img/index/newpack/type4.png",
+					"img/index/newpack/type1.png",
+					"img/index/newpack/type3.png",
+					"js/jquery.3.2.1.js",
+					"img/index/newpack/type2.png",
+					"img/index/newpack/server.png",
+					"img/index/newpack/banner.png",
+					"css/index/newpack.css",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/wcd.html": {
+				"resources": [
+					"img/index/wcd/wcd_tx.png",
+					"css/index/wcd.css",
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"js/jquery.3.2.1.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/sspd.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/index/sspd/sspd1s.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"img/index/sspd/sspd2.png",
+					"css/index/sspd.css",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"img/index/store/eyes.jpg",
+					"img/index/sspd/banner.png",
+					"img/index/sspd/sspd1.png"
+				],
+				"refer": [
+					"index/sspd_xx.html"
+				],
+				"priority": 0
+			},
+			"index/lxys.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/index/lxys/shone.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"img/index/lxys/shone1.png",
+					"css/index/lxys.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/tksjx.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/index/txsjx/ban22.png",
+					"img/index/txsjx/ban33.png",
+					"img/index/txsjx/ban111.png",
+					"fonts/mui.ttf",
+					"img/index/txsjx/ban222.png",
+					"img/index/txsjx/banner2.png",
+					"img/index/txsjx/ban1.png",
+					"img/index/txsjx/ban2.png",
+					"img/index/txsjx/ban11.png",
+					"css/index/tksjx.css",
+					"js/mui.min.js",
+					"img/index/txsjx/banner3.png",
+					"css/mui.min.css",
+					"css/mui_common.css",
+					"img/index/txsjx/ban3.png",
+					"img/index/txsjx/banner.png",
+					"img/index/txsjx/ban333.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/spxq.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"img/index/spxq/banner.png",
+					"font/iconfont.ttf",
+					"js/mui.min.js",
+					"css/index/spxq.css",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"img/index/spxq/spxq1.png",
+					"img/index/spxq/spxq_7.jpg",
+					"img/index/spxq/spxq_tx.png",
+					"img/index/spxq/spxq_1.jpg",
+					"img/index/spxq/spxq_3.jpg",
+					"img/index/spxq/spxq_4.jpg",
+					"img/index/newpack/type4.png",
+					"img/index/spxq/icon.jpg",
+					"img/index/spxq/spxq_8.jpg",
+					"img/index/spxq/spxq_5.jpg",
+					"img/index/spxq/spxq_2.jpg",
+					"img/index/newpack/type2.png",
+					"img/index/spxq/spxq_9.jpg",
+					"img/index/spxq/spxq_6.jpg",
+					"js/mui.zoom.js",
+					"js/mui.previewimage.js"
+				],
+				"refer": [
+					"index/gmpj.html",
+					"list_shoppingCart.html",
+					"index/sj.html"
+				],
+				"priority": 0
+			},
+			"index/sspd_xx.html": {
+				"resources": [
+					"css/index/sspd_xx.css",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/bgysm.html": {
+				"resources": [
+					"img/index/bgysm/bg4.png",
+					"img/index/bgysm/bg2.png",
+					"img/index/bgysm/bg1.png",
+					"img/index/bgysm/banner.png",
+					"css/index/bgysm.css",
+					"img/index/bgysm/bg3.png",
+					"img/index/bgysm/bg5.png",
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/search_item.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"fonts/mui.ttf",
+					"js/jquery.3.2.1.js",
+					"css/public.css",
+					"font/iconfont.css",
+					"js/mui.min.js",
+					"img/index/search/searchItem3.png",
+					"img/index/search/searchItem4.png",
+					"img/index/search/searchItem2.png",
+					"css/mui.min.css",
+					"img/index/search/searchItem1.png",
+					"css/index/search_item.css",
+					"js/resize.js",
+					"index/search.html",
+					"css/mui_common.css"
+				],
+				"refer": [
+					"index/info.html"
+				],
+				"priority": 0
+			},
+			"index/search.html": {
+				"resources": [
+					"img/index/search/search7.jpg",
+					"img/index/search/search5.jpg",
+					"img/index/search/search4.jpg",
+					"img/index/search/search1.jpg",
+					"img/index/search/search8.jpg",
+					"img/index/search/search6.jpg",
+					"css/index/search.css",
+					"img/index/search/search2.jpg",
+					"img/index/search/search3.jpg",
+					"index/search_item.html",
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"fonts/mui.ttf",
+					"js/jquery.3.2.1.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"css/mui_common.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/indexed-list.html": {
+				"resources": [
+					"css/index/mui.indexedlist.css",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"js/index/mui.indexedlist.js",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/today.html": {
+				"resources": [
+					"js/common.js",
+					"js/mui.min.js",
+					"img/index/today/icon2.jpg",
+					"img/index/today/today1.jpg",
+					"css/mui.min.css",
+					"css/index/today.css",
+					"img/index/today/today2.jpg",
+					"img/index/today/icon1.jpg",
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"img/index/today/kong.jpg",
+					"img/index/today/weixin.jpg",
+					"img/index/today/peng.jpg",
+					"img/index/today/qq.jpg",
+					"js/jquery.3.2.1.js"
+				],
+				"refer": [
+					"index/indexed-list.html",
+					"index/wcd.html",
+					"index/collocation.html",
+					"index/today_xq.html"
+				],
+				"priority": 0
+			},
+			"index/collocation.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/index/home/beauty_one.png",
+					"img/index/home/wen.png",
+					"img/index/home/test.png",
+					"js/mui.min.js",
+					"img/index/home/beauty_three.png",
+					"css/index/collocation.css",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"img/index/home/style.png",
+					"img/index/home/beauty_four.png",
+					"img/index/home/cloud.png",
+					"img/index/home/beauty_two.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/info.html": {
+				"resources": [
+					"css/index/info.css",
+					"img/index/info/youhui.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"js/jquery.3.2.1.js",
+					"img/index/info/chuangyi.png",
+					"img/index/info/huodong.png",
+					"img/index/info/dngdan.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/gmpj.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"css/index/gmpj.css",
+					"js/mui.min.js",
+					"css/mui_common.css",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"index/store.html"
+				],
+				"priority": 0
+			},
+			"index/store.html": {
+				"resources": [
+					"img/index/water/icon1.jpg",
+					"css/index/store.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"stroll/list_stroll.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"css/stroll/list_stroll.css",
+					"js/jquery.3.2.1.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/test1.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/index/test/img_3.png",
+					"img/index/test/img_5.png",
+					"img/index/test/img_4.png",
+					"fonts/mui.ttf",
+					"js/jquery.3.2.1.js",
+					"img/index/test/img_1.png",
+					"css/index/test1.css",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"css/mui_common.css",
+					"img/index/test/img_2.png"
+				],
+				"refer": [
+					"index/test2.html"
+				],
+				"priority": 0
+			},
+			"list_stroll.html": {
+				"resources": [
+					"index.html",
+					"fonts/mui.ttf",
+					"css/stroll/list_stroll.css",
+					"js/jquery.3.2.1.js",
+					"js/mui.min.js",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"img/index/spxq/banner.png",
+					"img/stroll/banner.png",
+					"img/index/newpeople/hot3.png",
+					"img/index/txsjx/ban33.png",
+					"img/index/store/single3.png",
+					"img/index/manual/sty1.png",
+					"img/index/manual/water.png",
+					"img/index/store/single.png",
+					"img/index/manual/sty4.png",
+					"img/index/manual/go.png",
+					"img/index/store/single2.png",
+					"img/index/home/recommend3.png",
+					"img/index/store/single1.png",
+					"img/index/newpeople/hot1.png",
+					"img/index/manual/sty5.png",
+					"img/index/home/recommend1.png",
+					"img/index/manual/sty3.png",
+					"img/index/spxq/spxq_8.jpg",
+					"img/index/manual/korea.png",
+					"img/index/manual/sty2.png",
+					"img/index/newpeople/hot2.png"
+				],
+				"refer": [
+					"stroll/xsqg.html",
+					"stroll/sell.html",
+					"stroll/indentical.html",
+					"stroll/guide1.html",
+					"stroll/jrsx.html",
+					"stroll/shangyi.html",
+					"stroll/hdtj.html",
+					"stroll/pintuan.html"
+				],
+				"priority": 0
+			},
+			"my.html": {
+				"resources": [
+					"css/css/my.css",
+					"css/css/public.css",
+					"fontt/iconfont.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"my/new_file.html",
+					"my/youhui.html",
+					"my/tuihuan.html",
+					"my/purse.html",
+					"my/shoucang.html",
+					"my/pintuan.html",
+					"my/caini.html",
+					"my/zuji.html",
+					"my/kefu.html",
+					"index/info.html",
+					"my/login.html",
+					"my/set.html",
+					"my/qiandao.html"
+				],
+				"priority": 0
+			},
+			"my/new_file.html": {
+				"resources": [
+					"css/css/new-fire.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/jquery.3.2.1.js",
+					"css/css/public.css",
+					"img/my/fk-2.png",
+					"img/my/fk-1.png",
+					"my/new_file.html"
+				],
+				"refer": [
+					"my/qrsh.html",
+					"my/wuliu.html"
+				],
+				"priority": 0
+			},
+			"my/youhui.html": {
+				"resources": [
+					"fonts/mui-icons-extra.ttf",
+					"css/css/youhui.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"css/icons-extra.css",
+					"fontt/iconfont.ttf"
+				],
+				"refer": [
+					"list_shoppingCart.html"
+				],
+				"priority": 0
+			},
+			"my/tuihuan.html": {
+				"resources": [
+					"img/my/zanwu.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"css/css/pay.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/purse.html": {
+				"resources": [
+					"font/iconfont.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"css/css/pay.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/shoucang.html": {
+				"resources": [
+					"css/css/shoucang.css",
+					"img/index/home/beauty_one.png",
+					"fonts/mui.ttf",
+					"fontt/iconfont.ttf",
+					"img/index/home/beauty_four.png",
+					"img/index/sspd/banner.png",
+					"css/icons-extra.css",
+					"img/index/home/beauty_two.png",
+					"fonts/mui-icons-extra.ttf",
+					"js/mui.min.js",
+					"img/index/home/beauty_three.png",
+					"css/mui.min.css",
+					"css/css/public.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/pintuan.html": {
+				"resources": [
+					"fonts/mui-icons-extra.ttf",
+					"img/my/zanwu.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"css/css/pay.css",
+					"css/icons-extra.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/caini.html": {
+				"resources": [
+					"css/css/shoucang.css",
+					"js/mui.min.js",
+					"img/index/manual/style_3.png",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"img/index/manual/style_2.png",
+					"css/icons-extra.css",
+					"img/index/manual/style_1.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/zuji.html": {
+				"resources": [
+					"css/css/zuji.css",
+					"img/index/home/art3.png",
+					"fonts/mui-icons-extra.ttf",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"fontt/iconfont.ttf",
+					"css/icons-extra.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/kefu.html": {
+				"resources": [
+					"css/css/shoucang.css",
+					"fonts/mui-icons-extra.ttf",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"fontt/iconfont.css",
+					"css/icons-extra.css"
+				],
+				"refer": [
+					"index/wcd.html"
+				],
+				"priority": 0
+			},
+			"my/login.html": {
+				"resources": [
+					"css/css/login.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"fontt/iconfont.css",
+					"js/app.js",
+					"js/mui.enterfocus.js"
+				],
+				"refer": [
+					"my/reg.html",
+					"my/forgetpassword.html"
+				],
+				"priority": 0
+			},
+			"my/set.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"fontt/iconfont.css",
+					"css/css/set.css"
+				],
+				"refer": [
+					"my/personal.html",
+					"my/binding.html",
+					"my/versions.html"
+				],
+				"priority": 0
+			},
+			"index/today_xq.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/index/lxys/shone.png",
+					"fonts/mui.ttf",
+					"img/index/today/kong.jpg",
+					"img/index/today/today1.jpg",
+					"img/index/today/weixin.jpg",
+					"img/index/today/peng.jpg",
+					"js/common.js",
+					"js/mui.min.js",
+					"img/index/spxq/icon.jpg",
+					"img/index/today/qq.jpg",
+					"css/mui.min.css",
+					"css/mui_common.css",
+					"img/index/home/touxiang1.png",
+					"css/index/today_xq.css",
+					"img/index/lxys/shone1.png",
+					"img/index/spxq/spxq_9.jpg"
+				],
+				"refer": [
+					"index/sj.html",
+					"list_shoppingCart.html"
+				],
+				"priority": 0
+			},
+			"index/sj.html": {
+				"resources": [
+					"css/index/sj.css",
+					"img/index/wcd/wcd_tx.png",
+					"js/jquery.3.2.1.js",
+					"font/iconfont.svg",
+					"css/mui_common.css",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/test2.html": {
+				"resources": [
+					"img/index/test/img2_3.png",
+					"css/index/test2.css",
+					"img/index/test/img2_4.png",
+					"img/index/test/img2_2.png",
+					"img/index/test/img2_1.png",
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"js/jquery.3.2.1.js"
+				],
+				"refer": [
+					"index/test3.html"
+				],
+				"priority": 0
+			},
+			"index/test3.html": {
+				"resources": [
+					"img/index/test/img3_4.png",
+					"css/index/test3.css",
+					"img/index/test/img3_1.png",
+					"img/index/test/img3_2.png",
+					"img/index/test/img3_3.png",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"index/test4.html",
+					"list_shoppingCart.html"
+				],
+				"priority": 0
+			},
+			"index/test5.html": {
+				"resources": [
+					"css/index/test5.css",
+					"img/index/test/img5_4.png",
+					"img/index/test/img5_2.png",
+					"img/index/test/img5_6.png",
+					"img/index/test/img5_1.png",
+					"img/index/test/img5_3.png",
+					"img/index/test/img5_5.png"
+				],
+				"refer": [
+					"index/test6.html"
+				],
+				"priority": 0
+			},
+			"index/test6.html": {
+				"resources": [
+					"css/index/test6.css",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"index/cxcs2.html",
+					"list_shoppingCart.html"
+				],
+				"priority": 0
+			},
+			"index/test4.html": {
+				"resources": [
+					"img/index/test/img4.png",
+					"css/index/test4.css",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"index/test5.html"
+				],
+				"priority": 0
+			},
+			"list_shoppingCart.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.css",
+					"images/shoppingCart/shop1.jpg",
+					"css/list_shoppingCart.css",
+					"images/shoppingCart/shop2.jpg",
+					"images/shoppingCart/dianpu1.png",
+					"css/public.css",
+					"images/shoppingCart/goods1.png",
+					"css/mui.min.css",
+					"js/jquery.3.2.1.js",
+					"font/iconfont.ttf",
+					"js/mui.min.js"
+				],
+				"refer": [
+					"shop/confirmOrder.html",
+					"index/spxq.html"
+				],
+				"priority": 0
+			},
+			"shop/confirmOrder.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"font/iconfont.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"js/jquery.3.2.1.js",
+					"css/mui.min.css",
+					"images/shoppingCart/dianpu1.png",
+					"css/public.css",
+					"images/shoppingCart/goods1.png",
+					"css/confirmOrder.css"
+				],
+				"refer": [
+					"shop/confirmPay.html"
+				],
+				"priority": 0
+			},
+			"shop/paySuccess.html": {
+				"resources": [
+					"css/paySuccess.css",
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"font/iconfont.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"js/jquery.3.2.1.js",
+					"css/mui.min.css",
+					"css/public.css",
+					"index.html"
+				],
+				"refer": [
+					"home.html"
+				],
+				"priority": 0
+			},
+			"shop/confirmPay.html": {
+				"resources": [
+					"css/confirmPay.css"
+				],
+				"refer": [
+					"shop/paySuccess.html"
+				],
+				"priority": 0
+			},
+			"my/qrsh.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"font/iconfont.css",
+					"css/css/qrsh.css",
+					"css/public.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"js/jquery.3.2.1.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"stroll/xsqg.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/stroll/goods1.jpg",
+					"img/stroll/goods2.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"js/jquery.3.2.1.js",
+					"css/stroll/xsqg.css",
+					"img/stroll/banner3.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/wuliu.html": {
+				"resources": [
+					"css/css/wuliu.css",
+					"fontt/iconfont.css",
+					"img/index/bgysm/bg3.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index/cxcs2.html": {
+				"resources": [
+					"img/index/home/beauty_one.png",
+					"img/index/cxcs2/messae2.png",
+					"img/index/cxcs2/img5.jpg",
+					"img/index/cxcs2/banner.png",
+					"img/index/cxcs2/messae3.png",
+					"img/index/home/beauty_four.png",
+					"css/index/cxcs2.css",
+					"img/index/home/beauty_two.png",
+					"img/index/cxcs2/messae1.png",
+					"img/index/cxcs2/img7.jpg",
+					"img/index/cxcs2/img4.jpg",
+					"img/index/home/beauty_three.png",
+					"img/index/cxcs2/img3.jpg",
+					"css/mui.min.css",
+					"img/index/cxcs2/img1.jpg",
+					"img/index/cxcs2/img2.jpg",
+					"img/index/cxcs2/img6.jpg",
+					"img/index/cxcs2/messae4.png",
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"fonts/mui.ttf",
+					"js/jquery.3.2.1.js",
+					"js/mui.min.js",
+					"css/mui_common.css"
+				],
+				"refer": [
+					"list_shoppingCart.html"
+				],
+				"priority": 0
+			},
+			"stroll/sell.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/stroll/banner.png",
+					"fonts/mui.ttf",
+					"js/jquery.3.2.1.js",
+					"img/index/home/retro3.png",
+					"img/index/search/search8.jpg",
+					"img/index/home/retro1.png",
+					"img/index/newpeople/snap4.png",
+					"js/mui.min.js",
+					"img/index/cxcs2/img3.jpg",
+					"css/stroll/sell.css",
+					"css/mui.min.css",
+					"css/mui_common.css",
+					"img/index/newpeople/hot2.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"stroll/indentical.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/index/home/beauty_one.png",
+					"img/stroll/banner1.png",
+					"js/mui.min.js",
+					"img/index/home/beauty_three.png",
+					"fonts/mui.ttf",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"js/jquery.3.2.1.js",
+					"img/index/home/beauty_four.png",
+					"css/stroll/indentical.css",
+					"img/index/home/beauty_two.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"stroll/guide1.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/index/manual/sty.png",
+					"img/index/home/retro2.png",
+					"js/mui.min.js",
+					"img/index/home/recommend2.png",
+					"fonts/mui.ttf",
+					"img/stroll/icon.png",
+					"css/stroll/guide1.css",
+					"css/mui_common.css",
+					"css/mui.min.css",
+					"js/jquery.3.2.1.js",
+					"img/stroll/banner2.png",
+					"img/index/spxq/spxq_3.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"stroll/jrsx.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"css/stroll/jrsx.css",
+					"fonts/mui.ttf",
+					"img/stroll/new2.jpg",
+					"js/jquery.3.2.1.js",
+					"img/stroll/new3.jpg",
+					"img/stroll/newGoods2.jpg",
+					"img/stroll/newGoods3.jpg",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"css/mui_common.css",
+					"img/stroll/newGoods1.jpg",
+					"img/stroll/newGoods4.jpg",
+					"img/stroll/new1.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"stroll/shangyi.html": {
+				"resources": [
+					"img/index/search/search5.jpg",
+					"img/index/home/beauty_one.png",
+					"css/stroll/shangyi.css",
+					"img/index/search/search8.jpg",
+					"js/jquery.3.2.1.js",
+					"img/stroll/banner2.png",
+					"fontt/iconfont.ttf",
+					"img/index/home/beauty_four.png",
+					"img/index/manual/style_2.png",
+					"img/index/search/search2.jpg",
+					"css/icons-extra.css",
+					"img/index/search/search7.jpg",
+					"fonts/mui-icons-extra.ttf",
+					"js/mui.min.js",
+					"img/index/manual/style_3.png",
+					"img/index/search/search1.jpg",
+					"fontt/iconfont.css",
+					"img/index/search/search4.jpg",
+					"fonts/mui.ttf",
+					"img/index/home/beauty_two.png",
+					"img/index/manual/style_1.png",
+					"img/index/home/beauty_three.png",
+					"css/mui.min.css",
+					"img/index/search/search6.jpg",
+					"css/css/public.css",
+					"img/index/search/search3.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"stroll/hdtj.html": {
+				"resources": [
+					"font/iconfont.svg",
+					"font/iconfont.ttf",
+					"img/stroll/banner1.png",
+					"img/index/newpeople/hot3.png",
+					"fonts/mui.ttf",
+					"img/index/search/search8.jpg",
+					"js/jquery.3.2.1.js",
+					"img/index/home/retro3.png",
+					"img/index/home/retro1.png",
+					"css/stroll/hdtj.css",
+					"images/shoppingCart/goods1.png",
+					"img/index/newpeople/snap4.png",
+					"img/index/newpeople/hot1.png",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"css/mui_common.css",
+					"img/index/newpeople/hot2.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"stroll/pintuan.html": {
+				"resources": [
+					"img/stroll/erweima.png",
+					"fonts/mui-icons-extra.ttf",
+					"img/stroll/banner.png",
+					"css/stroll/pintuan.css",
+					"css/css/public.css",
+					"fontt/iconfont.css",
+					"css/icons-extra.css",
+					"css/mui.min.css",
+					"fontt/iconfont.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/personal.html": {
+				"resources": [
+					"css/css/personal.css",
+					"font/iconfont.css",
+					"js/LCalendar.js",
+					"css/css/LCalendar.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/binding.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"css/css/binding.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/versions.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css",
+					"fontt/iconfont.css",
+					"css/css/set.css",
+					"img/my/logo.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/forgetpassword.html": {
+				"resources": [
+					"js/app.js",
+					"css/css/style.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/reg.html": {
+				"resources": [
+					"js/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/css/public.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my/qiandao.html": {
+				"resources": [
+					"img/my/qiandao_sprits.png",
+					"font/iconfont.svg",
+					"img/my/qiandao_icon.png",
+					"js/qiandao_js.js",
+					"css/css/qiandao_style.css"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"img/guide/btn.png",
+				"js/mui.js",
+				"css/mui.css"
+			]
+		}
+	}
+}

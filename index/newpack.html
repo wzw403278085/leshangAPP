@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>新人礼包</title>
+	    <script src="../js/mui.min.js"></script>
+	    <script src="../js/jquery.3.2.1.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/index/newpack.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init(); 
+	   </script>
+	</head>
+	<body id="pack">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">新人礼包</h1>
+		    <div class="right">
+		    	<div class="set">...</div>
+		    	<div class="shop mui-icon" id="gouwuche">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+		    <div class="banner">
+		    	<img src="../img/index/newpack/banner.png" alt="">
+		    </div>
+			<div class="server">
+				<img src="../img/index/newpack/server.png" alt=""/>
+			</div>
+			<div class="pack">
+				<a class="immediately" id="pack">邀请好友领取礼包</a>
+				<h2>大家都在买</h2>
+				<h3>同样享受新人专享优惠券</h3>
+			</div>
+			<div class="type">
+				<div class="type_tit">
+					<a class="cur">全</a>
+					<a>上</a>
+					<a>裙</a>
+					<a>裤</a>
+					<a>鞋</a>
+					<a>包</a>
+					<a>饰</a>
+				</div>
+				<div class="con">
+					<div class="content cur">
+						<ul class="type_con">
+							<li class="type_con_module">
+								<img src="../img/index/newpack/type1.png" alt="">
+								<div class="word">
+									<p class="tit">韩版牛仔超短裤</p>
+									<p class="clear">￥123.0<span>销量44笔</span></p>
+								</div>
+							</li>
+							<li class="type_con_module">
+								<img src="../img/index/newpack/type2.png" alt="">
+								<div class="word">
+									<p class="tit">韩版牛仔超短裤</p>
+									<p class="clear">￥123.0<span>销量44笔</span></p>
+								</div>
+							</li>
+							<li class="type_con_module">
+								<img src="../img/index/newpack/type3.png" alt="">
+								<div class="word">
+									<p class="tit">韩版牛仔超短裤</p>
+									<p class="clear">￥123.0<span>销量44笔</span></p>
+								</div>
+							</li>
+							<li class="type_con_module">
+								<img src="../img/index/newpack/type4.png" alt="">
+								<div class="word">
+									<p class="tit">韩版牛仔超短裤</p>
+									<p class="clear">￥123.0<span>销量44笔</span></p>
+								</div> 
+							</li>
+						</ul>
+					</div>
+					<div class="content">
+						<ul class="type_con">
+							<li class="type_con_module">
+								<img src="../img/index/newpack/type2.png" alt="">
+								<div class="word">
+									<p class="tit">韩版牛仔超短裤</p>
+									<p class="clear">￥123.0<span>销量44笔</span></p>
+								</div>
+							</li>
+							<li class="type_con_module">
+								<img src="../img/index/newpack/type3.png" alt="">
+								<div class="word">
+									<p class="tit">韩版牛仔超短裤</p>
+									<p class="clear">￥123.0<span>销量44笔</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="content">
+						<ul class="type_con">
+							<li class="type_con_module">
+								<img src="../img/index/newpack/type2.png" alt="">
+								<div class="word">
+									<p class="tit">韩版牛仔超短裤</p>
+									<p class="clear">￥123.0<span>销量44笔</span></p>
+								</div>
+							</li>
+							<li class="type_con_module">
+								<img src="../img/index/newpack/type4.png" alt="">
+								<div class="word">
+									<p class="tit">韩版牛仔超短裤</p>
+									<p class="clear">￥123.0<span>销量44笔</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="content">
+						<ul class="type_con">
+							<li class="type_con_module">
+								<img src="../img/index/newpack/type1.png" alt="">
+								<div class="word">
+									<p class="tit">韩版牛仔超短裤</p>
+									<p class="clear">￥123.0<span>销量44笔</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+			    $(".type .type_tit a").click(function () {
+			        var x=$(this).index();
+			        $(this).addClass("cur").siblings().removeClass("cur");
+			        $(this).parent().next().find(".content").eq(x).addClass("cur").siblings().removeClass("cur");
+			    });
+			}); 
+			/*document.getElementById("gouwuche").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});*/
+			
+			document.getElementById("gouwuche").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+		</script>
+	</body>
+</html>

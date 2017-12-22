@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>全部搭配</title>
+	    <script src="../js/mui.min.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/index/collocation.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	   </script>
+	</head>
+	<body id="collocation">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">全部搭配</h1>
+		    <div class="right">
+		    	<div class="shop mui-icon" id="gouwuche">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+			<div class="option1">
+				<p>风格：韩系、出行。尤其擅长以下穿搭：</p>
+				<div class="option">
+					<a class="option_icon">
+						<img src="../img/index/home/cloud.png" alt="">
+						<h2>约会</h2>
+					</a>
+					<a class="option_icon">
+						<img src="../img/index/home/test.png" alt=""/>
+						<h2>上学</h2>
+					</a>
+					<a class="option_icon"> 
+						<img src="../img/index/home/style.png" alt=""/>
+						<h2>职场</h2>
+					</a>
+					<a class="option_icon">
+						<img src="../img/index/home/wen.png" alt=""/>
+						<h2>休闲</h2>
+					</a>
+					<a class="option_icon">
+						<img src="../img/index/home/wen.png" alt=""/>
+						<h2>逛街</h2>
+					</a>
+				</div>
+				
+			</div>
+			<div class="beauty">
+				<h2>穿搭至</h2>
+				<ul class="beauty_con" id="beauty">
+					<li id="bea1">
+						<div class="img">
+							<img src="../img/index/home/beauty_one.png" alt="">
+							<div class="shadow">&#xe649;<span>48</span></div>
+						</div>
+						<p>T恤搭配牛仔裤 舒适简约</p>
+					</li>
+					<li id="bea2">
+						<div class="img">
+							<img src="../img/index/home/beauty_two.png" alt="">
+							<div class="shadow">&#xe649;<span>48</span></div>
+						</div>
+						<p>T恤搭配牛仔裤 舒适简约</p>
+					</li>
+					<li id="bea3">
+						<div class="img">
+							<img src="../img/index/home/beauty_three.png" alt="">
+							<div class="shadow">&#xe649;<span>48</span></div>
+						</div>
+						<p>T恤搭配牛仔裤 舒适简约</p>
+					</li>
+					<li id="bea4">
+						<div class="img">
+							<img src="../img/index/home/beauty_four.png" alt="">
+							<div class="shadow">&#xe649;<span>48</span></div>
+						</div>
+						<p>T恤搭配牛仔裤 舒适简约</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			/*document.getElementById("gouwuche").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});*/
+			
+			document.getElementById("gouwuche").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+		</script>
+	</body>
+</html>

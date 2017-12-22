@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>新人礼包</title>
+	     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery.3.2.1.js"></script>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link href="css/mui_common.css" rel="stylesheet"/>
+	    <link href="css/stroll/list_stroll.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init({
+      			keyEventBind:{
+      				backbutton:true
+      			}
+      		});
+      	
+			mui.old_back=mui.back;
+      		var clickNum=0;
+      		mui.back=function(){
+	      		clickNum++;
+	      		if(clickNum>1){
+	      			plus.runtime.quit();
+	      		}else{
+	      			mui.toast("再按一次退出应用");
+	      		}
+	      		setTimeout(function(){
+	      			clickNum=0
+	      		},1000);
+	      		return false;
+	      	}
+	   </script>
+	   
+	   
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav fl">
+		    <div class="mui-input-row mui-search mui-pull-left">
+				<input type="search" class="mui-input-clear" placeholder="搜索">
+			</div>
+			<a class="mui-pull-right  mui-icon-chat mui-icon"  id="info"></a>
+		</header>
+		<div class="mui-content">
+			<div class="banner clear">
+				<div class="ban_l fl">
+					<img  src="img/index/txsjx/ban33.png"/>
+					<div class="shadow1" id="xsqg">
+						<h2>限时抢购</h2>
+						<p>每天四场</p>
+						 <input type="text" value="" id="input" >
+					</div>
+				</div>
+				<div class="ban_r fl">
+					<ul>
+						<li id="sell">
+							<img src="img/stroll/banner.png" />
+							<div class="shadow">
+								<h2>8月榜单</h2>
+								<h3>大家都在买</h3>
+							</div>
+						</li>
+						<li id="pintuan">
+							<img src="img/stroll/banner.png" />
+							<div class="shadow">
+								<h2>爱拼团</h2>
+								<h3>组团更优惠</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="guess">
+				<div class="mui-slider">
+			        <div class="mui-slider-group mui-slider-loop">
+			        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="guess_con">
+								<li class="img">
+									<img src="img/index/manual/water.png" alt="">
+									<div class="shadow">今日上新</div>
+								</li>
+								<li class="img">
+									<img src="img/index/manual/go.png" alt="">
+									<div class="shadow">时尚红人</div>
+								</li>
+								<li class="img">
+									<img src="img/index/manual/korea.png" alt="">
+									<div class="shadow">明星同款</div>
+								</li>
+							</ul>
+			            </div>
+			            <div class="mui-slider-item">
+			               <ul class="guess_con">
+								<li class="img" id="jrsx">
+									<img src="img/index/manual/water.png" alt="">
+									<div class="shadow">今日上新</div>
+								</li>
+								<li class="img" id="guide1">
+									<img src="img/index/manual/go.png" alt="">
+									<div class="shadow">时尚红人</div>
+								</li>
+								<li class="img" id="indentical">
+									<img src="img/index/manual/korea.png" alt="">
+									<div class="shadow">明星同款</div>
+								</li>
+							</ul>
+		            	</div>
+			            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="guess_con">
+								<li class="img">
+									<img src="img/index/manual/water.png" alt="">
+									<div class="shadow">今日上新</div>
+								</li>
+								<li class="img">
+									<img src="img/index/manual/go.png" alt="">
+									<div class="shadow">时尚红人</div>
+								</li>
+								<li class="img">
+									<img src="img/index/manual/korea.png" alt="">
+									<div class="shadow">明星同款</div>
+								</li>
+							</ul>
+			            </div>
+			        </div>
+		    	</div>
+			</div>
+			<div class="single">
+				<h2>当季热卖</h2>
+				<div class="mui-slider">
+			        <div class="mui-slider-group mui-slider-loop">
+			        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="single_con">
+								<li class="single_con_moudle">
+									<img src="img/index/store/single1.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single2.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single3.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single.png">
+									<p>衬衫</p>
+								</li>
+							</ul>
+			            </div>
+			            <div class="mui-slider-item">
+			                <ul class="single_con">
+								<li class="single_con_moudle">
+									<img src="img/index/store/single1.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single2.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single3.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single.png">
+									<p>衬衫</p>
+								</li>
+							</ul>
+			            </div>
+			            
+			            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="single_con">
+								<li class="single_con_moudle">
+									<img src="img/index/store/single1.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single2.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single3.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single.png">
+									<p>衬衫</p>
+								</li>
+							</ul>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<div class="all">
+				<h2>全部分类</h2>
+				<ul id="beauty">
+					<li id="bea1">
+						<img src="img/index/manual/sty1.png" />
+						<div class="shadow">
+							<h2>上衣</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+					<li id="bea2">
+						<img src="img/index/manual/sty2.png" />
+						<div class="shadow">
+							<h2>裤子</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+					<li id="bea3">
+						<img src="img/index/manual/sty3.png" />
+						<div class="shadow">
+							<h2>裙装</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+					<li id="bea3">
+						<img src="img/index/manual/sty4.png" />
+						<div class="shadow">
+							<h2>鞋子</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+					<li id="bea5">
+						<img src="img/index/manual/sty5.png" />
+						<div class="shadow">
+							<h2>包包</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+					<li id="bea6">
+						<img src="img/index/spxq/spxq_8.jpg" />
+						<div class="shadow">
+							<h2>内衣</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+					<li id="bea7">
+						<img src="img/index/spxq/banner.png" />
+						<div class="shadow">
+							<h2>美妆个护</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+					<li id="bea8">
+						<img src="img/index/manual/sty4.png" />
+						<div class="shadow">
+							<h2>美妆个护</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+					
+					<li id="bea9">
+						<img src="img/index/manual/sty2.png" />
+						<div class="shadow">
+							<h2>家居</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+					<li id="bea10">
+						<img src="img/index/manual/sty3.png" />
+						<div class="shadow">
+							<h2>配饰</h2>
+							<h3>大家都在买</h3>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="good">
+				<h2>好店推荐</h2>
+				<div class="mui-slider">
+			        <div class="mui-slider-group mui-slider-loop">
+			        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="single_con">
+								<li class="single_con_moudle">
+									<img src="img/index/store/single1.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single2.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single3.png">
+									<p>衬衫</p>
+								</li>
+							</ul>
+			            </div>
+			            <div class="mui-slider-item">
+			                <ul class="single_con" id="hao">
+								<li class="single_con_moudle" id="hao1">
+									<img src="img/index/store/single1.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle" id="hao2">
+									<img src="img/index/store/single2.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle" id="hao3">
+									<img src="img/index/store/single3.png">
+									<p>衬衫</p>
+								</li>
+							</ul>
+			            </div>
+			            
+			            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="single_con">
+								<li class="single_con_moudle">
+									<img src="img/index/store/single1.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single2.png">
+									<p>衬衫</p>
+								</li>
+								<li class="single_con_moudle">
+									<img src="img/index/store/single3.png">
+									<p>衬衫</p>
+								</li>
+							</ul>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<div class="hot">
+				<h2>明星精选</h2>
+				<ul class="hot_con">
+					<li class="hot_con_module">
+						<img src="img/index/newpeople/hot1.png" alt="">
+						<p>杨幂</p>
+					</li>
+					<li class="hot_con_module cur">
+						<img src="img/index/newpeople/hot2.png" alt="">
+						<p>迪丽热巴</p>
+					</li>
+					<li class="hot_con_module">
+						<img src="img/index/newpeople/hot3.png" alt="">
+						<p>刘诗诗</p>
+					</li>
+				</ul>
+			</div>
+			<div class="down clear">
+				<div class="down_l fl">
+					<img src="img/index/home/recommend1.png">
+				</div>
+				<div class="down_r fl">
+					<img src="img/index/home/recommend3.png">
+					<img src="img/index/home/recommend3.png">
+					<p>黄色衬衣+黑色长裤 ￥212</p>
+				</div>
+				<p class="zi"><span>杨幂</span>黄色衬衣搭配黑色长裤清新靓丽显身材~</p>
+			</div>
+		</div>
+		<script>
+					 //年还剩  
+		    var txt= document.getElementById("input");  
+		    setInterval(function () {  
+		        //获取系统当前时间  
+		        var now = new Date();  
+		        //实例化今年跨年时间  
+		        var targDate = new Date(now.getFullYear() + 1, 0, 1);  
+		        //跨年时间与此时此刻时间差（毫秒）  
+		        var long = targDate - now;  
+		        var leftDay = parseInt(long/ 1000 / 60 / 60 / 24);  
+		        long = long % (1000 * 60 * 60 * 24);  
+		        var leftHour =parseInt(long / 1000 / 60 / 60);  
+		        long = long % (1000 * 60 * 60);  
+		        var leftMinute = parseInt(long / 1000 / 60) ;  
+		        long = long % (1000 * 60 );  
+		        var leftSeconde = parseInt(long / 1000);  
+		        txt.value= now.getFullYear()+"年还剩"+leftDay  
+		                + "天"+leftHour + ":"+leftMinute+":"+leftSeconde;  
+		    }, 1000);  
+			document.getElementById("xsqg").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"stroll/xsqg.html",
+					id:"xsqg",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			document.getElementById("info").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"index/info.html",
+					id:"info",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			document.getElementById("sell").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"stroll/sell.html",
+					id:"sell",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			document.getElementById("jrsx").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"stroll/jrsx.html",
+					id:"jrsx",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			document.getElementById("pintuan").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"stroll/pintuan.html",
+					id:"pintuan",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			document.getElementById("guide1").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"stroll/guide1.html",
+					id:"guide1",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			document.getElementById("indentical").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"stroll/indentical.html",
+					id:"indentical",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			var box3=document.getElementById("beauty");
+        		var arr_a3=box3.getElementsByTagName("li");
+        		for (var i=0;i<arr_a3.length;i++) {
+        			 var arr_id3=arr_a3[i].getAttribute("id");
+        			 document.getElementById(arr_id3).addEventListener("tap",tap_b3);
+        		}
+        		function tap_b3(){
+					mui.openWindow({
+						url:"stroll/shangyi.html",
+						id:"spxq",
+						createNew:true,
+						show:{
+							aniShow:"slide-in-right",
+							duration:200
+						},
+						waiting:{
+							title:"正在加载……"
+						}
+					
+					});
+        		}
+        		
+        		var box2=document.getElementById("hao");
+        		var arr_a2=box2.getElementsByTagName("li");
+        		for (var a=0;a<arr_a2.length;a++) {
+        			 var arr_id2=arr_a2[a].getAttribute("id");
+        			 document.getElementById(arr_id2).addEventListener("tap",tap_b2);
+        		}
+        		function tap_b2(){
+					mui.openWindow({
+						url:"stroll/hdtj.html",
+						id:"hdtj",
+						createNew:true,
+						show:{
+							aniShow:"slide-in-right",
+							duration:200
+						},
+						waiting:{
+							title:"正在加载……"
+						}
+					
+					});
+        		}
+		</script>
+	</body>
+</html>

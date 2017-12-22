@@ -1,0 +1,149 @@
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-title,.mui-action-back{
+	    		color: #fff;
+	    	}
+	    	header .right .shop{
+	    		font-family: icon;
+	    	}
+	    	header .right .set{
+	    		font-size: 1.3rem;
+	    		margin: -.5rem 0.3rem 0 0;
+	    	}
+	    	header .right{
+	    		float: right;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-end;
+				justify-content:flex-end;
+				-webkit-align-items: center;
+				align-items: center;
+	    	}
+	    	.head{
+	    		border-bottom: 1px solid #eee;
+	    		font-size: 0.94rem;
+	    		text-align: center;
+	    		line-height: 2rem;
+	    	}
+	    	.head span{
+	    		color: #F14DA4;
+	    		font-size: 1rem;
+	    		font-family: icon;
+	    	}
+	    	#segmentedControl a{
+	    		border: 1px solid #F14DA4;
+	    	}
+	    	
+			.mui-content{
+				background: #fff;
+			}
+			.mui-segmented-control {
+			    font-size: 15px;
+			    font-weight: 400;
+			    position: relative;
+			    display: table;
+			    overflow: hidden;
+			    width: 100%;
+			    table-layout: fixed;
+			    border: none;
+			    border-radius: 3px;
+			    background-color: transparent;
+			    -webkit-touch-callout: none;
+			}
+			.mui-segmented-control .mui-control-item{
+				color: #F14DA4;
+				border:1px solid #F14DA4;
+				border-color: #F14DA4;
+				width: 18%;
+				margin: 0.5rem 0.18rem 0;
+				height: 2rem;
+				line-height: 2rem;
+				display: inline-block;
+				
+			}
+			.mui-segmented-control .mui-control-item.mui-active {
+			    color: #fff;
+			    background-color: #F14DA4;
+			}
+			.user li .li{
+				font-family: icon;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content: center;
+				margin-top: 0.4rem;
+			}
+			.user li .li .user_name{
+				width: 73%;
+				padding-bottom: 0.4rem;
+				position: relative;
+			}
+			.user li .li .user_name h3{
+				font-size: 0.88rem;
+				margin: 0.4rem 0;
+				font-weight: 100;
+			}
+			
+			.user li .li .user_name p{
+				font-size: 0.75rem;
+				line-height: 1.3rem;
+			}
+			.user li .li .user_img{
+				font-size: 1.4rem;
+				color: #ddd;
+				width: 10%;
+			}
+			.user li .li .user_num{
+				width: 15%;
+				color: #F14DA4;
+			}
+			.user li .li .p{
+				color: #030303;
+			}
+			body{
+				background: #fff;
+			}
+			.userr{
+				border-top: 1px solid #eee;
+			}
+
+	  		.clean:after{content:'';clear: both;display: block;}
+	        .mui-scroll,.mui-scroll-wrapper{position: relative;}
+			
+			.user li .li_b{
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				border:1px solid #eee;
+				margin-left: 10%;
+			}
+			.user li .li_b .img{
+				width: 16%;
+				margin: 0.4rem 0 0 0.3rem;
+			}
+			.user li .li_b .img img{
+				width: 100%;
+			}
+			.user li .li_b .img_con{
+				width: 70%;
+			}
+			.user li .li_b .img_con h3{
+				font-size: 0.88rem;
+				color: #000;
+				margin: 0.8rem 0 0 0;
+				font-weight: 100;
+			}
+			.user li .li_b .img_con p{
+				font-size: 0.88rem;
+				
+				font-weight: 100;
+			}
+			.user li .li_b .img_r{
+				font-size: 1rem;
+				color: #F14DA4;
+				font-family: icon;
+				margin: 1rem 0.5rem 0 0;
+			}

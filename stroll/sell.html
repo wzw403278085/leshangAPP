@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>新人礼包</title>
+	    <script src="../js/mui.min.js"></script>
+	    <script src="../js/jquery.3.2.1.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/stroll/sell.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init(); 
+	   </script>
+	</head>
+	<body id="sell">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">热销榜</h1>
+		    <div class="right">
+		    	<div class="set">...</div>
+		    	<div class="shop mui-icon"  id="shop">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+			<div class="banner">
+				<div class="img">
+					<img src="../img/stroll/banner.png" />
+				</div>
+				<div class="shadow">
+					<h1><span>8月</span>热销榜单</h1>
+					<h3>—看看仙女们都在买什么—</h3>
+				</div>
+			</div>
+			<div class="type">
+				<ul class="type_con" id="beauty">
+					<li class="type_con_module" id="bea1">
+						<img src="../img/index/newpeople/snap4.png" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+					<li class="type_con_module" id="bea2">
+						<img src="../img/index/home/retro3.png" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+					<li class="type_con_module" id="bea3">
+						<img src="../img/index/home/retro1.png" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+					<li class="type_con_module" id="bea4">
+						<img src="../img/index/search/search8.jpg" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+					<li class="type_con_module" id="bea5">
+						<img src="../img/index/newpeople/hot2.png" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+					<li class="type_con_module" id="bea6">
+						<img src="../img/index/cxcs2/img3.jpg" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			var box3=document.getElementById("beauty");
+        		var arr_a3=box3.getElementsByTagName("li");
+        		for (var i=0;i<arr_a3.length;i++) {
+        			 var arr_id3=arr_a3[i].getAttribute("id");
+        			 document.getElementById(arr_id3).addEventListener("tap",tap_b3);
+        		}
+        		function tap_b3(){
+					mui.openWindow({
+						url:"../index/spxq.html",
+						id:"spxq",
+						createNew:true,
+						show:{
+							aniShow:"slide-in-right",
+							duration:200
+						},
+						waiting:{
+							title:"正在加载……"
+						}
+					
+					});
+        		}
+			/*document.getElementById("shop").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});*/
+			
+			document.getElementById("shop").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,212 @@
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-title,.mui-action-back{
+	    		color: #fff;
+	    	}
+	    	.mui-title{
+	    		width: 62% !important;
+	    	}
+	    	header .right .shop{
+	    		font-family: icon;
+	    	}
+	    	header .right{
+	    		float: right;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-end;
+				justify-content:flex-end;
+				-webkit-align-items: center;
+				align-items: center;
+	    	}
+	    	header .right .set{
+	    		font-size: 1.3rem;
+	    		margin: -.5rem 0.3rem 0 0;
+	    	}
+	    	.mui-search input[type="search"] {
+				width: 100%;
+				padding: 0 2rem;
+				color: #FED1EB;
+				font-size: 1.1rem;
+				background: rgba(255, 255, 255, .5);
+				border: none;
+				border-radius: 1.3rem;
+				margin-top: 0.5rem;
+				height: 1.7rem;
+			}
+			.mui-search .mui-placeholder{
+				text-align: left;
+				padding-left:0.6rem ;
+				line-height: 2.8rem;
+			}
+			.mui-search .mui-placeholder span {
+				font-size: 0.9rem;
+				color: #FED1EB;
+			}
+			.mui-bar .mui-icon-search:before {
+				line-height: 1.7rem;
+				color: #FEc9e6;
+				/*font-size: 1.5rem;*/
+				font-weight: 700;
+			}
+			
+.banner{
+    width: 100%;
+    position: relative;
+    height:11rem;
+}
+.banner .img{
+    width:100%;
+    height: 11rem;
+}
+.banner .img img{
+    width:100%;
+    height: 100%;
+}
+.banner .shadow{
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+.banner .shadow img{
+	display: block;
+	width: 3rem;
+	height: 3rem;
+	margin: 2rem auto 0.5rem;
+	border-radius: 50%;
+}
+.banner .shadow h2{
+	font-size: 0.9rem;
+}
+.banner .shadow .span{
+	display: block;
+	position: absolute;
+	right: 32%;
+	top: 3.8rem;
+	font-size: 0.7rem;
+	background: #F04997;
+	line-height: 1rem;
+	padding: 0 0.5rem;
+	border-radius: 10px;
+}
+.banner .shadow .a{
+	font-family:icon ;
+	
+}
+.banner .shadow .a a{
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 0.2rem 0.5rem;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	margin: 0.5rem;
+}
+.banner .shadow .a a span{
+	font-size: 1rem;
+	margin-top: 0.8rem;
+	display: inline-block;
+}
+.xiaoliang{
+	text-align: center;
+	background: #fff;
+	padding: 1rem 0;
+}
+.xiaoliang ul{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.xiaoliang ul li{
+	width: 33%;
+	border-right: 1px solid #919191;
+}
+.xiaoliang ul li:last-child{
+	border-right: 0;
+}
+.xiaoliang ul li span{
+	display: block;
+	line-height: 1rem;
+}
+
+			.hot{
+	    		/*height: 17.8rem;*/
+	    		background: #fff;
+	    		padding: 0.8rem;
+	    		margin-top: 0.8rem;
+	    	}
+	    
+	    	.hot .hot_con{
+	   			display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content:center;
+				-webkit-align-items: baseline;
+				align-items: baseline;
+				margin-top: 0.4rem;
+				width: 100%;
+				overflow: hidden;
+	   		}
+	   		.hot .hot_con .hot_con_module{
+	   			width: 30%;
+	   			margin: 0.5rem 0.3rem;
+	   		}
+	   		.hot .hot_con .hot_con_module.cur{
+	   			width: 34%;
+	   		}
+	   		.hot .hot_con .hot_con_module img{
+	   			width: 100%;
+	   		}
+	   		.word p{
+	   			color: #F14DA4;
+	   			font-size: 1rem;
+	   			line-height: 1.6rem;
+	   		}
+	   		.word p span{
+	   			font-size: 0.76rem;
+	   			text-decoration: line-through;
+	   			color: #606060;
+	   			margin-left: 0.3rem;
+	   		}
+	   		.word .tit{
+	   			color: #010101;
+	   			overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+	   		}
+	   		.title h3{
+	   			font-size: 1rem;
+	   			font-weight: 100;
+	   		}
+	   		.title a{
+	   			color: #F07FB5;
+	   		}
+	   		.type{
+	   			margin-top: 0.8rem;
+	   			background: #fff;
+	   			padding:0.8rem;
+	   		}
+	   		.type .type_con{
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content:space-between;
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				/*margin-top: 0.5rem;*/
+	    	}
+	    
+	    	.type .type_con .type_con_module{
+	    		width: 45%;
+	   			margin: 0.5rem 0.5rem;
+	   			
+	    	}
+	    	.type .type_con .type_con_module img{
+	    		width: 100%;
+	    		height: 14rem;
+	    	}

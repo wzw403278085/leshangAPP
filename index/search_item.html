@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>搜索单品 </title>
+		<script src="../js/mui.min.js"></script>
+	    <script src="../js/jquery.3.2.1.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+    	<link rel="stylesheet" type="text/css" href="../css/index/search_item.css"/>
+    	
+		<script type="text/javascript" charset="utf-8">
+      		mui.init();
+    	</script>
+	</head>
+	<body id="search_item">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <a href="search.html">
+		    	<div class="mui-input-row mui-search mui-pull-left">
+					<input type="search" class="mui-input-clear" placeholder="搜索">
+				</div>
+		    </a>
+		    <a id="info" class="info mui-pull-right">&#xe6c5;</a>
+		</header>
+		<div class="mui-content">
+			<div class="search_title">
+				<a class="cur">单品</a>
+				<a>搭配</a>
+				<a>文章</a>
+				<a>店铺</a>
+			</div>
+			<div class="searchItem_box">
+				<div class="searchItem_con one">
+					<h2>热门搜索</h2>
+					<div class="Item dp">
+						<h3>单品</h3>
+						<ul>
+							<li><a href="">衬衫</a></li>
+							<li><a href="">牛仔裤</a></li>
+							<li><a href="">T恤</a></li>
+							<li><a href="">卫衣</a></li>
+							<li><a href="">双肩包</a></li>
+							<li><a href="">时尚套装</a></li>
+							<li><a href="">薄款长衫</a></li>
+							<li><a href="">凉鞋</a></li>
+							<li><a href="">耳饰</a></li>
+							<li><a href="">小白鞋</a></li>
+							<li><a href="">连衣裙</a></li>
+							<li><a href="">睫毛膏</a></li>
+						</ul>
+					</div>
+					<div class="Item match">
+						<h3>搭配</h3>
+						<ul>
+							<li><a href="">明星街拍</a></li>
+							<li><a href="">显高</a></li>
+							<li><a href="">显瘦</a></li>
+							<li><a href="">遮粗腿</a></li>
+							<li><a href="">轻熟</a></li>
+							<li><a href="">学院</a></li>
+							<li><a href="">文艺</a></li>
+							<li><a href="">上学</a></li>
+						</ul>
+					</div>
+					<div class="Item article">
+						<h3>热门文章</h3>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell mui-media">
+								<a class="mui-navigate-right">
+									<img class="mui-media-object mui-pull-left" src="../img/index/search/searchItem1.png">
+									<div class="mui-media-body">
+										<p class='mui-ellipsis'>冰冰的素颜肌无敌水嫩，这才是护肤的秘诀之重。</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a class='mui-navigate-right' href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="../img/index/search/searchItem2.png">
+									<div class="mui-media-body">
+										<p class='mui-ellipsis'>脖子短怎么办？诗诗、冬雨教你打造天鹅颈</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="Item shop">
+						<h3>推荐店铺</h3>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell mui-media">
+								<a class="mui-navigate-right">
+									<img class="mui-media-object mui-pull-left" src="../img/index/search/searchItem3.png">
+									<div class="mui-media-body">
+										韩都衣舍
+										<p class='mui-ellipsis'>冰冰的素颜肌无敌水嫩，这才是护肤的秘诀之重。</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a class='mui-navigate-right' href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="../img/index/search/searchItem4.png">
+									<div class="mui-media-body">
+										时尚gogo
+										<p class='mui-ellipsis'>韩系 上学  人气  大牌  潮流  时尚！！！</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="searchItem_con two" style="display: none;">
+					<h2>热门搜索</h2>
+					<div class="Item match">
+						<ul>
+							<li><a href="">明星街拍</a></li>
+							<li><a href="">显高</a></li>
+							<li><a href="">显瘦</a></li>
+							<li><a href="">遮粗腿</a></li>
+							<li><a href="">轻熟</a></li>
+							<li><a href="">学院</a></li>
+							<li><a href="">文艺</a></li>
+							<li><a href="">上学</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="searchItem_con three" style="display: none;">
+					<h2>热门搜索</h2>
+					<div class="Item match">
+						<ul>
+							<li><a href="">最流行</a></li>
+							<li><a href="">明星</a></li>
+							<li><a href="">美容美妆</a></li>
+							<li><a href="">春天</a></li>
+							<li><a href="">显瘦</a></li>
+							<li><a href="">收纳</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="searchItem_con four" style="display: none;">
+					<h2>热门搜索</h2>
+					<div class="Item shop">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="../img/index/search/searchItem3.png">
+									<div class="mui-media-body">
+										韩都衣舍
+										<p class='mui-ellipsis'>冰冰的素颜肌水嫩无敌，这才是护肤的秘诀之</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="../img/index/search/searchItem4.png">
+									<div class="mui-media-body">
+										时尚gogo
+										<p class='mui-ellipsis'>脖子短怎么办？诗诗、冬雨教你打造天鹅颈</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".search_title a").click(function(){
+					$(this).addClass("cur").siblings().removeClass("cur");
+					var index=$(this).index();
+					$(".searchItem_con").eq(index).css("display","block").siblings().css("display","none")
+				});
+			});
+			document.getElementById("info").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"info.html",
+					id:"info",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

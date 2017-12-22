@@ -1,0 +1,55 @@
+body{
+	background: #fff;
+}
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-title,.mui-action-back{
+	    		color: #fff;
+	    	}
+	    	.mui-content{
+	    		background: #fff;
+	    	}
+			.mui-table-view .mui-media-object{
+				background: #ED54A6;
+				border-radius: 50%;
+				width: 1.8rem;
+				height: 1.8rem;
+				line-height: 1.8px; 
+    			text-align: center;
+    			
+			}
+			.mui-table-view .mui-media-object img{
+				width: 56%;
+				margin: 0.5rem 0 0 0.1rem;
+				
+			}
+			.mui-media-body{
+				font-size:1rem;
+				line-height: 1.5rem;
+			}
+			.mui-media-body span{
+				color: #DBDBDB;
+				font-size:0.8rem ;
+				margin-left: 0.5rem;
+			}
+			.mui-media-body p{
+				line-height: 1rem;
+				margin-top: -.2rem;
+			}
+			.mui-content>.mui-table-view:first-child {
+			    margin-top:0;
+			}
+			.mui-table-view-cell{
+				padding: 0.8rem;
+			}
+			.mui-table-view-cell:after{
+				left: 0;
+			}
+			.mui-table-view .mui-media-object.pre{
+				background: #B875F6;
+			}
+			.mui-table-view .mui-media-object.pre img{
+				width: 42%;
+			}

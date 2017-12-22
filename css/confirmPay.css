@@ -1,0 +1,401 @@
+body {
+	background: #F6F5FB;
+}
+
+.mui-content {
+	background: #F6F5FB;
+}
+
+
+/*头部*/
+
+.mui-bar {
+	position: relative;
+	/*height: 4rem;*/
+	background: #F14DA3;
+	box-shadow: none;
+}
+
+.mui-bar-nav.mui-bar .mui-icon {
+	margin: .5rem 0;
+	padding: 0;
+	color: #fff;
+	/*font-size: 2.6rem;*/
+}
+
+.mui-bar .mui-title {
+	/*margin-top: .7rem;*/
+	color: #fff;
+	/*font-size: 1.2rem;*/
+}
+
+
+/*主体*/
+
+.mui-bar-nav~.mui-content {
+	padding: 0;
+}
+
+.mui-content .pay ul {
+	margin: 0;
+	padding: 0 1rem 10rem;
+}
+
+.mui-content .pay ul li {
+	position: relative;
+	width: 100%;
+	height: 4rem;
+	margin-top: 1rem;
+	background: #fff;
+	border: 1px solid transparent;
+}
+
+.mui-content .pay ul li .p1 {
+	position: relative;
+	margin-left: 5rem;
+	margin-bottom: 0;
+	color: #676767;
+	font-size: 1rem;
+	line-height: 4rem;
+}
+
+.mui-content .pay ul li .p1:before {
+	content: '\e71f';
+	display: inline-block;
+	position: absolute;
+	left: -2.7rem;
+	top: -.1rem;
+	font-family: icon;
+	font-style: normal;
+	color: #15A1EE;
+	font-size: 2.5rem;
+}
+
+.mui-content .pay ul li .p2 {
+	position: relative;
+	width: 32%;
+	margin: .6rem 2rem 0 0;
+	color: #777777;
+	font-size: .9rem;
+}
+
+.mui-content .pay ul li .p2:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 1rem;
+	left: -1rem;
+	width: 6.1%;
+	height: .45rem;
+	background: #606060;
+	border-radius: 50%;
+}
+
+.mui-content .pay ul li:nth-child(2) .p1:before {
+	content: '\e719';
+	color: #45C45D;
+}
+
+.mui-content .pay ul li:nth-child(3) .p1:before {
+	content: '\e71b';
+	color: #EFB436;
+}
+
+.mui-content .pay ul li:nth-child(4) .p1:before {
+	content: '\e71e';
+	color: #D81E05;
+}
+
+.mui-content .pay ul li:nth-child(5) .p1:before {
+	content: '\e704';
+	color: #E60013;
+}
+
+.mui-content .pay ul li span {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: .5rem;
+	font-family: icon;
+	color: #ED4DA2;
+	line-height: 4rem;
+}
+
+.mui-content .pay ul li.curr {
+	border: 1px solid #F7A6C8;
+}
+
+.mui-content .pay ul li.curr span {
+	display: inline-block;
+}
+
+.payFooter {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 3rem;
+	background: #fff;
+	border-top: 1px solid #EEEEF0;
+}
+
+.payFooter p {
+	display: inline-block;
+	width: 32.4%;
+	height: 100%;
+	margin: 0;
+	color: #F44EA4;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 3rem;
+	border-right: 1px solid #EFEFEF;
+}
+
+.payFooter p i {
+	font-family: icon;
+	font-style: normal;
+}
+
+.payFooter p:nth-child(2) {
+	border-right: 1px solid transparent;
+}
+
+.payFooter button {
+	float: right;
+	width: 32%;
+	height: 100%;
+	background: #F14DA4;
+	color: #fff;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 0;
+}
+
+.mui-content .fk {
+	display: none;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(128, 128, 128, .5);
+}
+
+.mui-content .fk .fkCon {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #fff;
+}
+
+.fk .fkCon .header {
+	width: 100%;
+	height: 3.5rem;
+	padding: 0 1rem;
+	border-bottom: 1px solid #EFEFEF;
+}
+
+.fk .fkCon .header .close {
+	font-family: icon;
+	color: #949494;
+	font-size: 1.5rem;
+	line-height: 3.5rem;
+}
+
+.fk .fkCon .header .help {
+	font-family: icon;
+	color: #2DABDE;
+	font-size: 1.5rem;
+	line-height: 3.5rem;
+}
+
+.fk .fkCon .header h3 {
+	position: relative;
+	margin: 0 0 0 8.5rem;
+	line-height: 3.5rem;
+	color: #010101;
+	font-size: 1.3rem;
+	font-weight: normal;
+}
+
+.fk .fkCon .header h3:before {
+	content: '\e71f';
+	display: inline-block;
+	position: absolute;
+	left: -2.5rem;
+	font-family: icon;
+	color: #19A0E4;
+	font-size: 2rem;
+}
+
+.fk .fkCon h2 {
+	margin-top: 2rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+.fk .fkCon .ddxx {
+	width: 100%;
+	height: 3rem;
+	padding: 0 1rem;
+	color: #656565;
+	line-height: 3rem;
+	border-bottom: 1px solid #EEEEEE;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.fk .fkCon .ddxx span {
+	margin-left: 1rem;
+	color: #000;
+}
+
+.fk .fkCon .fkfs {
+	width: 100%;
+	height: 3rem;
+	padding: 0 1rem;
+	color: #656565;
+	line-height: 3rem;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.fk .fkCon .fkfs span {
+	float: right;
+	color: #000;
+}
+
+.fk .fkCon .fkfs span:after {
+	content: '\e6d7';
+	display: inline-block;
+	font-family: icon;
+	color: #5F5F5F;
+	font-size: 1.2rem;
+}
+
+.fk .fkCon button {
+	width: 90%;
+	height: 3rem;
+	margin: 3rem 0 1rem 1.2rem;
+	font-weight: normal;
+	color: #fff;
+	font-size: 1.2rem;
+	background: #19A0E4;
+	border: none;
+}
+
+.mui-content .zfmm {
+	display: none;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(128, 128, 128, .5);
+}
+
+.mui-content .zfmm .zfmm_con {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #fff;
+}
+
+.zfmm .zfmm_con .header {
+	position: relative;
+	width: 100%;
+	height: 3.5rem;
+	border-bottom: 1px solid #EFEFEF;
+}
+
+.zfmm .zfmm_con .header h3 {
+	text-align: center;
+	line-height: 3.5rem;
+	color: #010101;
+	font-size: 1.3rem;
+	font-weight: normal;
+}
+
+.zfmm .zfmm_con .header span {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	font-family: icon;
+	font-size: 2rem;
+	color: #989898;
+}
+
+.zfmm .zfmm_con .password {
+	width: 70%;
+	margin: 2rem auto 0;
+}
+
+.zfmm .zfmm_con .password div {
+	height: 3rem;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #C6C6C6;
+	border-radius: .5rem;
+}
+
+.zfmm .zfmm_con .password div input {
+	float: left;
+	width: 16.6%;
+	height: 100%;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 2rem;
+	color: #626166;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-right: 1px solid #EBEBEB;
+	background: transparent;
+}
+
+.zfmm .zfmm_con .password div input:last-child {
+	border: none;
+}
+
+.zfmm .zfmm_con .password a {
+	float: right;
+	display: block;
+	margin-top: .7rem;
+	color: #18A3E8;
+}
+
+.zfmm .zfmm_con .btn {
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.zfmm .zfmm_con .btn ul {
+	margin: 0;
+	padding: 0;
+}
+
+.zfmm .zfmm_con .btn ul li {
+	float: left;
+	width: 33.33%;
+	height: 3rem;
+	margin: 0;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 3rem;
+	border-top: 1px solid #EAEAEA;
+	border-right: 1px solid #EAEAEA;
+}
+
+.zfmm .zfmm_con .btn ul li:nth-child(3n) {
+	border-right: none;
+}
+
+.zfmm .zfmm_con .btn ul li:nth-child(10),
+.zfmm .zfmm_con .btn ul li:nth-child(12) {
+	background: #E7E7E7;
+}
+
+.zfmm .zfmm_con .btn ul li p {
+	font-family: icon;
+	font-size: 1.5rem;
+	color: #CDCDCD;
+}

@@ -1,0 +1,387 @@
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-title,.mui-action-back{
+	    		color: #fff;
+	    	}
+	    	
+	    	header .right .shop{
+	    		font-family: icon;
+	    	}
+	    	
+	    	header .right{
+	    		float: right;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-end;
+				justify-content:flex-end;
+				-webkit-align-items: center;
+				align-items: center;
+	    	}
+	    	header .right .set{
+	    		font-family: icon;
+	    		font-size: 1.3rem;
+	    		margin: 0 0.5rem 0;
+	    		color: #fff;
+	    	}
+	    	
+	    	.mui-popover.mui-popover-bottom.mui-active{
+				left: 0 !important;
+				border-radius: 0;
+				top:80% !important;
+				}
+			.mui-popover {
+				height: 20%;
+				width: 100%;
+				background: #fff;
+			}
+			#bottomPopover p{
+				color: #000;
+				text-align: center;
+			}
+			#bottomPopover .share_con{
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content: center;
+			}
+			#bottomPopover .share_con a{
+				display: inline-block;
+				width: 10%;
+				border-radius: 50%;
+				overflow: hidden;
+				margin: 1rem;
+			}
+			#bottomPopover .share_con a img{
+				width: 100%;
+			}
+			.mui-popover {
+			    -webkit-transition: opacity 0s;
+			     transition: opacity 0s; 
+			   
+			}
+	    	.mui-popover .mui-popover-arrow {
+			   display: none;
+			}
+			
+			.style{
+				padding: 0.645rem;
+				width: 100%;
+				overflow: hidden;
+				background: #fff;
+				position: relative;
+			}
+			.style .style_img {
+				width: 100%;
+				overflow: hidden;
+			}
+			.style .style_img img{
+				width: 100%;
+			}
+			.style .pos_r{
+				position: absolute;
+				top: 22%;
+				right: 10%;
+				width: 38%;
+				background: rgba(0,0,0,0.5);
+				color: #fff;
+				line-height: 1.5rem;
+				border-radius: 0 15px 15px 0;
+			}
+			.style .pos_r span{
+				width: 5px;
+				height: 5px;
+				background: #fff;
+				display: inline-block;
+				border-radius: 50%;
+				margin: 0 0.3rem 0.2rem 0.5rem;
+			}
+			.style .pos_l{
+				position: absolute;
+				bottom: 40%;
+				left: 10%;
+				width: 38%;
+				background: rgba(0,0,0,0.5);
+				color: #fff;
+				line-height: 1.5rem;
+				border-radius:  0 15px 15px 0;
+			}
+			.style .pos_l span{
+				width: 5px;
+				height: 5px;
+				background: #fff;
+				display: inline-block;
+				border-radius: 50%;
+				margin: 0 0.3rem 0.2rem 0.5rem;
+			}
+			
+			.style .a a{
+				display: inline-block;
+				color: #919191;
+				border: 1px solid #e6e6e6;
+				border-radius:15px ;
+				padding: 0 0.5rem;
+				line-height: 1.5rem;
+				margin: 0 0.2rem;
+			}
+			.shopp{
+				padding: 0.645rem;
+				width: 100%;
+				overflow: hidden;
+				background: #fff;
+			}
+			.shopp .shopp_tit{
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			.shopp .shopp_tit .shopp_tit_img{
+				display: block;
+				color: #010101;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-align-items: center;
+				align-items: center;
+				/*height: 1rem;*/
+			}
+			.shopp .shopp_tit .shopp_tit_img img{
+				width: 30%;
+			}
+			.shopp .shopp_tit .shopp_tit_img p{
+				margin-left: 1rem;
+			}
+			.shopp .shopp_tit .shopp_tit_follow{
+				border: 1px solid #919191;
+				line-height: 1.3rem;
+				height: 1.5rem;
+				padding: 0 0.4rem;
+				border-radius:15px ;
+			}
+			.shopp .shopp_tit .shopp_tit_follow span{
+				color: #919191;
+			}
+			.shopp .p{
+				color: #010101;
+				margin: 0.3rem 0;
+			}
+			.shopp .shopp_con ul{
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-start;
+				justify-content:flex-start;
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				margin-top: 0.5rem;
+	    	}
+	    	.shopp .shopp_con ul li{
+	    		width: 45%;
+	    		margin: 0.5rem 0.3rem;
+	    		background: #eee;
+	    	}
+	    	.shopp .shopp_con ul li img{
+	    		width: 100%;
+	    		
+	    	}
+	    	.shopp .shopp_con ul li .word {
+	    		padding: 0 0.3rem;
+	    	}
+	    	.shopp .shopp_con ul li .word .tit{
+	    		color: #000;
+	    		overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				width: 90%;
+				margin: 0 auto;
+	    	}
+	    	.shopp .shopp_con ul li .word .tit_con{
+	    		text-align: center;
+	    		line-height: 1rem;
+	    		margin-bottom: 0.7rem;
+	    		color: #F14DA4;
+	    	}
+	    	.shopp .shopp_con ul li .word .tit_con span{
+	    		text-decoration: line-through;
+	    		color: #6a6a6a;
+	    	}
+	    	.shopp .sale{
+	    		width: 94%;
+	    		margin: 0.5rem 0.2rem;
+	    		border: 1px solid #060606;
+	    		text-align: center;
+	    		font-size: 1rem;
+	    		line-height: 3rem;
+	    		display: block;
+	    		color: #010101;
+	    	}
+	    	.shopp .sale .span1{
+	    		color: #F14DA3;
+	    	}
+	    	.shopp .sale .span2{
+	    		text-decoration: line-through;
+	    		color: #6a6a6a;
+	    		font-size: 0.8rem;
+	    	}
+	    	.shopp .sale .span3{
+	    		color: #fff;
+	    		background: #F14DA3;
+	    		font-size: 0.6rem;
+	    		padding: 0 0.8rem;
+	    		border-radius: 6px;
+	    	}
+	    	.shopp .sale .span4{
+	    		color: #919191;
+	    	}
+	    	/*商品评价*/
+			.assess{
+				padding: 0.625rem 0;
+				background: #fff;
+				margin-top: 0.6rem;
+			}
+			.assess .til{
+				padding: 0 0.645rem;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content:space-between;
+				line-height:2rem;
+				
+			}
+			.assess .til h3{
+				font-size: 0.875rem;
+				font-weight: 100;
+				line-height:2rem;
+			}
+			.assess .ass_con{
+				font-family: icon;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-start;
+				justify-content: flex-start;
+				margin-top: 0.6rem;
+				border-top: 1px solid #eee;
+				padding: 0.645rem;
+			}
+			.assess .ass_con .user_img{
+				font-size: 1.4rem;
+				color: #ddd;
+				width: 9%;
+			}
+			.assess .ass_con .user_name{
+				width: 73%;
+				padding-bottom: 0.4rem;
+				position: relative;
+			}
+			.assess .ass_con .user_name h3{
+				font-size: 0.88rem;
+				margin: 0.4rem 0;
+				font-weight: 100;
+			}
+			.assess .ass_con .user_name p{
+				font-size: 0.75rem;
+				line-height: 1.3rem;
+			}
+			.server{
+				width: 100%;
+				padding: 0 1rem;
+				background: #fff;
+				margin-top: 0.625rem;
+				height: 2.2rem;
+			}
+			.server img{
+				width: 100%;
+				height: 2.1rem;
+			}
+			.conntact{
+				width: 100%;
+				padding: 1rem;
+				background: #fff;
+				margin-top: 0.625rem;
+				display: block;
+				line-height: 1rem;
+				height: 3rem;
+			}
+			.conntact img{
+				width: 8%;
+				margin: -.4rem 0.5rem 0 0;
+			}
+			.conntact p span{
+				color:#F14DA4 ;
+			}
+			.conntact .fr{
+				color: #010101;
+			}
+			.h2{
+	    		font-size: 0.875rem;
+	    		font-weight: 100;
+	    		text-align: center;
+	    		margin-top: 1.2rem;
+	    		position: relative;
+	    		color: #8C8B90;
+	    	}
+	    	.h2:after{
+	    		content: '';
+	    		display: block;
+	    		position: absolute;
+	    		right: 30%;
+	    		bottom: 0.3rem;
+	    		width: 10%;
+	    		height: 1px;
+	    		background: #8C8B90;
+	    	}
+	    	.h2:before{
+	    		content: '';
+	    		display: block;
+	    		position: absolute;
+	    		left: 30%;
+	    		bottom: 0.3rem;
+	    		width: 10%;
+	    		height: 1px;
+	    		background: #8C8B90;
+	    	}
+	    	.mui-content{
+	    		padding-bottom: 4rem;
+	    	}
+	    	/*底部*/
+			.bottom{
+				height: 3.125rem;
+				line-height: 3.125rem;
+				border-top: 1px solid #eee;
+				background: #fff;
+				width: 100%;
+				text-align: center;
+				position: fixed;
+				bottom: 0;
+				/*display: none;*/
+			}
+			.bottom .conn{
+				width: 34%;
+				font-size: 0.625rem;
+			}
+			.bottom .conn a{
+				color: #919191;
+				margin: 0.7rem 1rem;
+				font-family: icon;
+				display: inline-block;
+				line-height: 3rem;
+				position: relative;
+			}
+			.bottom .conn a span{
+				position: absolute;
+				font-size: 1.2rem;
+				margin-left: -0.6rem;
+				left: 50%;
+				top:-1rem;
+			}
+			
+			.bottom .sub{
+				width: 66%;
+				height: 3.125rem;
+				border: none;
+				background: #F14DA4;
+				color: #fff;
+				border-radius: 0;
+			}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的拼团</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <link rel="stylesheet" href="../css/css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/icons-extra.css">
+	<link rel="stylesheet" href="../fontt/iconfont.css">
+    <link rel="stylesheet" href="../css/stroll/pintuan.css">
+    <style>
+        .mui-content{
+            background: #fff;
+        }
+        body{
+        	background: #fff;
+        }
+    </style>
+
+</head>
+<body id="pintuan">
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">爱拼团</h1>
+    <a class="mui-icon-extra mui-icon-extra-cart mui-icon-right-nav mui-pull-right" id="shop"></a>
+
+</header>
+
+<div class="mui-content">
+
+    <div class="banner">
+        <div class="img">
+            <img src="../img/stroll/banner.png" />
+        </div>
+        <div class="shadow">
+            <h1>爱 / 拼 / 团</h1>
+            <h3>12点更新 &nbsp;&nbsp;组团优惠&nbsp;&nbsp;超低折扣</h3>
+        </div>
+    </div>
+    
+    <div class="wanfa clean">
+        <p class="title">——&nbsp;拼团玩法&nbsp;——</p>
+
+    <div class="wanfa-con">
+            <div>
+                支付开团或参团
+            </div>
+            <p> > </p>
+            <div>
+                邀请好友参团
+            </div>
+            <p> > </p>
+            <div>
+                达到拼团人数
+            </div>
+            <p> > </p>
+            <div>
+                组团成功等待发货
+            </div>
+
+    </div>
+
+        <p class="word">加入官方拼团群，帮你找到拼团小伙伴！嘘~据说群主还会送20元代金券噢！</p>
+
+        <div class="img clean" >
+            <img src="../img/stroll/erweima.png" alt="">
+        </div>
+
+        <h4>WEANER: 17154673285</h4>
+    </div>
+    
+</div>
+<script>
+	
+	document.getElementById("shop").addEventListener("tap",function(){
+		var main=mui.openWindow({
+			url:"../index.html",
+			id:"index"
+					
+		});
+		mui.fire(main,'goGwc');
+	});
+	
+	/*document.getElementById("shop").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});*/
+</script>
+</body>
+</html>

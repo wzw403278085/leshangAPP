@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>首页</title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery.3.2.1.js"></script>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link href="css/mui_common.css" rel="stylesheet"/>
+	    <link href="css/index/home.css" rel="stylesheet"/>
+	    <script type="text/javascript" charset="utf-8">
+//	      	mui.init();
+	      	mui.init({
+      		keyEventBind:{
+      			backbutton:true
+      		}
+      	});
+      	
+		mui.old_back=mui.back;
+      	var clickNum=0;
+      	mui.back=function(){
+      		clickNum++;
+      		if(clickNum>1){
+      			plus.runtime.quit();
+      		}else{
+      			mui.toast("再按一次退出应用");
+      		}
+      		setTimeout(function(){
+      			clickNum=0
+      		},1000);
+      		return false;
+      	}
+	    </script>
+	</head>
+	<body id="home">
+		<header class="mui-bar mui-bar-nav">
+			<div class="mui-input-row mui-search" id="search_item">
+		    	<!--<input type="search" class="mui-input-clear" placeholder="">-->
+			&#xe665;
+			</div>
+			<div class="nav">
+				<a class="mui_word hot cur">热门</a>
+				<a class="mui_word follow">关注</a>
+			</div>
+			<div class="mui-icon mui-icon-chat" id="info"></div>
+		</header>
+		<div class="mui-content">
+			<div class="index_content cur">
+			    <div id="slider" class="mui-slider" >
+					<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/index/home/banner.png">
+							</a>
+						</div>
+					<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/index/home/banner.png">
+							</a>
+						</div>
+					<!-- 第二张 -->
+						<div class="mui-slider-item"> 
+							<a href="#">
+								<img src="img/index/home/banner.png">
+							</a>
+						</div>
+					<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/index/home/banner.png">
+							</a>
+						</div>
+					<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/index/home/banner.png">
+							</a>
+						</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/index/home/banner.png">
+							</a>
+						</div>
+				</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+					<script type="text/javascript" charset="utf-8">
+						var slider = mui("#slider");
+								slider.slider({
+									interval: 3000
+								});
+					</script>
+			    </div>
+				<div class="option">
+					<a class="option_icon" id="today">
+						<img src="img/index/home/cloud.png" alt="">
+						<h2>今天穿</h2>
+					</a>
+					<a class="option_icon" id="test1">
+						<img src="img/index/home/test.png" alt=""/>
+						<h2>搭配测试</h2>
+					</a>
+					<a class="option_icon"  id="manual"> 
+						<img src="img/index/home/style.png" alt=""/>
+						<h2>搭配风格</h2>
+					</a>
+					<a class="option_icon" id="wcd">
+						<img src="img/index/home/wen.png" alt=""/>
+						<h2>问穿搭</h2>
+					</a>
+				</div>
+				<div class="exclusive">
+					<div class="new" id="new">
+						新人专享
+					</div>
+					<div class="free">
+						<img src="img/index/home/red.png" alt="" class="red"/>
+						<p>新用户,免费领取<span>200</span>元现金券>></p>
+						<img src="img/index/home/money.png" alt="" class="money"/>
+					</div>
+				</div>
+				<div class="fashion">
+					<h2>时尚频道</h2>
+					<div class="mui-slider">
+				        <div class="mui-slider-group mui-slider-loop">
+				        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				                    	<a href="#">
+				                    		<img src="img/index/home/left.png" alt=""/>
+											<div class="fashion_word">
+												<p class="tit">最显白的口红色号在哪里？刘诗诗唐嫣...</p>
+												<p>有药可医 | VOL.174</p>
+											</div>
+				                    	</a>
+				                    </li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				                    	<a href="#"><img src="img/index/home/left.png" alt=""/>
+											<div class="fashion_word">
+												<p class="tit">最显白的口红色号在哪里？刘诗诗唐嫣...</p>
+												<p>有药可医 | VOL.174</p>
+											</div>
+				                    	</a>
+				                    </li>
+				                </ul>
+				            </div>
+				            <div class="mui-slider-item">
+				                <ul id="box" class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				                    	<a id="sspd">
+				                    		<img src="img/index/home/left.png" alt=""/>
+											<div class="fashion_word">
+												<p class="tit">最显白的口红色号在哪里？刘诗诗唐嫣...</p>
+												<p>有药可医 | VOL.174</p>
+											</div>
+				                    	</a>
+				                    </li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				                    	<a id="sspd1">
+				                    		<img src="img/index/home/left.png" alt=""/>
+											<div class="fashion_word">
+												<p class="tit">最显白的口红色号在哪里？刘诗诗唐嫣...</p>
+												<p>有药可医 | VOL.174</p>
+											</div>
+				                    	</a>
+				                    </li>
+				                </ul>
+				            </div>
+				            
+				            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				                    	<!--<div class="fashion_con">
+											<div class="fashion_conOne">-->
+										<a href="#">
+				                    		<img src="img/index/home/left.png" alt=""/>
+											<div class="fashion_word">
+												<p class="tit">最显白的口红色号在哪里？刘诗诗唐嫣...</p>
+												<p>有药可医 | VOL.174</p>
+											</div>
+				                    	</a>
+											<!--</div>
+										</div>-->
+				                    </li>
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+				                    	<a href="#">
+				                    		<img src="img/index/home/left.png" alt=""/>
+											<div class="fashion_word">
+												<p class="tit">最显白的口红色号在哪里？刘诗诗唐嫣...</p>
+												<p>有药可医 | VOL.174</p>
+											</div>
+				                    	</a>
+				                    </li>
+				                </ul>
+				            </div>
+				        </div>
+		    		</div>
+				</div>	
+				<div class="popular">
+					<h2>流行元素</h2>
+					<ul class="pop_con" id="pop">
+						<li id="lxys">
+							<img src="img/index/home/niu.png" alt=""/>
+							<p>牛仔外套</p>
+						</li>
+						<li  id="lxys1">
+							<img src="img/index/home/bao.png" alt=""/>
+							<p>优雅手提包</p>
+						</li>
+						<li id="lxys2">
+							<img src="img/index/home/bu.png" alt=""/>
+							<p>不规则半身裙</p>
+						</li>
+						<li id="lxys3">
+							<img src="img/index/home/xie.png" alt=""/>
+							<p>通勤上学运动鞋</p>
+						</li>
+						<li id="lxys4">
+							<img src="img/index/home/shan.png" alt=""/>
+							<p>薄款针织衫</p>
+						</li>
+						<li id="lxys5">
+							<img src="img/index/home/shisang.png" alt=""/>
+							<p>初秋时尚装</p>
+						</li>
+						<li id="lxys6">
+							<img src="img/index/home/lianyi.png" alt=""/>
+							<p>显瘦高腰连衣裙</p>
+						</li>
+						<li id="lxys7">
+							<img src="img/index/home/kua.png" alt=""/>
+							<p>古灵精怪斜挎包</p>
+						</li>
+						<li id="lxys8">
+							<img src="img/index/home/kuo.png" alt=""/>
+							<p>高腰阔腿裤必备</p>
+						</li>
+					</ul>
+				</div>
+				<div class="choice">
+					<h2>挑款师精选</h2>
+					<div class="title">
+						<a>流行趋势</a>
+						<a>美妆心得</a>
+						<a>你问我答</a>
+						<a>红人穿搭</a>
+					</div>
+					<ul class="choice_con" id="txs">
+						<li id="txsjx">
+							<img src="img/index/home/choice_ru.png" alt=""/>
+							<div class="choice_word">
+								<p class="tit">最显白的口红色号在哪里？刘诗诗唐嫣...</p>
+								<p>精选热文</p>
+							</div>
+						</li>
+						<li id="txsjx1">
+							<img src="img/index/home/choice_maoshan.png" alt=""/>
+							<div class="choice_word">
+								<p class="tit">最显白的口红色号在哪里？刘诗诗唐嫣...</p>
+								<p>精选热文</p>
+							</div>
+						</li>
+					</ul>
+				</div>		
+				<div class="beauty">
+					<h2>—— 优选美搭 ——</h2>
+					<ul class="beauty_con" id="beauty">
+						<li id="bea1">
+							<div class="img">
+								<img src="img/index/home/beauty_one.png" alt="">
+								<div class="shadow">&#xe649;<span>48</span></div>
+							</div>
+							<p>T恤搭配牛仔裤 舒适简约</p>
+						</li>
+						<li id="bea2">
+							<div class="img">
+								<img src="img/index/home/beauty_two.png" alt="">
+								<div class="shadow">&#xe649;<span>48</span></div>
+							</div>
+							<p>T恤搭配牛仔裤 舒适简约</p>
+						</li>
+						<li id="bea3">
+							<div class="img">
+								<img src="img/index/home/beauty_three.png" alt="">
+								<div class="shadow">&#xe649;<span>48</span></div>
+							</div>
+							<p>T恤搭配牛仔裤 舒适简约</p>
+						</li>
+						<li id="bea4">
+							<div class="img">
+								<img src="img/index/home/beauty_four.png" alt="">
+								<div class="shadow">&#xe649;<span>48</span></div>
+							</div>
+							<p>T恤搭配牛仔裤 舒适简约</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="index_content">
+				<div class="art">
+					<div class="art_top clear">
+						<div class="art_topL">
+							<img src="img/index/home/touxiang1.png" alt="">
+							<h3>芦苇微微清新女装</h3>
+						</div>
+						<span>3小时前</span>
+					</div>
+					<div class="p">最新发布了7套适合<span>#芦苇微微文...#</span>的搭配哦</div>
+					<div class="img">
+						<img src="img/index/home/art1.png" alt=""/>
+						<img src="img/index/home/art2.png" alt=""/>
+						<img src="img/index/home/art3.png" alt=""/>
+					</div>
+				</div>
+				<div class="retro">
+					<div class="retro_top clear">
+						<div class="retro_topL">
+							<img src="img/index/home/retro.png" alt="">
+							<h3>复古风</h3>
+						</div>
+						<span>5小时前</span>
+					</div>
+					<div class="p">最新发布了7套适合<span>#复古风#</span>的搭配哦</div>
+					<div class="img">
+						<img src="img/index/home/retro1.png" alt=""/>
+						<img src="img/index/home/retro2.png" alt=""/>
+						<img src="img/index/home/retro3.png" alt=""/>
+					</div>
+				</div>
+				<div class="recommend">
+					<h2>——店铺推荐——</h2>
+					<div class="recommend_top clear">
+						<div class="recommend_topL">
+							<img src="img/index/home/recommend.png" alt="">
+							<h3>学院</h3>
+						</div>
+						<span>+加关注</span>
+					</div>
+					<div class="p">最新发布了6套适合<span>#学院#</span>的搭配哦</div>
+					<div class="img">
+						<img src="img/index/home/recommend1.png" alt=""/>
+						<img src="img/index/home/recommend2.png" alt=""/>
+						<img src="img/index/home/recommend3.png" alt=""/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/home.js"></script>
+	</body>
+</html>

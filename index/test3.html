@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>流行元素|通勤元素上学运动鞋</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <script src="../js/mui.min.js"></script>
+	    <script src="../js/jquery.3.2.1.js"></script> 
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/index/test3.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	  </script>
+	</head>
+	<body id="dapei3">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">搭配测试</h1>
+		    <div class="right">
+		    	<div class="shop mui-icon" id="gwc">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+			<div class="test">肤色选择</div>
+			<div class="test_con">
+				<ul id="tt">
+					<li id="test">
+						<div class="img">
+							<img src="../img/index/test/img3_1.png">
+						</div>
+						<h3>直筒型</h3>
+					</li>
+					<li id="test1">
+						<div class="img">
+							<img src="../img/index/test/img3_2.png">
+						</div>
+						<h3>梨型</h3>
+					</li>
+					<li id="test2">
+						<div class="img">
+							<img src="../img/index/test/img3_3.png">
+						</div>
+						<h3>沙漏型</h3>
+					</li>
+					<li id="test3">
+						<div class="img">
+							<img src="../img/index/test/img3_4.png">
+						</div>
+						<h3>苹果型</h3>
+					</li>
+					
+				</ul>
+				<a class="next" id="next">
+					下一步 >
+				</a>
+				<a class="mui-action-back pre">< 上一步</a>
+			</div>
+		</div>
+		
+		<script>
+			window.onload=function(){
+			 	var box=document.getElementById("tt");
+            		var arr_a=box.getElementsByTagName("li");
+            		for (var i=0;i<arr_a.length;i++) {
+            			 var arr_id=arr_a[i].getAttribute("id");
+            			 document.getElementById(arr_id).addEventListener("tap",tap_b);
+            		}
+            		function tap_b(){
+						mui.openWindow({
+							url:"test4.html",
+							id:"dapei4",
+							createNew:true,
+							show:{
+								aniShow:"slide-in-right",
+								duration:200
+							},
+							waiting:{
+								title:"正在加载……"
+							}
+						
+						});
+            		}
+            	
+            }	
+            document.getElementById("next").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"test4.html",
+					id:"dapei4",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			
+			document.getElementById("gwc").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+		
+	 /*document.getElementById("gwc").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"../list_shoppingCart.html",
+            id:"gouwuche",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });*/
+
+		</script>
+	</body>
+</html>

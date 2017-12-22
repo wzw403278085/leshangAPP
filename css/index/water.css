@@ -1,0 +1,289 @@
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-title,.mui-action-back{
+	    		color: #fff;
+	    	}
+	    	header .right .shop{
+	    		font-family: icon;
+	    	}
+	    	header .right{
+	    		float: right;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-end;
+				justify-content:flex-end;
+				-webkit-align-items: center;
+				align-items: center;
+	    	}
+	    	header .right .set{
+	    		font-size: 1.3rem;
+	    		margin: -.5rem 0.3rem 0 0;
+	    	}
+	    	
+	    	.top{
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content:space-between;
+				-webkit-align-items: center;
+				align-items: center;
+				padding: 0.64rem;
+				background: #fff;
+				width: 100%;
+	    	}
+	    	.top .top_left{
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content:space-between;
+				-webkit-align-items: center;
+				align-items: center;
+				
+	    	}
+	    	.top .top_left p{
+	    		color: #010101;
+	    	}
+	    	.top .top_left img{
+	    		width: 26%;
+	    		margin-right: -1rem;
+	    		border-radius: 50%;
+				display: block;
+	    	}
+	    	.top .top_left .word{
+	    		line-height: 1.3rem;
+	    	}
+	    	.top .top_right{
+	    		width: 18%;
+	    		text-align: center;
+	    		border: 1px solid #000000;
+	    		border-radius: 10px;
+	    	}
+	    	.cover{
+	    		/*height: 22rem;*/
+	    		background: #fff;
+	    		padding: 0 0.635rem 0.653rem;
+	    		
+	    		position: relative;
+	    	}
+	    	.cover .cu{
+	    		width: 86%;
+	    		margin-left: 10%;
+	    		border-top: 1px solid #000000;
+	    		text-align: right;
+	    	}
+	    	.cover .cu h2{
+	    		font-size: 1.2rem;
+	    		line-height: 1.7rem;
+	    	}
+	    	.cover .cu h3{
+	    		font-size: 0.8rem;
+	    		font-weight: 100;
+	    	}
+	    	.cover:before{
+	    		content: '';
+	    		display: block;
+	    		width: 10%;
+	    		height: 3px;
+	    		background: #000;
+	    		position: absolute;
+	    		top:-1px;
+	    		z-index: 2;
+	    		left: 0;
+	    	}
+	    	.cover:after{
+	    		content: '';
+	    		display: block;
+	    		width: 4px;
+	    		height: 2.34rem;
+	    		background: #000;
+	    		position: absolute;
+	    		top:-1px;
+	    		z-index: 2;
+	    		right: 0.6rem;
+	    	}
+	    	.cover .img{
+	    		width: 100%;
+	    		margin-top: 0.6rem;
+	    	}
+	    	.cover .img img{
+	    		width: 100%;
+	    	}
+	    	.cover .poem{
+	    		text-align: center;
+	    		padding-top: 0.7rem;
+	    	}
+	    	.cover .poem p{
+	    		color: #010101;
+	    		line-height: 1.4rem;
+	    	}
+	    	.teach{
+	    		/*height: 8.28rem;*/
+	    		margin-top: 0.635rem;
+	    		background: #fff;
+	    		padding: 0 0.645rem 0.64rem;
+	    	}
+	    	.teach h2{
+	    		text-align: center;
+	    		font-size: 0.9rem;
+	    		position: relative;
+	    		padding-top: 1rem;
+	    	}
+	    	.teach h2:after{
+	    		content: '';
+	    		display: block;
+	    		background:#F14DA3 ;
+	    		width: 1.25rem;
+	    		height: 3px;
+	    		position: absolute;
+	    		left: 50%;
+	    		margin-left: -.625rem;
+	    		margin-top: 0.2rem;
+	    	}
+	    	.teach .teach_con{
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content:space-between;	
+				-webkit-align-items: baseline;
+				align-items: baseline;
+				margin-top: 1rem;
+	    	}
+	    	.teach .teach_con .teach_conL{
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content:space-between;	
+				width: 66%;
+	    	}
+	    	.teach .teach_con .teach_conL img{
+	    		width: 30%;
+	    		height: 30%;
+	    	}
+	    	.teach .teach_con .teach_conL p{
+	    		color: #010101;
+	    	}
+	    	.teach .teach_con .teach_conR{
+	    		width: 20%;
+	    		text-align: right;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-end;
+				justify-content:flex-end;	
+				margin-top: -1rem;
+	    	}
+	    	.teach .teach_con .teach_conR img{
+	    		width: 30%;
+	    		height: 0.8rem;
+	    		margin: 0.5rem 0.3rem 0 0;
+	    	}
+/*必备单品*/
+			.single{
+	    		/*height: 8.28rem;*/
+	    		margin-top: 0.635rem;
+	    		background: #fff;
+	    		padding: 0 0.645rem 0.64rem;
+	    	}
+	    	.single h2{
+	    		text-align: center;
+	    		font-size: 0.9rem;
+	    		position: relative;
+	    		padding-top: 1rem;
+	    	}
+	    	.single h2:after{
+	    		content: '';
+	    		display: block;
+	    		background:#F14DA3 ;
+	    		width: 1.25rem;
+	    		height: 3px;
+	    		position: absolute;
+	    		left: 50%;
+	    		margin-left: -.625rem;
+	    		margin-top: 0.2rem;
+	    	}
+	    	.single .single_con{
+	    		margin-top: 1.6rem;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content:space-between;	
+				
+	    	}
+	    	.single .single_con .single_con_moudle{
+	    		width: 23%;
+	    		text-align: center;
+	    	}
+	    	.single .single_con .single_con_moudle img{
+	    		width: 100%;
+	    	}
+	    	.single .single_con .single_con_moudle p{
+	    		color: #000000;
+	    	}
+	    	/*穿搭灵感*/
+	    	.inspiration{
+	    		/*height: 8.28rem;*/
+	    		margin-top: 0.635rem;
+	    		background: #fff;
+	    		padding: 0 0.645rem 0.64rem;
+	    	}
+	    	.inspiration h2{
+	    		text-align: center;
+	    		font-size: 0.9rem;
+	    		position: relative;
+	    		padding-top: 1rem;
+	    	}
+	    	.inspiration h2:after{
+	    		content: '';
+	    		display: block;
+	    		background:#F14DA3 ;
+	    		width: 1.25rem;
+	    		height: 3px;
+	    		position: absolute;
+	    		left: 50%;
+	    		margin-left: -.625rem;
+	    		margin-top: 0.2rem;
+	    	}
+	    	.inspiration .inspiration_con{
+				/*background: #007AFF;*/
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				margin-top: 1rem;
+			}
+			.inspiration .inspiration_con .inspiration_con_moudle{
+				width: 45%;
+				margin: 0.5rem;
+			}
+			.inspiration .inspiration_con .inspiration_con_moudle .img{
+				position: relative;
+			}
+			.inspiration .inspiration_con .inspiration_con_moudle img{
+				width: 100%;
+				height: 14rem;
+			}
+			.inspiration .inspiration_con .inspiration_con_moudle .shadow{
+				position: absolute;
+				right: 0;
+				width: 25%;
+				bottom:1.5rem;
+				background: rgba(0,0,0,0.6);
+				z-index: 2;
+				border-radius: 0.8rem 0 0 0.8rem;
+				font-family: icon;
+				color: #fff;
+				padding-left: 0.4rem;
+			}
+			.inspiration .inspiration_con .inspiration_con_moudle p:before{
+				content: '';
+				display: inline-block;
+				border-left: 6px solid #676767;
+				border-right: 6px solid transparent;
+				border-bottom:6px solid transparent;
+				border-top: 6px solid transparent;
+			}
+			.inspiration .inspiration_con .inspiration_con_moudle p{
+				line-height: 1rem;
+			}

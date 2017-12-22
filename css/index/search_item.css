@@ -1,0 +1,231 @@
+		/*头部*/
+		
+		.mui-bar {
+			/*height: 4rem;*/
+			padding: 0;
+			background: #F14DA3;
+			box-shadow: none;
+		}
+		.mui-bar-nav{
+				background: #F14DA3;
+				display: -webkit-flex;
+				display: flex;
+				justify-content: space-between;
+				-webkit-justify-content:space-between;
+			}
+		.mui-bar-nav.mui-bar .mui-icon {
+			margin: .7rem .5rem;
+			padding: 0;
+			color: #fff;
+			/*font-size: 2.6rem;*/
+		}
+		
+		.mui-bar-nav .info {
+			margin-right: 1rem;
+			font-family: icon;
+			color: #fff;
+			font-size: 1.5rem;
+			line-height: 3rem;
+		}
+		
+		.mui-input-row {
+			clear: none;
+		}
+		
+		.mui-search {
+			width: 95%;
+		}
+		
+		.mui-search input[type="search"] {
+			width: 100%;
+			height: 1.8rem;
+			margin: 0.5rem 0 0;
+			padding: .7rem 2.6rem;
+			color: #FED1EB;
+			font-size: 0.8rem;
+			background: rgba(255, 255, 255, .5);
+			border: none;
+			border-radius: 1.3rem;
+		}
+		
+		.mui-search .mui-placeholder {
+			top: .3rem;
+			left: .5rem;
+			text-align: left;
+			font-size: 0.9rem;
+		}
+		
+		.mui-search .mui-placeholder span {
+			font-size: 1rem;
+			color: #FED1EB;
+		}
+		
+		.mui-search .mui-placeholder .mui-icon {
+			margin: 0;
+			font-size: 1.2rem;
+			color: #FED1EB;
+		}
+		.mui-bar .mui-search:before {
+			margin-left: .5rem;
+			margin-top: -.6rem;
+			color: #FED1EB;
+			font-size: 1.2rem;
+		}
+		/*主体*/
+		.mui-bar-nav~.mui-content {
+			/*padding-top: 4rem;*/
+		}
+		/*搜索选项*/
+		
+		.search_title {
+			padding: 0 3rem;
+			border-bottom: 1px solid #EEEEEE;
+			background: #fff;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+		}
+		
+		.search_title a {
+			cursor: pointer;
+			display: inline-block;
+			height: 3rem;
+			text-align: center;
+			color: #000;
+			line-height: 3rem;
+			font-size: 1rem;
+		}
+		
+		.search_title a.cur {
+			color: #F250A3;
+			border-bottom: 2px solid #F250A3;
+		}
+		
+		
+		/*搜索单品内容*/
+		
+		.searchItem_con {
+			padding: .6rem 0;
+			background: #fff;
+		}
+		
+		.searchItem_con h2 {
+			margin: 0;
+			padding-left: 1.8rem;
+			color: #2B2B2B;
+			font-size: 1.1rem;
+			font-weight: normal;
+			line-height: 2rem;
+		}
+		
+		.searchItem_con .Item {
+			padding: 1rem 1.8rem 0;
+			border-bottom: 1px solid #F0F0F0;
+		}
+		
+		.searchItem_con .Item h3 {
+			position: relative;
+			margin: 0 0 .7rem .7rem;
+			color: #7C7C7C;
+			font-weight: normal;
+			font-size: 1rem;
+		}
+		
+		.searchItem_con .Item h3:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: .4rem;
+			left: -.7rem;
+			width: .4rem;
+			height: .4rem;
+			background: #656565;
+			border-radius: 50%;
+		}
+		
+		.searchItem_con .Item ul {
+			display: flex;
+			justify-content: flex-start;
+			align-content: space-between;
+			flex-wrap: wrap;
+			padding: 0;
+		}
+		
+		.searchItem_con .dp ul li,.searchItem_con .match ul li {
+			/*padding: 0 .3rem;*/
+			/*height: 2rem;*/
+			width: 25%;
+			margin: 0.3rem .6rem;
+			text-align: center;
+			line-height: 1.6rem;
+			background: #EEEEEE;
+			border-radius: 1rem;
+			font-size: 0.8rem;
+		}
+		
+		.searchItem_con .Item ul li a {
+			color: #0F0F0F;
+			/*font-size: 1rem;*/
+		}
+		
+		.searchItem_con .article,
+		.searchItem_con .shop {
+			padding: 0;
+		}
+		
+		.searchItem_con .shop {
+			border: none;
+		}
+		
+		.searchItem_con .article h3,
+		.searchItem_con .shop h3 {
+			margin: 1rem 0 0 1.8rem;
+		}
+		
+		.mui-table-view:before,
+		.mui-table-view:after,
+		.mui-table-view-cell:after {
+			display: none;
+		}
+		
+		.searchItem_con .article ul li,
+		.searchItem_con .shop ul li {
+			width: 100%;
+			padding: 0;
+		}
+		
+		.searchItem_con .article ul li:first-child,
+		.searchItem_con .shop ul li:first-child {
+			border-bottom: 1px solid #F7F7F7;
+		}
+		
+		.searchItem_con .article ul li a,
+		.searchItem_con .shop ul li a {
+			margin: 1rem .5rem 1rem 1.7rem;
+		}
+		
+		.mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn) {
+			margin-right: 0;
+		}
+		
+		.mui-table-view .mui-media-body {
+			width: 75%;
+		}
+		
+		.searchItem_con .article .mui-media-body {
+			margin-top: .6rem;
+		}
+		
+		.searchItem_box .two .Item,
+		.searchItem_box .three .Item {
+			border: none;
+			padding-top: 0;
+		}
+		
+		body {
+			background: #fff;
+		}
+		.mui-media .mui-ellipsis{
+			line-height: 1rem;
+		}

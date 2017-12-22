@@ -1,0 +1,118 @@
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-title,.mui-action-back{
+	    		color: #fff;
+	    	}
+	    	header .right .shop{
+	    		font-family: icon;
+	    	}
+	    	header .right{
+	    		float: right;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-end;
+				justify-content:flex-end;
+				-webkit-align-items: center;
+				align-items: center;
+	    	}
+	    	header .right .set{
+	    		font-size: 1.3rem;
+	    		margin: -.5rem 0.3rem 0 0;
+	    	}
+	    	.mui-content{
+	    		background: #fff;
+	    	}
+	    	
+			.banner{
+				margin: 0.625rem 0;
+				position: relative;
+				width: 100%;
+				height: 11.7rem;
+				background: url(../../img/index/txsjx/banner.png) no-repeat center/cover;
+			}
+			.banner.banner3{
+				margin: 0.625rem 0;
+				position: relative;
+				width: 100%;
+				height: 11.7rem;
+				background: url(../../img/index/txsjx/banner3.png) no-repeat center/cover;
+			}
+			.banner.banner2{
+				margin: 0.625rem 0;
+				position: relative;
+				width: 100%;
+				height: 11.7rem;
+				background: url(../../img/index/txsjx/banner2.png) no-repeat center/cover;
+			}
+			.shadow{
+				width: 100%;
+				height: 11.7rem;
+				position: absolute;
+				top:0;
+				background: rgba(0,0,0,0.3);
+				color: #fff;
+			}
+			.shadow h2{
+				font-size: 0.94rem;
+				padding: 7.25rem 0 0 1.3rem;
+			}
+			.shadow a{
+				display: block;
+				color: #fff;
+				margin: 0.6rem 1.3rem;
+				padding-left: 1.4rem;
+				width: 30%;
+				border: 1px solid #fff;
+				height: 1.6rem;
+				line-height: 1.4rem;
+				border-radius: 15px;
+				position: relative;
+			}
+			.shadow a:after{
+				position: absolute;
+				content: '';
+				display: block;
+				border-left: 6px solid #fff;
+				border-right: 6px solid transparent;
+				border-bottom:6px solid transparent;
+				border-top: 6px solid transparent;
+				top: 0.4rem;
+				right: 12px;
+			}
+			.con{
+	   			display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content:center;
+				-webkit-align-items: baseline;
+				align-items: baseline;
+				margin-top: 0.4rem;
+				width: 100%;
+				overflow: hidden;
+	   		}
+	   		.con li{
+	   			width: 30%;
+	   			margin: 0.5rem 0.3rem;
+	   		}
+	   		.con li img{
+	   			width: 100%;
+	   		}
+	   		.word p{
+	   			color: #F14DA4;
+	   			font-size: 1rem;
+	   			line-height: 1.6rem;
+	   		}
+	   		.word p span{
+	   			font-size: 0.76rem;
+	   			text-decoration: line-through;
+	   			color: #606060;
+	   			margin-left: 0.3rem;
+	   		}
+	   		.word .tit{
+	   			color: #010101;
+	   			overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+	   		}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>流行元素|通勤元素上学运动鞋</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	    <script src="../js/mui.min.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/index/gmpj.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	   </script>
+	   <style>
+			.mui-card .mui-control-content {
+				padding: 10px;
+			}
+			
+			.mui-control-content {
+				height: 150px;
+			}
+		</style>
+	</head>
+	<body id="assess">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">购买评价</h1>
+		    <div class="right">
+		    	<div class="shop mui-icon" id="gouwuche">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+			<div style="padding: 10px 10px;">
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1">全部</a>
+					<a class="mui-control-item" href="#item2">好评(1)</a>
+					<a class="mui-control-item" href="#item3">中评(0)</a>
+					<a class="mui-control-item" href="#item4">差评(0)</a>
+					<a class="mui-control-item" href="#item5">有图(0)</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<div id="scroll" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view user">
+								<li class="mui-table-view-cell">
+									<div class="user_img">
+										<div class="user_img1">&#xe60a;</div>
+									</div>
+									<div class="user_name">
+										<h3>小敏</h3>
+										<p class="p">我觉得冰冰那个橘色不别扭啊</p>
+										<p><span>2017-10-03</span> <span>颜色:米白色</span> <span>尺码:S</span></p>
+									</div>
+									<div class="user_num">好评</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul class="mui-table-view user">
+						<li class="mui-table-view-cell">
+							<div class="user_img">
+								<div class="user_img1">&#xe60a;</div>
+							</div>
+							<div class="user_name">
+								<h3>小敏</h3>
+								<p class="p">我觉得冰冰那个橘色不别扭啊</p>
+								<p><span>2017-10-03</span> <span>颜色:米白色</span> <span>尺码:S</span></p>
+							</div>
+							<div class="user_num">好评</div>
+						</li>
+					</ul>
+				</div>
+				<div id="item3" class="mui-control-content">
+					
+				</div>
+				<div id="item5" class="mui-control-content">
+					
+				</div>
+				<div id="item5" class="mui-control-content">
+					
+				</div>
+			</div>
+			<p class="see">
+				您已看完该商品的全部评价
+			</p>
+			<div class="lettrt">
+				评论太少下不来决心？<a id="store">查看该店铺全部评价</a>
+			</div>
+		</div>
+		
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			(function($) {
+				$('#scroll').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var segmentedControl = document.getElementById('segmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						var styleEl = document.querySelector('input[name="style"]:checked');
+						var colorEl = document.querySelector('input[name="color"]:checked');
+						if (styleEl && colorEl) {
+							var style = styleEl.value;
+							var color = colorEl.value;
+							segmentedControl.className = 'mui-segmented-control' + (style ? (' mui-segmented-control-' + style) : '') + ' mui-segmented-control-' + color;
+						}
+					}
+				});
+			})(mui);
+			
+			
+			
+			document.getElementById("store").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"store.html",
+					id:"store",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			document.getElementById("gouwuche").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+		</script>
+
+	</body>
+</html>

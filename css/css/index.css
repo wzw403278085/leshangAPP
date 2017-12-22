@@ -1,0 +1,98 @@
+@font-face {
+    font-family: icon;
+    src: url(../font/iconfont.eot), url(../font/iconfont.svg), url(../font/iconfont.ttf), url(../font/iconfont.woff);
+}
+body,ul,li{
+    margin: 0;padding: 0;list-style: none;
+}
+.mui-content{
+    background: white;
+}
+.mui-bar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #F14DA3;
+}
+
+.mui-bar-nav h1 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    height: 1rem;
+    color: white;
+    font-weight: 500;
+    font-family: icon;
+
+}
+
+
+.mui-bar-nav h1.cur {
+    text-decoration: underline;
+}
+
+.mui-icon {
+    font-family: icon;
+}
+
+.mui-slider-indicator .mui-indicator {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: white;
+    border: 0px solid #F14DA3;
+    box-shadow: 0 0 1px 1px #F14DA3;
+}
+
+.mui-slider-indicator .mui-active.mui-indicator {
+    background: #F14DA3;
+    border: 1px solid #F14DA3;
+    box-shadow: 0 0 1px 1px #F14DA3;
+}
+.page{
+    width: 90%;
+    margin: 0 auto;
+}
+.page ul{
+    margin-top: 1.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.page ul li{
+    width: 14%;
+}
+.page ul li img{
+    width: 50px;
+    height: 50px;
+}
+.page ul li h6{
+    text-align: center;
+    font-size: 0.77rem;
+    color: black;
+}
+.mui-content .people{
+    width: 90%;
+    margin: 1rem auto;
+}
+.mui-content .people h3{
+    float: left;
+    font-weight: 300;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+    background: #F14DA3;
+    width: 20%;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+.mui-content .people .word{
+    padding: 0.3rem 0;
+    float: right;
+    font-size: 0.85rem;
+}
+.mui-content .people .word span{
+    color: red;
+}
+.mui-content .people .word img{
+    width: 1.8rem;
+}
+

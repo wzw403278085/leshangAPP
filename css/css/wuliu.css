@@ -1,0 +1,53 @@
+.mui-content .wuliu-con{
+    width: 90%;
+    margin: 0 auto;
+}
+.mui-content .wuliu-con .mui-left{
+    width: 25%;
+    float: left;
+    margin: 5% 10% 5% 0;
+
+}
+.mui-content .wuliu-con .mui-left img{
+    width: 100%;
+}
+
+.mui-content .wuliu-con .mui-right{
+    float: left;
+    margin: 7% 0 5% 0;
+    line-height: 1rem;
+}
+
+
+.mui-content .word-con{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mui-content .word-con ul li{
+    margin-bottom: 15%;
+    color: #F14DA4;
+}
+.mui-content .word-con ul li p:nth-child(2){
+    line-height: 10px;
+}
+.mui-content .word-con ul li:first-child:before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F14DA4;
+    float: left;
+    border: 1px solid #F14DA4;
+    margin: 12% 5% 0 0;
+}
+.mui-content .word-con ul li:last-child{
+    margin-left: 9%;
+}
+.mui-content{
+	background: #fff;
+}
+body{
+	background: #fff;
+}

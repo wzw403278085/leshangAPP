@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>穿搭手册</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	    <script src="../js/mui.min.js"></script>
+	    <script src="../js/jquery.3.2.1.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/index/manual.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	   </script>
+	</head>
+	<body id="manual">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">穿搭手册</h1>
+		    <div class="right">
+		    	<div class="set">...</div>
+		    	<div class="shop mui-icon" id="gouwuche">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+			<div class="guess">
+				<h2>猜你想看</h2>
+				<div class="mui-slider">
+			        <div class="mui-slider-group mui-slider-loop">
+			        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="guess_con">
+								<li class="img">
+									<img src="../img/index/manual/water.png" alt="">
+									<div class="shadow">水蓝色</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/go.png" alt="">
+									<div class="shadow">上学</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/korea.png" alt="">
+									<div class="shadow">韩系</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/thin.png" alt="">
+									<div class="shadow">显瘦</div>
+								</li>
+							</ul>
+			            </div>
+			            <div class="mui-slider-item">
+			               <ul class="guess_con" id="box">
+								<li class="img" id="water">
+									<img src="../img/index/manual/water.png" alt="">
+									<div class="shadow">水蓝色</div>
+								</li>
+								<li class="img" id="water1">
+									<img src="../img/index/manual/go.png" alt="">
+									<div class="shadow">上学</div>
+								</li>
+								<li class="img" id="water2">
+									<img src="../img/index/manual/korea.png" alt="">
+									<div class="shadow">韩系</div>
+								</li>
+								<li class="img" id="water3">
+									<img src="../img/index/manual/thin.png" alt="">
+									<div class="shadow">显瘦</div>
+								</li>
+							</ul>
+		            	</div>
+			            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="guess_con">
+								<li class="img">
+									<img src="../img/index/manual/water.png" alt="">
+									<div class="shadow">水蓝色</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/go.png" alt="">
+									<div class="shadow">上学</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/korea.png" alt="">
+									<div class="shadow">韩系</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/thin.png" alt="">
+									<div class="shadow">显瘦</div>
+								</li>
+							</ul>
+			            </div>
+			        </div>
+		    	</div>
+			</div>
+			<div class="style">
+				<h2>时尚频道</h2>
+				<div class="mui-slider">
+			        <div class="mui-slider-group mui-slider-loop">
+			        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="style_con">
+								<li class="img">
+									<img src="../img/index/manual/style_1.png" alt="">
+									<div class="shadow">八卦也时髦</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/style_2.png" alt="">
+									<div class="shadow">美人新计</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/style_3.png" alt="">
+									<div class="shadow">时尚&光鲜</div>
+								</li>
+							</ul>
+			           </div>
+			            <div class="mui-slider-item">
+			                <ul class="style_con" id="box1">
+								<li class="img" id="bg">
+									<img src="../img/index/manual/style_1.png" alt="">
+									<div class="shadow">八卦也时髦</div>
+								</li>
+								<li class="img" id="bg1">
+									<img src="../img/index/manual/style_2.png" alt="">
+									<div class="shadow">美人新计</div>
+								</li>
+								<li class="img" id="bg2">
+									<img src="../img/index/manual/style_3.png" alt="">
+									<div class="shadow">时尚&光鲜</div>
+								</li>
+							</ul>
+			            </div>
+			            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="style_con">
+								<li class="img">
+									<img src="../img/index/manual/style_1.png" alt="">
+									<div class="shadow">八卦也时髦</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/style_2.png" alt="">
+									<div class="shadow">美人新计</div>
+								</li>
+								<li class="img">
+									<img src="../img/index/manual/style_3.png" alt="">
+									<div class="shadow">时尚&光鲜</div>
+								</li>
+							</ul>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<div class="tide">
+				<h2>潮流穿搭志</h2>
+				<div class="mui-slider">
+			        <div class="mui-slider-group mui-slider-loop">
+			        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="tide_con">
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_1.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_2.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_3.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_4.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+							</ul>
+			            </div>
+			            <div class="mui-slider-item">
+			                <ul class="tide_con">
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_1.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_2.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_3.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_4.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+							</ul>
+			            </div>
+			            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+			            <div class="mui-slider-item mui-slider-item-duplicate">
+			                <ul class="tide_con">
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_1.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_2.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_3.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+								<li class="tid_con_modules">
+									<div class="img">
+										<img src="../img/index/manual/tide_4.png">
+									</div>
+									<div class="tid_word">
+										<p class="tit">大饼穿搭sacs</p>
+										<p>使用穿搭wrgr</p>
+									</div>
+								</li>
+							</ul>
+			            </div>
+			        </div>
+			    </div>
+				<div class="tide_see">
+					查看全部 >
+				</div>
+			</div>
+			<div class="practical">
+				<h2>实用穿搭</h2>
+				<div class="pra_con">
+					<div class="pra_conC">
+						<div class="pra_conCL">
+							<img src="../img/index/manual/sty.png" alt="">
+							<div class="shadow">风格</div>
+						</div>
+						<ul class="pra_conCR">
+							<li class="img">
+								<img src="../img/index/manual/sty1.png" alt="">
+								<div class="shadow">韩系</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty2.png" alt="">
+								<div class="shadow">欧美</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">日系</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty4.png" alt="">
+								<div class="shadow">复古</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty5.png" alt="">
+								<div class="shadow">学院</div>
+							</li>
+							<li><a>&#xe6d6;</a></li>
+						</ul>
+					</div>
+					<div class="pra_conC">
+						<div class="pra_conCL">
+							<img src="../img/index/manual/sty.png" alt="">
+							<div class="shadow">身型</div>
+						</div>
+						<ul class="pra_conCR">
+							<li class="img">
+								<img src="../img/index/manual/sty1.png" alt="">
+								<div class="shadow">显瘦</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty2.png" alt="">
+								<div class="shadow">显高</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">腿粗</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty4.png" alt="">
+								<div class="shadow">平胸</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty5.png" alt="">
+								<div class="shadow">小肚腩</div>
+							</li>
+							<li><a>&#xe6d6;</a></li>
+							
+						</ul>
+					</div>
+					<div class="pra_conC">
+						<div class="pra_conCL">
+							<img src="../img/index/manual/sty.png" alt="">
+							<div class="shadow">场合</div>
+						</div>
+						<ul class="pra_conCR">
+							<li class="img">
+								<img src="../img/index/manual/sty1.png" alt="">
+								<div class="shadow">出街</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty2.png" alt="">
+								<div class="shadow">上学</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">约会</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty4.png" alt="">
+								<div class="shadow">旅行</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty5.png" alt="">
+								<div class="shadow">聚会</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty5.png" alt="">
+								<div class="shadow">职场</div>
+							</li>
+						</ul>
+					</div>
+					<div class="pra_conC">
+						<div class="pra_conCL">
+							<img src="../img/index/manual/sty.png" alt="">
+							<div class="shadow">颜色</div>
+						</div>
+						<ul class="pra_conCR">
+							<li class="img">
+								<img src="../img/index/manual/sty1.png" alt="">
+								<div class="shadow">白色</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty2.png" alt="">
+								<div class="shadow">黑白灰</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">蓝色</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty4.png" alt="">
+								<div class="shadow">大红色</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty5.png" alt="">
+								<div class="shadow">黄色</div>
+							</li>
+							<li><a>&#xe6d6;</a></li>
+							
+						</ul>
+					</div>
+					<div class="pra_conC">
+						<div class="pra_conCL">
+							<img src="../img/index/manual/sty.png" alt="">
+							<div class="shadow">上装</div>
+						</div>
+						<ul class="pra_conCR">
+							<li class="img">
+								<img src="../img/index/manual/sty1.png" alt="">
+								<div class="shadow">连衣裙</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty2.png" alt="">
+								<div class="shadow">T恤</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">衬衫</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty4.png" alt="">
+								<div class="shadow">卫衣</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">雪纺衫</div>
+							</li>
+						</ul>
+					</div>
+					<div class="pra_conC">
+						<div class="pra_conCL">
+							<img src="../img/index/manual/sty.png" alt="">
+							<div class="shadow">下装</div>
+						</div>
+						<ul class="pra_conCR">
+							<li class="img">
+								<img src="../img/index/manual/sty1.png" alt="">
+								<div class="shadow">短裤</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty2.png" alt="">
+								<div class="shadow">半身裙</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">A字裙</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty4.png" alt="">
+								<div class="shadow">长裤</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">牛仔裤</div>
+							</li>
+							<li><a>&#xe6d6;</a></li>
+						</ul>
+					</div>
+					<div class="pra_conC">
+						<div class="pra_conCL">
+							<img src="../img/index/manual/sty.png" alt="">
+							<div class="shadow">鞋包配饰</div>
+						</div>
+						<ul class="pra_conCR">
+							<li class="img">
+								<img src="../img/index/manual/sty1.png" alt="">
+								<div class="shadow">平底鞋</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty2.png" alt="">
+								<div class="shadow">高跟鞋</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">双肩包</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty4.png" alt="">
+								<div class="shadow">单肩包</div>
+							</li>
+							<li class="img">
+								<img src="../img/index/manual/sty3.png" alt="">
+								<div class="shadow">腰带</div>
+							</li>
+							<li><a>&#xe6d6;</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="all">
+				<h2>全部主题</h2>
+				<div class="all_see">
+					更多热门主题 >
+				</div>
+			</div>
+			<a onclick="pageScroll()" class="top">
+        		<span>&#xe679;</span>顶部
+			</a>
+		</div>
+		
+		<script>
+			document.getElementById("gouwuche").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+			
+			/*document.getElementById("gouwuche").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});*/
+			function pageScroll(){
+		        window.scrollBy(0,-1000);
+		        scrolldelay = setTimeout('pageScroll()',10);
+		        var sTop=document.documentElement.scrollTop+document.body.scrollTop;
+		        if(sTop==0) clearTimeout(scrolldelay);
+		    }
+    		window.onload=function(){
+    			var box=document.getElementById("box");
+            		var arr_a=box.getElementsByTagName("li");
+            		for (var i=0;i<arr_a.length;i++) {
+            			 var arr_id=arr_a[i].getAttribute("id");
+            			 document.getElementById(arr_id).addEventListener("tap",tap_b);
+            		}
+            		function tap_b(){
+						mui.openWindow({
+							url:"water.html",
+							id:"water",
+							createNew:true,
+							show:{
+								aniShow:"slide-in-right",
+								duration:200
+							},
+							waiting:{
+								title:"正在加载……"
+							}
+						
+						});
+            		}
+            		
+            		var box1=document.getElementById("box1");
+            		var arr_a1=box1.getElementsByTagName("li");
+            		for (var a=0;a<arr_a1.length;a++) {
+            			 var arr_id1=arr_a1[a].getAttribute("id");
+            			 document.getElementById(arr_id1).addEventListener("tap",tap_b1);
+            		}
+            		function tap_b1(){
+						mui.openWindow({
+							url:"bgysm.html",
+							id:"bgysm",
+							createNew:true,
+							show:{
+								aniShow:"slide-in-right",
+								duration:200
+							},
+							waiting:{
+								title:"正在加载……"
+							}
+						
+						});
+            		}
+            }
+		</script>
+	</body>
+</html>

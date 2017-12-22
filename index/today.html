@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>衣</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/index/today.css" rel="stylesheet"/>
+	    <script src="../js/jquery.3.2.1.js" type="text/javascript"></script>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	      	var watchId;
+
+			function geoInf( position ) {
+				var str = "";
+				str += position.addresses;//获取地址信息
+				console.log(JSON.stringify(position));
+				outLine( str );
+			}
+			
+			// 通过定位模块获取位置信息
+			mui.plusReady(function(){
+//				outSet( "获取定位位置信息:" );
+				plus.geolocation.getCurrentPosition( geoInf, function ( e ) {
+				console.log("123"); 
+					outSet( "获取定位位置信息失败："+e.message );
+				},{geocode:true});
+			});
+	   </script>
+	</head>
+	<body id="today">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title" id="output"></h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider mui-fullscreen" style="background-color: #fff;">
+				<div class="mui-slider-group">
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<div class="item1">
+							<div class="img">
+								<img src="../img/index/today/today1.jpg">
+							</div>
+							<div class="item_icon">
+								<a id="temperature">
+									<span>&#xe6ac;</span>
+									<h3>18/23摄氏度</h3>
+								</a>
+								<a id="share" href="#bottomPopover">
+									<span>&#xe6ab;</span>
+									<h3>分享</h3>
+								</a>
+								<a id="details">
+									<span>&#xe627;</span>
+									<h3>详情</h3>
+								</a>
+								<a id="like">
+									<span>&#xe649;</span>
+									<h3>喜欢</h3>
+								</a>
+								<a id="recommend">
+									<span>&#xe6b5;</span>
+									<h3>再推荐</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<div class="item1">
+							<div class="img">
+								<img src="../img/index/today/today2.jpg">
+							</div>
+							<div class="item_icon">
+								<a>
+									<span>&#xe6ac;</span>
+									<h3>18/23摄氏度</h3>
+								</a>
+								<a href="#bottomPopover">
+									<span>&#xe6ab;</span>
+									<h3>分享</h3>
+								</a>
+								<a id="detail">
+									<span>&#xe627;</span>
+									<h3>详情</h3>
+								</a>
+								<a>
+									<span>&#xe649;</span>
+									<h3>喜欢</h3>
+								</a>
+								<a>
+									<span>&#xe6b5;</span>
+									<h3>再推荐</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<div class="item1">
+							<h1>想知道更多穿搭方案？</h1>
+							<div class="wen">
+								<div class="wen_img">
+									<img src="../img/index/today/icon1.jpg" />
+								</div>
+								<a class="xiao" id="wcd">问搭配师小Y</a>
+							</div>
+							<div class="wen">
+								<div class="wen_img">
+									<img src="../img/index/today/icon2.jpg" />
+								</div>
+								<a class="xiao" id="collocation">跟明星学穿搭</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+		</div>
+		<div id="bottomPopover" class="mui-popover mui-popover-bottom">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<p>分享到</p>
+					<div class="share_con">
+						<a><img src="../img/index/today/weixin.jpg"></a>
+						<a><img src="../img/index/today/qq.jpg"></a>
+						<a><img src="../img/index/today/peng.jpg"></a>
+						<a><img src="../img/index/today/kong.jpg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			document.getElementById("wcd").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"wcd.html",
+					id:"wcd",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			document.getElementById("collocation").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"collocation.html",
+					id:"collocation",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			
+			document.getElementById("details").addEventListener("tap",function(){
+				mui.openWindow({ 
+					url:"today_xq.html",
+					id:"today_xq",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			
+			document.getElementById("detail").addEventListener("tap",function(){
+				mui.openWindow({ 
+					url:"today_xq.html",
+					id:"today_xq",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+
+			document.getElementById("output").addEventListener("tap",function(){
+				mui.openWindow({ 
+					url:"indexed-list.html",
+					id:"dingwei",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

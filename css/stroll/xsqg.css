@@ -1,0 +1,251 @@
+.mui-bar-nav {
+	background: #F14DA4;
+	color: #fff;
+	box-shadow: none;
+}
+
+.mui-bar-nav .mui-title,.mui-action-back {
+	color: #fff;
+}
+
+header .right .shop {
+	font-family: icon;
+}
+
+header .right {
+	float: right;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+header .right .set {
+	font-size: 1.3rem;
+	margin: -.5rem 0.3rem 0 0;
+}
+
+body {
+	background: #fff;
+}
+
+.mui-content {
+	background: #fff;
+}
+
+.mui-content .pT {
+	color: #000;
+	text-align: center;
+	line-height: 2rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background: #fff;
+	padding: 0 0.5rem;
+}
+
+.mui-content .banner {
+	width: 100%;
+}
+
+.mui-content .banner img {
+	width: 100%;
+}
+
+.mui-content .buy_con{
+	margin-top: -1rem;
+}
+
+.buy_con ul {
+	margin: 0;
+	padding: 0;
+}
+
+.buy_con ul li {
+	float: left;
+	width: 19.5%;
+	height: 4rem;
+	padding-top: .8rem;
+	margin-right: .1rem;
+	text-align: center;
+	background: #FF919C;
+}
+
+.buy_con ul li:last-child {
+	margin-right: 0;
+}
+
+.buy_con ul li p {
+	color: #FFFCFD;
+	font-size: .9rem;
+	line-height: 1.2rem;
+}
+
+.buy_con ul li.cur {
+	background: #fff;
+}
+
+.buy_con ul li.cur p {
+	color: #F65068;
+}
+
+.buy_con .buy_box .box_con {
+	padding: 1rem 0;
+}
+
+.buy_con .buy_box .box_con .text {
+	padding: 0 1rem;
+}
+
+.buy_con .buy_box .box_con .text p {
+	color: #F04997;
+	font-size: 1rem;
+}
+
+.buy_box .box_con .text p:first-child:before {
+	content: '';
+	display: inline-block;
+	width: .5rem;
+	height: .5rem;
+	margin-right: .5rem;
+	background: #FF46A5;
+	border-radius: 50%;
+}
+
+.buy_box .box_con .content {
+	width: 100%;
+	height: 14rem;
+	padding: 1rem 1rem .5rem;
+	border-bottom: 1px solid #EFEFEF;
+}
+
+.buy_box .box_con .content:last-child {
+	border-bottom: none;
+}
+
+.buy_box .box_con .content .img {
+	width: 48%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.buy_box .box_con .content .img img {
+	width: 100%;
+	height: 100%;
+}
+
+.buy_box .box_con .content .description {
+	position: relative;
+	width: 48%;
+	padding: .7rem 0;
+}
+
+.box_con .content .description h3 {
+	margin-bottom: .2rem;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
+.box_con .content .description .price {
+	margin-bottom: .2rem;
+}
+
+.box_con .content .description .price span:first-child {
+	color: #FD4A9E;
+	font-size: 1rem;
+}
+
+.box_con .content .description .price span:first-child mark {
+	background: transparent;
+	color: #EE4EA4;
+	font-weight: 600;
+}
+
+.box_con .content .description .price span:last-child {
+	position: relative;
+	color: #717171;
+	font-size: .9rem;
+}
+
+.box_con .content .description .price span:last-child:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: .8rem;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #000;
+}
+
+.box_con .content .description .ProgressBar {
+	position: relative;
+	width: 100%;
+	height: 1rem;
+	margin-bottom: .2rem;
+	border: 1px solid #FCCF34;
+	border-radius: 1rem;
+}
+
+.box_con .content .description .ProgressBar span {
+	position: absolute;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	background: #FCCE35;
+	border-radius: 1rem;
+}
+
+.box_con .content .description .number span {
+	font-size: .9rem;
+}
+
+.box_con .content .description .number span:first-child {
+	color: #6C6C6C;
+}
+
+.box_con .content .description .number span:last-child {
+	color: #F95496;
+}
+
+.box_con .content .description button {
+	width: 100%;
+	height: 2.5rem;
+	color: #fff;
+	font-size: 1rem;
+	border: none;
+	background: #FF919C;
+	border-radius: .5rem;
+}
+
+.buy_con .buy_box .box_con:first-child button {
+	margin-top: 3rem;
+}
+
+.buy_con .buy_box .box_con:first-child h3 {
+	color: #939393;
+}
+
+.buy_con .buy_box .box_con:first-child .price span {
+	color: #8B8B8B;
+}
+
+.buy_con .buy_box .box_con:first-child .price span mark {
+	color: #8C8C8C;
+}
+
+.box_con .content .description .mask {
+	position: absolute;
+	top: 2rem;
+	left: 3rem;
+	width: 5rem;
+	height: 5rem;
+	color: #fff;
+	text-align: center;
+	line-height: 5rem;
+	font-size: 1rem;
+	background: rgba(127, 127, 127, .6);
+	border-radius: 50%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/mui_common.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body id="index">
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" id="defaultTab" href="home.html">
+	        <span class="mui-icon">&#xe625;</span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item" href="list_stroll.html">
+	        <span class="mui-icon mui_guang">&#xe620;</span>
+	        <span class="mui-tab-label">逛逛</span>
+	    </a>
+	    <a id="GWC" class="mui-tab-item" href="list_shoppingCart.html">
+	        <span class="mui-icon">&#xe6b9;</span>
+	        <span class="mui-tab-label">购物车</span>
+	    </a>
+	    <a class="mui-tab-item" href="my.html">
+	        <span class="mui-icon">&#xe60d;</span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+		<script src="js/castapp.js"></script>
+	<script type="text/javascript">
+		ca.init();
+		var pathArray=['home.html','list_stroll.html','list_shoppingCart.html','my.html'];
+		castapp.tabBar(pathArray);
+		function setStatusbarRed(){
+				// 设置系统状态栏背景色为红色
+				plus.navigator.setStatusBarBackground("#F14DA3");
+		}
+		document.addEventListener('plusready',function(){
+			setStatusbarRed();
+		},false);
+		document.addEventListener('gohome',function(){
+//			alert("123");
+			var defaultTab=document.getElementById('defaultTab')
+			mui.trigger(defaultTab,'tap');
+			var curr=document.querySelector(".mui-bar>.mui-tab-item.mui-active");
+			if(defaultTab!==curr){
+				curr.classList.remove('mui-active');
+				defaultTab.classList.add("mui-active");
+			}
+		
+		});
+
+		document.addEventListener('goGwc',function(){
+				var a=document.getElementById('GWC');
+				mui.trigger(a,'tap');
+				var curr=document.querySelector(".mui-tab-item.mui-active");
+				if(a!==curr){
+					a.classList.add("mui-active");
+					curr.classList.remove('mui-active');
+				}
+		});
+	</script>
+</body>
+</html>

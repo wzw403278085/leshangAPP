@@ -1,0 +1,32 @@
+.mui-scroll{
+    margin-top: 4rem;
+}
+.mui-content .menu ul{
+    margin-bottom: 2rem;
+
+}
+.mui-content .menu ul li{
+    color: #333;
+
+}
+.mui-table-view-cell::after{
+    background-color: #ccc;
+}
+.mui-table-view::before{
+    background-color:#ccc ;
+}
+.mui-table-view::after{
+    background-color: #ccc;
+}
+.mui-pull-right{
+    /*margin-top: -1.2rem;*/
+    color: #ccc;
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+
+}
+.mui-pull-right1{
+    /*margin-top: -1.2rem;*/
+    color: #F55CAE;
+
+}

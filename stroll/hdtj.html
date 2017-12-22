@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>新人礼包</title>
+	    <script src="../js/mui.min.js"></script> 
+	    <script src="../js/jquery.3.2.1.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/stroll/hdtj.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init(); 
+	   </script>
+	</head>
+	<body id="hdtj">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <div class="mui-title">
+		    	<div class="mui-input-row mui-search mui-pull-left">
+					<input type="search" class="mui-input-clear" placeholder="搜索">
+				</div>
+		    </div>
+		    <div class="right">
+		    	<div class="set">...</div>
+		    	<div class="shop mui-icon" id="shop">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+		    <div class="banner">
+		        <div class="img">
+		            <img src="../img/stroll/banner1.png" />
+		        </div>
+		        <div class="shadow">
+		            <img src="../images/shoppingCart/goods1.png">
+		            <h2>安丽丝</h2>
+		            <span class="span">官方</span>
+		            <div class="a">
+		            	<a id="contact"><span>&#xe6c5;</span>联系客服</a>
+		            	<a><span>&#xe649;</span>收藏店铺</a>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="xiaoliang">
+		    	<ul>
+		    		<li>
+		    			<span>51521</span>
+		    			<span>商品</span>
+		    		</li>
+		    		<li>
+		    			<span>298.9万</span>
+		    			<span>销量</span>
+		    		</li>
+		    		<li>
+		    			<span>11.1万</span>
+		    			<span>粉丝</span>
+		    		</li>
+		    	</ul>
+		    </div>
+			<div class="hot">
+				<div class="title clear">
+					<h3 class="fl">人气穿搭</h3>
+					<a class="fr">更多 ></a>
+				</div>
+				<ul class="hot_con">
+					<li class="hot_con_module">
+						<img src="../img/index/newpeople/hot1.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="hot_con_module cur">
+						<img src="../img/index/newpeople/hot2.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="hot_con_module">
+						<img src="../img/index/newpeople/hot3.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="type">
+				<div class="title clear">
+					<h3 class="fl">衬衫/雪纺衫</h3>
+					<a class="fr">更多 ></a>
+				</div>
+				<ul class="type_con" id="beauty">
+					<li class="type_con_module" id="bea1">
+						<img src="../img/index/newpeople/snap4.png" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+					<li class="type_con_module" id="bea2">
+						<img src="../img/index/home/retro3.png" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+					<li class="type_con_module" id="bea3">
+						<img src="../img/index/home/retro1.png" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+					<li class="type_con_module" id="bea4">
+						<img src="../img/index/search/search8.jpg" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="type">
+				<div class="title clear">
+					<h3 class="fl">正在上新</h3>
+					<a class="fr">更多 ></a>
+				</div>
+				<ul class="type_con">
+					<li class="type_con_module">
+						<img src="../img/index/newpeople/snap4.png" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+					<li class="type_con_module">
+						<img src="../img/index/home/retro3.png" alt="">
+						<div class="word">
+							<p class="tit">韩版牛仔超短裤</p>
+							<p class="clear">￥123.0</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			
+			document.getElementById("shop").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+			
+			/*document.getElementById("shop").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});*/
+			document.getElementById("contact").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../index/sj.html",
+					id:"contact",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			var box3=document.getElementById("beauty");
+        		var arr_a3=box3.getElementsByTagName("li");
+        		for (var i=0;i<arr_a3.length;i++) {
+        			 var arr_id3=arr_a3[i].getAttribute("id");
+        			 document.getElementById(arr_id3).addEventListener("tap",tap_b3);
+        		}
+        		function tap_b3(){
+					mui.openWindow({
+						url:"../index/spxq.html",
+						id:"spxq",
+						createNew:true,
+						show:{
+							aniShow:"slide-in-right",
+							duration:200
+						},
+						waiting:{
+							title:"正在加载……"
+						}
+					
+					});
+        		}
+		</script>
+	</body>
+</html>

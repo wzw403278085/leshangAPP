@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>新人专享</title>
+	    <script src="../js/mui.min.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/index/newpeople.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	    </script>
+	    
+	</head>
+	<body id="new">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">新人专享</h1>
+		    <div class="right">
+		    	<div class="set">...</div>
+		    	<div class="shop mui-icon" id="gouwuche">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+		    <div class="banner">
+		    	<img src="../img/index/newpeople/new_banner.png" alt="">
+		    	<a class="immediately" id="pack">立即领取</a>
+		    </div>
+			<div class="snap">
+				<h2>——— 限时抢购 ———</h2>
+				<div class="click">
+					<img src="../img/index/newpeople/small.png" alt="">
+					<div class="click_p">
+						<div class="all">全场<span>99</span>元<span>2</span>件</div>
+						<a>点击进入</a>
+					</div>
+				</div>
+				<ul class="snap_con">
+					<li class="snap_con_module">
+						<img src="../img/index/newpeople/snap1.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="snap_con_module">
+						<img src="../img/index/newpeople/snap2.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="snap_con_module">
+						<img src="../img/index/newpeople/snap3.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="snap_con_module">
+						<img src="../img/index/newpeople/snap4.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="hot">
+				<h2>——— 人气热卖 ———</h2>
+				<ul class="hot_con">
+					<li class="hot_con_module">
+						<img src="../img/index/newpeople/hot1.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="hot_con_module cur">
+						<img src="../img/index/newpeople/hot2.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="hot_con_module">
+						<img src="../img/index/newpeople/hot3.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="day">
+				<h2>——— 每日精选 ———</h2>
+				<ul class="day_con">
+					<li class="day_con_module">
+						<img src="../img/index/newpeople/day1.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="day_con_module">
+						<img src="../img/index/newpeople/day2.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="day_con_module">
+						<img src="../img/index/newpeople/day3.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+					<li class="day_con_module">
+						<img src="../img/index/newpeople/day4.png" alt="">
+						<div class="word">
+							<p class="tit">芦苇微微文艺个字连衣裙</p>
+							<p>￥123.0<span>￥308</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+		document.getElementById("pack").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"newpack.html",
+					id:"pack",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			/*document.getElementById("gouwuche").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});*/
+			
+			document.getElementById("gouwuche").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+		</script>
+	</body>
+</html>

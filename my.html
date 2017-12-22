@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>我的</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <link rel="stylesheet" href="css/css/public.css">
+    <link rel="stylesheet" href="css/css/my.css">
+    <link rel="stylesheet" type="text/css" href="fontt/iconfont.css">
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a id="set" class="mui-icon mui-icon-gear "></a>
+    <h1 class="mui-title">我的主页</h1>
+    <a id="message" class="mui-icon mui-icon-chat"></a>
+</header>
+<div class="mui-content">
+    <div class="top clean">
+        <div class="menu clean">
+
+        </div>
+        <div id="login" class="head">
+            <a id="icon-icon-contact"><span class="mui-icon mui-icon-contact"></span></a>
+            <a class="login" href="#">登录/注册</a>
+        </div>
+    </div>
+    <div class="option clean">
+        <ul>
+            <li id="pay">
+                <a class="iconfont icon-pay" ></a>
+                <span class="mui-badge mui-badge-danger">1</span>
+                <p>待付款</p>
+            </li>
+            <li id="send">
+                <a class="iconfont icon-deliver"></a>
+                <span class="mui-badge mui-badge-danger">1</span>
+                <p>待发货</p>
+            </li>
+            <li id="get">
+                <a class="iconfont icon-send"></a>
+                <span class="mui-badge mui-badge-danger">1</span>
+                <p>待收货</p>
+            </li>
+            <li id="tuihuan">
+                <a class="iconfont icon-rechargefill"></a>
+                <span class="mui-badge mui-badge-danger">1</span>
+                <p>退换货</p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="menu clean">
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li id="qbdd" class="mui-table-view-cell">
+               <a  class="mui-navigate-right"> <span class="iconfont icon-form"></span>全部订单</a>
+            </li>
+        </ul>
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li id="purse" class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    <span class="iconfont icon-wodeqianbao"></span>我的钱包</a>
+            </li>
+            <li id="youhui" class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    <span class="iconfont icon-youhuiquan"></span>优惠券</a>
+            </li>
+
+        </ul>
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li id="qiandao" class="mui-table-view-cell">
+                <a  class="mui-navigate-right"> <span class="iconfont icon-zuji"></span>签到 </a>
+            </li>
+            <li id="shoucang" class="mui-table-view-cell">
+                <a  class="mui-navigate-right"><span class="iconfont icon-wodeshoucang"></span>我的收藏 </a>
+            </li>
+            <li id="caini" class="mui-table-view-cell">
+                <a  class="mui-navigate-right"><span class="iconfont icon-cainixihuan1"></span>猜你喜欢 </a>
+            </li>
+        </ul>
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li id="zuji" class="mui-table-view-cell">
+                <a href="#" class="mui-navigate-right"><span class="iconfont icon-zuji"></span>足迹 </a>
+            </li>
+            <li id="pintuan" class="mui-table-view-cell">
+                <a href="#" class="mui-navigate-right"><span class="iconfont icon-wodepintuan"></span>我的拼团 </a>
+            </li>
+            <li id="kefu" class="mui-table-view-cell">
+                <a href="#" class="mui-navigate-right"><span class="iconfont icon-kefuzhongxin"></span>客服中心 </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+
+//    设置set
+    document.getElementById("set").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/set.html",
+            id:"set-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+
+//消息message
+    document.getElementById("message").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"index/info.html",
+            id:"info",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+//全部订单qbdd
+document.getElementById("qbdd").addEventListener("tap",function(){
+
+    var main=mui.openWindow({
+        url:"my/new_file.html",
+        id:"list",
+        createNew:true,
+        show:{
+            autoShow:true,
+            aniShow:"slide-in-right",
+            duration:200
+        },
+        waiting:{
+            autoShow:true,
+            title:"正在加载..."
+        }
+         
+    });
+      mui.fire(main,'goAll');
+});
+
+
+
+    //待支付
+    document.getElementById("pay").addEventListener("tap",function(){
+        var main=mui.openWindow({
+            url:"my/new_file.html",
+            id:"list",
+            createNew:true,
+            show:{
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                title:"正在加载..."
+            }
+        });
+        mui.fire(main,'goPay');
+    });
+    //待发货
+    document.getElementById("send").addEventListener("tap",function(){
+        var main=mui.openWindow({
+            url:"my/new_file.html",
+            id:"list",
+            createNew:true,
+            show:{
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                title:"正在加载..."
+            }
+        });
+        mui.fire(main,'goDfh');
+    });
+    //待收货
+    document.getElementById("get").addEventListener("tap",function(){
+        var main=mui.openWindow({
+            url:"my/new_file.html",
+            id:"list",
+            createNew:true,
+            show:{
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                title:"正在加载..."
+            }
+        });
+        mui.fire(main,'goDsh');
+    });
+
+
+
+    //登录
+    document.getElementById("login").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/login.html",
+            id:"login-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+    //退换货
+    document.getElementById("tuihuan").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/tuihuan.html",
+            id:"tuihuan-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+    //我的钱包
+    document.getElementById("purse").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/purse.html",
+            id:"purse-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+    //优惠券
+
+    document.getElementById("youhui").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/youhui.html",
+            id:"youhui-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+    ////敲到
+    document.getElementById("qiandao").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/qiandao.html",
+            id:"qiandao-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+
+    //我的拼团
+    document.getElementById("pintuan").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/pintuan.html",
+            id:"pintuan-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+    //在线客服
+    document.getElementById("kefu").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/kefu.html",
+            id:"kefu-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+    //我的收藏
+    document.getElementById("shoucang").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/shoucang.html",
+            id:"shoucang-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+    //猜你喜欢
+    document.getElementById("caini").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/caini.html",
+            id:"caini-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+
+    //足迹
+    document.getElementById("zuji").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"my/zuji.html",
+            id:"zuji-con",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });
+
+
+        mui.init({
+            keyEventBind:{
+                backbutton:true
+            }
+        });
+
+        mui.old_back=mui.back;
+        var clickNum=0;
+        mui.back=function(){
+            clickNum++;
+            if(clickNum>1){
+                plus.runtime.quit();
+            }else{
+                mui.toast("再按一次退出应用");
+            }
+            setTimeout(function(){
+                clickNum=0
+            },1000);
+            return false;
+        }
+</script>
+</body>
+</html>

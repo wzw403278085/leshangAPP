@@ -1,0 +1,174 @@
+.mui-icon-extra-cart::before{
+    color: #fcfcfc;
+
+}
+.mui-icon-extra{
+    margin-top: 10px;
+}
+
+.duihuan{
+    width: 100%;
+    margin-right: -10px;
+    margin-left: -10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #fcfcfc;
+    text-align: right;
+
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+    color: #2C2C2C;
+
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+    color:#F15BAC ;
+}
+.mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-progress-bar{
+    background-color: #F15BAC;
+}
+.beauty{
+    background: #fff;
+    margin-top: 0.63rem;
+    /*height: 41rem;*/
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+.beauty h2{
+    font-size: 1rem;
+    height: 3.06rem;
+    line-height: 3.6rem;
+    text-align: center;
+    font-weight: 100;
+}
+.beauty .beauty_con{
+    /*background: #007AFF;*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.beauty .beauty_con li{
+    width: 45%;
+    margin-top: 0.5rem;
+}
+.beauty .beauty_con li .img{
+    position: relative;
+}
+.beauty .beauty_con li img{
+    width: 100%;
+    height: 14rem;
+}
+.beauty .beauty_con li .shadow{
+    position: absolute;
+    right: 0;
+    width: 25%;
+    bottom:1.5rem;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+    border-radius: 0.8rem 0 0 0.8rem;
+    font-family: icon;
+    color: #fff;
+    padding-left: 0.4rem;
+}
+.beauty .beauty_con li p:before{
+    content: '';
+    display: inline-block;
+    border-left: 6px solid #676767;
+    border-right: 6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-top: 6px solid transparent;
+}
+.beauty .beauty_con li p{
+    line-height: 1rem;
+}
+.mui-table-view-cell button{
+    border-radius: 5px;
+    border-color: #5C5C5C;
+    line-height: 1;
+}
+.mui-table-view-cell h4{
+    color:#F15BAC ;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.mui-table-view-cell .zhuti h4{
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    white-space: nowrap;
+}
+.mui-table-view-cell .zhuti img{
+    width: 100%;
+    height: 15rem;
+}
+.mui-content .tiaoxuan{
+    width: 95%;
+    margin: 0 auto;
+    display:-webkit-flex ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+.mui-content .tiaoxuan li{
+    width: 48%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.mui-content .tiaoxuan li img{
+    width: 100%;
+}
+.mui-content .tiaoxuan li p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#000 ;
+}
+.mui-content .tiaoxuan li h4{
+    color: #F15BAC;
+    font-weight: 200;
+    float: left;
+    line-height: 0;
+}
+.mui-content .tiaoxuan li span{
+    float: right;
+    font-size: 12px;
+    line-height: 1rem;
+    color: #8f8f94;
+}
+.mui-icon-extra{
+    color: white;
+}
+.mui-content .title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5%;
+}
+.mui-content .kefu{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    width: 90%;
+}
+.mui-content .kefu li{
+    width: 47%;
+
+}
+
+.mui-content .kefu li span{
+    color: #FAD200;
+    font-size: 1.5rem;
+}
+.mui-col-xs-4{
+    width: 50%;
+}
+.mui-content .kefu li h4{
+    color:#F15BAC ;
+}

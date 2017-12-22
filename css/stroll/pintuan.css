@@ -1,0 +1,93 @@
+.mui-icon-extra{
+    color: white;
+    line-height: 2.6rem;
+}
+.mui-bar-nav{
+    -webkit-box-shadow: 0 1px 6px #F14DA3;
+    box-shadow: 0 1px 6px #F14DA3;
+}
+.banner{
+    width: 100%;
+    position: relative;
+    height:11rem;
+}
+.banner .img{
+    width:100%;
+    height: 11rem;
+}
+.banner .img img{
+    width:100%;
+    height: 100%;
+}
+.banner .shadow{
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+.banner .shadow h1{
+    font-size: 1.82rem;
+    font-weight: 100;
+    margin: 3rem 0 0 0;
+}
+.banner .shadow h1 span{
+    color: #ffcd32;
+    font-size: 2rem;
+}
+.banner .shadow h3{
+    font-size: 0.82rem;
+    font-weight: 100;
+    margin: 1rem 0 0 0;
+}
+.wanfa {
+    width: 95%;
+    margin:  0 auto;
+}
+.wanfa .title{
+    color: #2C2C2C;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 3rem;
+}
+.wanfa .wanfa-con{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.wanfa .wanfa-con p{
+    line-height: 4rem;
+
+
+}
+.wanfa .wanfa-con div{
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #2C2C2C;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.8rem 0.2rem;
+    line-height: 1.2rem;
+}
+
+.wanfa .word{
+    color: #2C2C2C;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+.wanfa .img{
+    width: 30%;
+    margin: 2rem auto;
+}
+.wanfa .img img{
+    width: 100%;
+}
+.wanfa h4{
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+}

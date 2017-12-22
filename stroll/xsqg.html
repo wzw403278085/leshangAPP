@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>限时抢购</title>
+	    <script src="../js/mui.min.js"></script>
+	    <script src="../js/jquery.3.2.1.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/stroll/xsqg.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init(); 
+	   </script>
+	</head>
+	<body id="xsqg">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">限时抢购</h1>
+		    <div class="right">
+		    	<div class="set">...</div>
+		    	<div class="shop mui-icon" id="shop">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+		    <p class="pT">秒杀价拍到的商品，不能退换货，请知晓，如有问题可联系客服</p>
+		    <div class="banner">
+		    	<img src="../img/stroll/banner3.jpg " alt="" />
+		   	</div>
+		   	<div class="buy_con">
+		   		<ul class="clear" id="time">
+		   			<li class="cur">
+		   				<p>28号0点</p>
+		   				<p>已结束</p>
+		   			</li>
+		   			<li>
+		   				<p>10点</p>
+		   				<p>抢购中</p>
+		   			</li>
+		   			<li>
+		   				<p>16点</p>
+		   				<p>即将开场</p>
+		   			</li>
+		   			<li>
+		   				<p>20号19.9</p>
+		   				<p>即将开场</p>
+		   			</li>
+		   			<li>
+		   				<p>22点</p>
+		   				<p>即将开场</p>
+		   			</li>
+		   		</ul>
+		   		<div class="buy_box" id="buyBox">
+		   			<div class="box_con clear">
+		   				<div class="text clear">
+		   					<p class="fl">抢购结束 下次赶早</p>
+		   					<p class="fr">本场已结束</p>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods1.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>夏季薄款透气速干两件套</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥68</mark></span>
+		   							<span class="fr">￥128</span>
+		   						</p>
+		   						<button>按原价购买</button>
+		   						<div class="mask">已抢光</div>
+		   					</div>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods2.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>秋装新款袖口绑带口袋衬衫</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥49</mark></span>
+		   							<span class="fr">￥106</span>
+		   						</p>
+		   						<button>按原价购买</button>
+		   						<div class="mask">已抢光</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			<div class="box_con" style="display: none;">
+		   				<div class="text clear">
+		   					<p class="fl">限时限量 疯狂抢购</p>
+		   					<p class="fr">距本场结束05:20:02</p>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods1.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>夏季薄款透气速干两件套</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥68</mark></span>
+		   							<span class="fr">￥128</span>
+		   						</p>
+		   						<div class="ProgressBar"><span></span></div>
+		   						<p class="number clear">
+		   							<span class="fl">已售2件</span>
+		   							<span class="fr">仅剩38件</span>
+		   						</p>
+		   						<button>立即抢购</button>
+		   					</div>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods2.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>秋装新款袖口绑带口袋衬衫</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥49</mark></span>
+		   							<span class="fr">￥106</span>
+		   						</p>
+		   						<div class="ProgressBar"><span></span></div>
+		   						<p class="number clear">
+		   							<span class="fl">已售2件</span>
+		   							<span class="fr">仅剩38件</span>
+		   						</p>
+		   						<button>立即抢购</button>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			<div class="box_con" style="display: none;">
+		   				<div class="text clear">
+		   					<p class="fl">设置提醒 不再错过</p>
+		   					<p class="fr">距本场开始05:20:02</p>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods1.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>夏季薄款透气速干两件套</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥68</mark></span>
+		   							<span class="fr">￥128</span>
+		   						</p>
+		   						<div class="ProgressBar" style="border-color: #B2B2B2;"></div>
+		   						<p class="number clear">
+		   							<span class="fl" style="color: #8E8E8E;">已售2件</span>
+		   							<span class="fr" style="color: #8E8E8E;">仅剩38件</span>
+		   						</p>
+		   						<button>设置提醒</button>
+		   					</div>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods2.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>秋装新款袖口绑带口袋衬衫</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥49</mark></span>
+		   							<span class="fr">￥106</span>
+		   						</p>
+		   						<div class="ProgressBar" style="border-color: #B2B2B2;"></div>
+		   						<p class="number clear">
+		   							<span class="fl" style="color: #8E8E8E;">已售2件</span>
+		   							<span class="fr" style="color: #8E8E8E;">仅剩38件</span>
+		   						</p>
+		   						<button>设置提醒</button>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			<div class="box_con" style="display: none;">
+		   				<div class="text clear">
+		   					<p class="fl">设置提醒 不再错过</p>
+		   					<p class="fr">距本场开始06:20:02</p>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods1.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>夏季薄款透气速干两件套</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥68</mark></span>
+		   							<span class="fr">￥128</span>
+		   						</p>
+		   						<div class="ProgressBar" style="border-color: #B2B2B2;"></div>
+		   						<p class="number clear">
+		   							<span class="fl" style="color: #8E8E8E;">已售2件</span>
+		   							<span class="fr" style="color: #8E8E8E;">仅剩38件</span>
+		   						</p>
+		   						<button>设置提醒</button>
+		   					</div>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods2.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>秋装新款袖口绑带口袋衬衫</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥49</mark></span>
+		   							<span class="fr">￥106</span>
+		   						</p>
+		   						<div class="ProgressBar" style="border-color: #B2B2B2;"></div>
+		   						<p class="number clear">
+		   							<span class="fl" style="color: #8E8E8E;">已售2件</span>
+		   							<span class="fr" style="color: #8E8E8E;">仅剩38件</span>
+		   						</p>
+		   						<button>设置提醒</button>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			<div class="box_con" style="display: none;">
+		   				<div class="text clear">
+		   					<p class="fl">设置提醒 不再错过</p>
+		   					<p class="fr">距本场开始07:20:02</p>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods1.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>夏季薄款透气速干两件套</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥68</mark></span>
+		   							<span class="fr">￥128</span>
+		   						</p>
+		   						<div class="ProgressBar" style="border-color: #B2B2B2;"></div>
+		   						<p class="number clear">
+		   							<span class="fl" style="color: #8E8E8E;">已售2件</span>
+		   							<span class="fr" style="color: #8E8E8E;">仅剩38件</span>
+		   						</p>
+		   						<button>设置提醒</button>
+		   					</div>
+		   				</div>
+		   				<div class="content clear">
+		   					<div class="img fl">
+		   						<img src="../img/stroll/goods2.jpg"/>
+		   					</div>
+		   					<div class="description fr">
+		   						<h3>秋装新款袖口绑带口袋衬衫</h3>
+		   						<p class="price clear">
+		   							<span class="fl">限时特价：<mark>￥49</mark></span>
+		   							<span class="fr">￥106</span>
+		   						</p>
+		   						<div class="ProgressBar" style="border-color: #B2B2B2;"></div>
+		   						<p class="number clear">
+		   							<span class="fl" style="color: #8E8E8E;">已售2件</span>
+		   							<span class="fr" style="color: #8E8E8E;">仅剩38件</span>
+		   						</p>
+		   						<button>设置提醒</button>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</div>
+		</div>
+		
+		<script>
+			$(document).ready(function(){
+				$("#time li").click(function(){
+					$(this).addClass('cur').siblings().removeClass('cur');
+					var index=$(this).index();
+					$("#buyBox").children().eq(index).css("display","block").siblings().css("display","none");
+				});
+			});
+			
+			document.getElementById("shop").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+			
+			/*document.getElementById("shop").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});*/
+		</script>
+	</body>
+</html>

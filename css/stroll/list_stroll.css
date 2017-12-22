@@ -1,0 +1,362 @@
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-icon-chat{
+	    		color: #fff;
+	    	}
+	    	
+	    	.mui-search input[type="search"] {
+				width: 100%;
+				padding: 0 2rem;
+				color: #FED1EB;
+				font-size: 1.1rem;
+				background: rgba(255, 255, 255, .5);
+				border: none;
+				border-radius: 1.3rem;
+				margin-top: 0.5rem;
+			}
+			.mui-search .mui-placeholder{
+				text-align: left;
+				padding-left:0.6rem ;
+			}
+			.mui-search .mui-placeholder span {
+				font-size: 1rem;
+				color: #FED1EB;
+			}
+			.mui-bar .mui-icon-search:before {
+				line-height: 1.7rem;
+				color: #FEc9e6;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+			body{
+				background: #fff;
+			}
+			.banner{
+				width: 100%;
+				padding-top: 1rem;
+				height: 15rem;
+				background: #fff;
+				padding-bottom: 1rem;
+			}
+			.banner .ban_l{
+				width: 50%;
+				height: 100%;
+				position: relative;
+			}
+			.banner .ban_l img{
+				width: 90%;
+				height:100%;
+				margin:0 auto;
+				display: block;
+			}
+			.banner .ban_l .shadow1{
+				position: absolute;
+				bottom: 5%;
+				width: 84%;
+				height: 5rem;
+				background: #fff;
+				left: 8%;
+			}
+			.banner .ban_l .shadow1 h2{
+				text-align: center;
+				font-size: 1rem;
+				margin-top: 1rem;
+				/*line-height: 2rem;*/
+			}
+			.banner .ban_l .shadow1 p{
+				text-align: center;
+				height: 1rem;
+				margin-bottom: 0.2rem;
+				/*line-height: 1rem;*/
+			}
+			.banner .ban_r{
+				width: 50%;
+			}
+			.banner .ban_r ul li{
+				width: 100%;
+				height: 6rem;
+				position: relative;
+			}
+			.banner .ban_r ul li:nth-child(2){
+				margin-top: 1rem;
+			}
+			.banner .ban_r ul li img{
+				width: 90%;
+				display: block;
+				margin: 0 auto;
+				height: 100%;
+			}
+			.banner .ban_r ul li .shadow{
+				position: absolute;
+				top:0;
+				left: 5%;
+				width: 90%;
+				height: 100%;
+				background: rgba(0,0,0,0.3);
+				padding-left: 1rem;
+			}
+			.banner .ban_r ul li h2{
+				color: #fff;
+				font-size: 1.2rem;
+				margin-top: 2.6rem;
+			}
+			.banner .ban_r ul li h3{
+				color: #fff;
+				font-weight: 100;
+				font-size: 0.95rem;
+				line-height: 1.8rem;
+			}
+			
+			.guess{
+				background: #fff;
+				width: 100%;
+				padding: 0 0.4rem;
+				margin-top: 0.645rem;
+			}
+			.guess .guess_con{
+				display: -webkit-flex;
+				display: flex;
+				justify-content: center;
+				-webkit-justify-content:center;
+			}
+			.guess .guess_con .img{
+				width: 30%;
+				height: 4rem;
+				position: relative;
+				border-radius:5px ;
+				overflow: hidden;
+				margin: 1.4rem 0.5rem 0.4rem;
+				font-size: 0.69rem;
+			}
+			.guess .guess_con .img img{
+				width: 100%;
+				height: 4rem;
+			}
+			.guess .guess_con .shadow{
+				position: absolute;
+				top:0;
+				background: rgba(0,0,0,0.4);
+				width: 100%;
+				height: 100%;
+				color: #fff;
+				text-align: center;
+				font-size: 1rem;
+				line-height:2rem;
+			}
+
+			.single{
+	    		background: #fff;
+	    		padding: 0 0.8rem 0.64rem;
+	    	}
+	    	.single h2{
+	    		text-align: center;
+	    		font-size: 1rem;
+	    		position: relative;
+	    		padding-top: 1rem;
+	    		font-weight: 100;
+	    	}
+	    	.single .single_con{
+	    		margin-top: 1rem;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content:space-between;	
+				
+	    	}
+	    	.single .single_con .single_con_moudle{
+	    		width: 23%;
+	    		text-align: center;
+	    	}
+	    	.single .single_con .single_con_moudle img{
+	    		width: 100%;
+	    	}
+	    	.single .single_con .single_con_moudle p{
+	    		color: #000000;
+	    	}
+	    	.all{
+	    		background: #fff;
+	    		padding: 0 0.8rem 0.5rem;
+	    	}
+	    	.all h2{
+	    		text-align: center;
+	    		font-size: 1rem;
+	    		position: relative;
+	    		padding-top: 1rem;
+	    		font-weight: 100;
+	    	}
+	    	.all ul{
+	    		display: -webkit-flex;
+	    		display: flex;
+	    		-webkit-justify-content: flex-start;
+	    		justify-content: flex-start;
+	    		-webkit-flex-wrap: wrap;
+	    		flex-wrap: wrap;
+	    		margin-top: 0.8rem;
+	    	}
+	    	.all ul li{
+	    		width: 45%;
+	    		margin: 0.4rem;
+	    		position: relative;
+	    		border-radius: 8px;
+	    		overflow: hidden;
+	    		height: 5rem;
+	    	}
+	    	.all ul li img{
+	    		width: 100%;
+	    		height: 100%;
+	    	}
+	    	.all ul li .shadow{
+				position: absolute;
+				top:0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.3);
+				padding-left: 1rem;
+			}
+			.all ul li h2{
+				color: #fff;
+				font-size: 1rem;
+				margin-top: 0.5rem;
+				text-align: left;
+			}
+			.all ul li h3{
+				color: #fff;
+				font-weight: 100;
+				font-size: 0.85rem;
+				line-height: 1.3rem;
+			}
+			.good{
+	    		background: #fff;
+	    		padding: 0 1rem 0.5rem;
+	    	}
+	    	.good h2{
+	    		text-align: center;
+	    		font-size: 1rem;
+	    		position: relative;
+	    		padding-top: 1rem;
+	    		font-weight: 100;
+	    	}
+	    	.good .single_con{
+	    		margin-top: 1rem;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content:space-between;	
+				
+	    	}
+	    	.good .single_con .single_con_moudle{
+	    		width: 30%;
+	    		text-align: center;
+	    		position: relative;
+	    	}
+	    	.good .single_con .single_con_moudle img{
+	    		width: 100%;
+	    	}
+	    	.good .single_con .single_con_moudle p{
+	    		position: absolute;
+	    		bottom: 10%;
+	    		color: #fff;
+	    		background: rgba(255,100,100,0.7);
+	    		left: 50%;
+	    		width: 3rem;
+	    		margin-left: -1.5rem;
+	    		line-height: 1.4rem;
+	    		border-radius: 10px;
+	    	}
+	    	
+	    	.hot{
+	    		background: #fff;
+	    		padding: 0 0.8rem 0.5rem;
+	    	}
+	    	.hot h2{
+	    		text-align: center;
+	    		font-size: 1rem;
+	    		position: relative;
+	    		padding-top: 1rem;
+	    		font-weight: 100;
+	    	}
+	    	
+	    	.hot .hot_con{
+	   			display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content:center;
+				-webkit-align-items: baseline;
+				align-items: baseline;
+				margin-top: 0.4rem;
+				width: 100%;
+				overflow: hidden;
+	   		}
+	   		.hot .hot_con .hot_con_module{
+	   			width: 30%;
+	   			margin: 0.5rem 0.3rem;
+	   			position: relative;
+	   		}
+	   		.hot .hot_con .hot_con_module.cur{
+	   			width: 34%;
+	   		}
+	   		.hot .hot_con .hot_con_module img{
+	   			width: 100%;
+	   		}
+	   		.hot .hot_con .hot_con_module p{
+	    		position: absolute;
+	    		bottom: 10%;
+	    		color: #fff;
+	    		background: rgba(100,100,255,0.7);
+	    		left: 50%;
+	    		width: 4rem;
+	    		text-align: center;
+	    		margin-left: -2rem;
+	    		line-height: 1.4rem;
+	    		border-radius: 10px;
+	    	}
+	    	.down{
+	    		background: #fff;
+	    		margin-top: 0.8rem;
+	    		padding: 0.8rem 0;
+	    	}
+	    	.down .down_l{
+	    		width: 60%;
+	    	}
+	    	.down .down_l img{
+	    		width: 80%;
+	    		display: block;
+	    		margin: 0 auto;
+	    	}
+	    	.down .down_r{
+	    		width: 40%;
+	    	}
+	    	.down .down_r img{
+	    		width: 5.8rem;
+	    		display: block;
+	    		height: 5.8rem;
+	    		border-radius: 50%;
+	    		margin: 0.3rem auto 0.8rem;
+	    	}
+	    	.down .down_r p{
+	    		text-align: center;
+	    		color: #000;
+	    		overflow: hidden;
+	    		text-overflow: ellipsis;
+	    		white-space: nowrap;
+	    	}
+	    	.down .zi{
+	    		padding-left: 1.2rem;
+	    		color: #000;
+	    	}
+	    	.down .zi span{
+	    		font-size: 1.2rem;
+	    		margin-right: 0.3rem;
+	    	}
+	    	#input{
+	    		border: none;
+	    		text-align: center;
+	    		padding: 0;
+	    		margin: 0 !important;
+	    		font-size: 0.8rem;
+	    		height: 1rem;
+	    		line-height: 1rem;
+	    	}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>为你挑选</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <link rel="stylesheet" href="../css/css/public.css">
+    <link rel="stylesheet" href="../css/css/shoucang.css">
+    <link rel="stylesheet" type="text/css" href="../css/icons-extra.css">
+	<style>
+	
+	.mui-content{
+		background: #fff;
+	}
+	</style>
+</head>
+<body id="caini">
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">为你挑选</h1>
+
+</header>
+
+<div class="mui-content">
+    <ul class="tiaoxuan" id="beauty">
+        <li id="bea1">
+            <div class="img">
+                <img src="../img/index/manual/style_3.png" alt="">
+            </div>
+            <p>韩版百搭短款甜美T恤精选调配</p>
+            <h4>￥67.55</h4>
+            <span>销量：60笔</span>
+        </li>
+        <li id="bea2">
+            <div class="img">
+                <img src="../img/index/manual/style_2.png" alt="">
+            </div>
+            <p>韩版百搭短款甜美T恤精选调配</p>
+            <h4>￥107.55</h4>
+            <span>销量：60笔</span>
+        </li>
+        <li id="bea3">
+            <div class="img">
+                <img src="../img/index/manual/style_1.png" alt="">
+            </div>
+            <p>韩版百搭短款甜美T恤精选调配</p>
+            <h4>￥67.55</h4>
+            <span>销量：60笔</span>
+        </li>
+        <li id="bea4">
+            <div class="img">
+                <img src="../img/index/manual/style_2.png" alt="">
+            </div>
+            <p>韩版百搭短款甜美T恤精选调配</p>
+            <h4>￥107.55</h4>
+            <span>销量：60笔</span>
+        </li>
+    </ul>
+</div>
+<script>
+	var box3=document.getElementById("beauty");
+	var arr_a3=box3.getElementsByTagName("li");
+	for (var i=0;i<arr_a3.length;i++) {
+		 var arr_id3=arr_a3[i].getAttribute("id");
+		 document.getElementById(arr_id3).addEventListener("tap",tap_b3);
+	}
+	function tap_b3(){
+		mui.openWindow({
+			url:"../index/spxq.html",
+			id:"spxq",
+			createNew:true,
+			show:{
+				aniShow:"slide-in-right",
+				duration:200
+			},
+			waiting:{
+				title:"正在加载……"
+			}
+		
+		});
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-title,.mui-action-back{
+	    		color: #fff;
+	    	}
+	    	header .right .shop{
+	    		font-family: icon;
+	    	}
+	    	header .right{
+	    		float: right;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-end;
+				justify-content:flex-end;
+				-webkit-align-items: center;
+				align-items: center;
+	    	}
+	    	header .right .set{
+	    		font-size: 1.3rem;
+	    		margin: -.5rem 0.3rem 0 0;
+	    	}
+	    	.banner{
+	    		width: 100%;
+	    		background: #fff;
+	    	}
+	    	.banner img{
+	    		width: 100%;
+	    	}
+	    	.banner .immediately{
+	    		height: 3.125rem;
+	    		line-height: 3.125rem;
+	    		width: 50%;
+	    		text-align: center;
+	    		background: #FFCC32;
+	    		margin: 1rem auto 0;
+	    		border-radius: 5px;
+	    		font-size: 1.25rem;
+	    		font-weight: 600;
+	    		display: block;
+	    		color: #000000;
+	    	}
+/*限时热购*/
+	    	.snap{
+	    		/*height: 50rem;*/
+	    		background: #fff;
+	    		padding: 0.63rem;
+	    	}
+	    	.snap h2{
+	    		font-size: 1.2rem;
+				height: 3.06rem;
+				line-height: 3.6rem;
+				text-align: center;
+				font-weight: 100;
+				color: #FB47A0;
+				position: relative;
+	    	}
+	    	.snap h2:before{
+	    		content: '';
+	    		display: block;
+	    		position: absolute;
+	    		width: 5px;
+	    		height: 5px;
+	    		border-radius: 50%;
+	    		background: #FB47A0;
+	    		left: 36%;
+	    		top:50%;
+	    	}
+	    	.snap h2:after{
+	    		content: '';
+	    		display: block;
+	    		position: absolute;
+	    		width: 5px;
+	    		height: 5px;
+	    		border-radius: 50%;
+	    		background: #FB47A0;
+	    		right: 36%;
+	    		top:50%;
+	    	}
+	    	.snap .click{
+	    		height: 8.125rem;
+	    		width: 94%;
+	    		margin: 1rem auto 0;
+	    		position: relative;
+	    	}
+	    	.snap .click img{
+	    		width: 100%;
+	   		}
+	   		.snap .click .click_p{
+	   			position: absolute;
+	   			top:34%;
+	    		width: 100%;
+	    		text-align: center;
+	    		color: #fff;
+	   		}
+	   		.snap .click .click_p .all{
+	   			font-size: 1.1rem;
+	   			font-weight: 600;
+	   			letter-spacing: 0.1rem;
+	   		}
+	   		.snap .click .click_p .all span{
+	   			font-size: 1.3rem;
+	   		}
+	   		.snap .click .click_p a{
+	   			color: #fff;
+	   			font-size: 0.95rem;
+	   			display: block;
+	   			border: 1px solid #fff;
+	   			width: 22%;
+	   			margin: 0.5rem auto;
+	   			line-height: 1.5rem;
+	   			border-radius: 15px;
+	   		}
+	   		.snap .snap_con{
+	   			display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content:center;
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				margin-top: 1.4rem;
+	   		}
+	   		.snap .snap_con .snap_con_module{
+	   			width: 45%;
+	   			margin: 0.5rem 0.5rem;
+	   		}
+	   		.snap .snap_con .snap_con_module img{
+	   			width: 100%;
+	   		}
+	   		.word p{
+	   			color: #F14DA4;
+	   			font-size: 1rem;
+	   			line-height: 1.6rem;
+	   		}
+	   		.word p span{
+	   			font-size: 0.76rem;
+	   			text-decoration: line-through;
+	   			color: #606060;
+	   			margin-left: 0.3rem;
+	   		}
+	   		.word .tit{
+	   			color: #010101;
+	   			overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+	   		}
+/*人气热卖*/
+	   		.hot{
+	    		/*height: 17.8rem;*/
+	    		background: #fff;
+	    		padding: 0.63rem;
+	    	}
+	    	.hot h2{
+	    		font-size: 1.2rem;
+				height: 3.06rem;
+				line-height: 3.6rem;
+				text-align: center;
+				font-weight: 100;
+				color: #FB47A0;
+				position: relative;
+				margin-top: -1rem;
+	    	}
+	    	.hot h2:before{
+	    		content: '';
+	    		display: block;
+	    		position: absolute;
+	    		width: 5px;
+	    		height: 5px;
+	    		border-radius: 50%;
+	    		background: #FB47A0;
+	    		left: 36%;
+	    		top:50%;
+	    	}
+	    	.hot h2:after{
+	    		content: '';
+	    		display: block;
+	    		position: absolute;
+	    		width: 5px;
+	    		height: 5px;
+	    		border-radius: 50%;
+	    		background: #FB47A0;
+	    		right: 36%;
+	    		top:50%;
+	    	}
+	    	.hot .hot_con{
+	   			display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content:center;
+				-webkit-align-items: baseline;
+				align-items: baseline;
+				margin-top: 0.4rem;
+				width: 100%;
+				overflow: hidden;
+	   		}
+	   		.hot .hot_con .hot_con_module{
+	   			width: 30%;
+	   			margin: 0.5rem 0.3rem;
+	   		}
+	   		.hot .hot_con .hot_con_module.cur{
+	   			width: 34%;
+	   		}
+	   		.hot .hot_con .hot_con_module img{
+	   			width: 100%;
+	   		}
+	   		/*每日精选*/
+	   		.day{
+	    		/*height: 17.8rem;*/
+	    		background: #fff;
+	    		padding: 0.63rem;
+	    	}
+	    	.day h2{
+	    		font-size: 1.2rem;
+				height: 3.06rem;
+				line-height: 3.6rem;
+				text-align: center;
+				font-weight: 100;
+				color: #FB47A0;
+				position: relative;
+				margin-top: -1rem;
+	    	}
+	    	.day h2:before{
+	    		content: '';
+	    		display: block;
+	    		position: absolute;
+	    		width: 5px;
+	    		height: 5px;
+	    		border-radius: 50%;
+	    		background: #FB47A0;
+	    		left: 36%;
+	    		top:50%;
+	    	}
+	    	.day h2:after{
+	    		content: '';
+	    		display: block;
+	    		position: absolute;
+	    		width: 5px;
+	    		height: 5px;
+	    		border-radius: 50%;
+	    		background: #FB47A0;
+	    		right: 36%;
+	    		top:50%;
+	    	}
+	    	.day .day_con{
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content:center;
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				margin-top: 0.5rem;
+	    	}
+	    	.day .day_con .day_con_module{
+	    		width: 45%;
+	   			margin: 0.5rem 0.5rem;
+	    	}
+	    	.day .day_con .day_con_module img{
+	    		width: 100%;
+	    	}

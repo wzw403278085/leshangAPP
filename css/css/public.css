@@ -1,0 +1,27 @@
+body,ul,li{
+    margin: 0;padding: 0;list-style: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font: normal 14px/28px 微软雅黑;
+}
+@font-face {
+    font-family: icon;
+    src: url(../../fontt/iconfont.eot), url(../fontt/iconfont.svg), url(../../fontt/iconfont.ttf), url(../../fontt/iconfont.woff);
+}
+.clean{
+    clear: both;
+}
+.mui-bar {
+    background-color: #F14DA3;
+}
+.mui-icon-gear {
+    color: #fff;
+}
+.mui-bar .mui-title{
+    color: white;
+}
+.mui-bar .mui-icon{
+    color: white;
+}

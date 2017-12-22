@@ -1,0 +1,93 @@
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-title,.mui-action-back{
+	    		color: #fff;
+	    	}
+	    	.mui-pull-right{
+	    		font-family: icon;
+	    		color: #fff;
+	    		font-size: 1.6rem;
+	    		margin-top: 0.5rem;
+	    	}
+			.people{
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content: center;
+				margin-top: 1rem;
+			}
+			.img{
+				width: 13%;
+				margin: 0 1rem 0 -0.4rem;
+			}
+			.img img{
+				width: 100%;
+			}
+			.people .que{
+				width: 70%;
+				background: #fff;
+				border-radius: 8px;
+				padding: 0.6rem;
+				line-height: 1.2rem;
+				position: relative;
+			}
+			.people .que:before{
+				position: absolute;
+				content: '';
+				display: block;
+				border-left: 10px solid transparent;
+				border-right: 6px solid #fff;
+				border-bottom:4px solid transparent;
+				border-top: 4px solid transparent;
+				left: -1rem;
+			}
+			
+			
+			.bottom{
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+			}
+			.bottom .a{
+				display: block;
+				width: 83%;
+				margin: 0 auto;
+			}
+			.bottom .a a{
+				display: inline-block;
+				background: #fff;
+				margin: 0 0.5rem 1rem;
+				padding: 0 0.4rem;
+				border-radius: 15px;
+				color: #919191;
+			}
+			.con{
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content: center;
+				width: 100%;
+				background: #fff;
+				padding: 0.6rem 0;
+			}
+			.con a{
+				font-family: icon;
+				color: #919191;
+				font-size: 2rem;
+				margin: 0.3rem 0.1rem;
+			}
+			.con .text{
+				width: 60%;
+				border-radius:8px ;
+				margin: 0 0.5rem;
+			}
+			.con .sub{
+				background: #fff;
+				color: #919191;
+				border: 1px solid #919191;
+				height: 2rem;
+				margin-top: 0.2rem;
+			}
+

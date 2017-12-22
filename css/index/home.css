@@ -1,0 +1,478 @@
+/*轮播*/
+			.mui-slider .mui-slider-indicator .mui-indicator{
+				background: #fff;
+				 -webkit-box-shadow: 0 0 1px 1px #F14DA3;
+			            box-shadow: 0 0 1px 1px #F14DA3;
+			}
+			.mui-slider .mui-slider-indicator .mui-active{
+				background: #F14DA3;
+			}
+/*头部*/
+			.mui-bar-nav{
+				background: #F14DA3;
+				display: -webkit-flex;
+				display: flex;
+				justify-content: space-between;
+				-webkit-justify-content:space-between;
+			}
+			.mui-bar-nav .mui-search{
+				width: 50px;
+				font-family: icon;
+				font-size: 1.6rem;
+				color: #fff;
+				line-height: 2.8rem;
+			}
+			.mui-bar-nav input[type='search']{
+				background: #f14DA3;
+				
+			}
+			.mui-search .mui-placeholder .mui-icon {
+				color: #fff;
+				font-size: 26px;
+				font-weight: 600;
+			}
+			.mui-icon-chat{
+				color: #fff;
+				display: block;
+				right: 14px;
+				top:2px
+			}
+			.mui-bar .mui-icon{
+				font-size: 22px;
+			}
+			.mui_word{
+				color: #fff;
+				line-height: 45px;
+				font-size: 1rem;
+				height: 40px;
+				margin: 0 2rem;
+			}
+			.mui_word.cur{
+				border-bottom: 2px solid #fff;
+			}
+			
+			.option{
+				/*height: 6.78rem;*/
+				background: #fff;
+				display: -webkit-flex;
+			    display: flex;
+			    -webkit-justify-content: center;
+			    justify-content: center;
+			    -webkit-align-items: center;
+			    align-items: center;
+			    padding: 0.8rem 0;
+			}
+			.option img{
+				display: block;
+				border-radius: 50%;
+			}
+			.option a{
+				display: inline-block;
+			}
+			.option .option_icon img{
+				width: 2.5rem;
+				margin: 0 0.6rem 0.6rem;
+			}
+			.option .option_icon{
+				width: 3.81rem;
+				margin: 0 1rem;
+				text-align: center;
+			}
+			.option .option_icon h2{
+				font-size: 0.875rem;
+				color: #010101;
+				font-weight: 100;
+			}
+			
+/*新人专享*/
+			.exclusive{
+				/*height: 2.69rem;*/
+				display: -webkit-flex;
+			    display: flex;
+			    -webkit-justify-content: center;
+			    justify-content: center;
+			    -webkit-align-items: center;
+			    align-items: center;
+			    background: #fff;
+			    margin-top: 0.63rem;
+			    width: 100%;
+			    padding: 0.7rem 0;
+			}
+			.exclusive .new{
+				height: 1.7rem;
+				background: #F14DA3;
+				line-height: 1.7rem;
+				color: #fff;
+				font-size: 0.875;
+				width: 18%;
+				text-align: center;
+				border-radius: 12px;
+			}
+			.exclusive .free{
+				width: 71%;
+				display: -webkit-flex;
+			    display: flex;
+			    -webkit-justify-content: space-between;
+			    justify-content: space-between;
+			    -webkit-align-items: center;
+			    align-items: center;
+			}
+			.exclusive .free .red{
+				width: 11.6%;
+			}
+			.exclusive .free .money{
+				width: 9%;
+			}
+			.exclusive .free p{
+				color: #010101;
+				width: 80%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				
+			}
+			.exclusive .free p span{
+				color: #FF0101;
+				font-size: 18px;
+			}
+/*时尚频道*/
+			.fashion{
+				/*height: 15.8rem;*/
+				background: #fff;
+				margin-top: 0.63rem;
+				text-align: center;
+				overflow:auto;
+				width: 100%;
+				padding-bottom: 0.6rem;
+			}
+			.fashion h2{
+				font-size: 1rem;
+				height: 3.06rem;
+				line-height: 3.6rem;
+				font-weight: 100;
+			}
+			
+			.fashion .fashion_word .tit{
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				color: #010101;
+				font-size: 0.95rem;
+			}
+			.fashion .fashion_word p{
+				line-height: 20px;
+			}
+/*流行元素*/
+			.popular{
+				/*height: 26.2rem;*/
+				background: #fff;
+				margin-top: 0.63rem;
+				text-align: center;
+				padding-bottom: 0.7rem;
+			}
+			.popular h2{
+				font-size: 1rem;
+				height: 3.06rem;
+				line-height: 3.6rem;
+				font-weight: 100;
+			}
+			.popular .pop_con{
+				width: 100%;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.popular .pop_con li{
+				width: 27%;
+				margin:0.4rem 0.6rem;
+				overflow: hidden;
+			}
+			.popular .pop_con li img{
+				width: 82%;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			.popular .pop_con li p{
+				color: #010101;
+				line-height:1rem;
+			}
+/*挑款师精选*/
+			.choice{
+				background: #fff;
+				margin-top: 0.63rem;
+				text-align: center;
+				/*height: 22.8rem;*/
+				width: 100%;
+				overflow: hidden;
+				padding-bottom: 0.6rem;
+			}
+			.choice h2{
+				font-size: 1rem;
+				height: 3.06rem;
+				line-height: 3.6rem;
+				font-weight: 100;
+			}
+			.choice .title a{
+				display: inline-block;
+				height: 1.56rem;
+				line-height: 1.56rem;
+				border: 1px solid #F14DA6;
+				font-size: 0.77rem;
+				width: 19%;
+				color: #F14DA6;
+				border-radius: 5px;
+				margin: 0 0.1rem;
+			}
+			.choice .title a:nth-child(2){
+				color: #6501FF;
+				border: 1px solid #6501FF;
+			}
+			.choice .title a:nth-child(3){
+				color: #7A5A41;
+				border: 1px solid #7A5A41;
+			}
+			.choice .title a:nth-child(4){
+				color: #CE3303;
+				border: 1px solid #CE3303;
+			}
+			.choice .choice_con{
+				width: 100%;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content: center;
+				margin-top: 1rem;
+			}
+			.choice .choice_con li{
+				width: 38%;
+				margin: 0 0.6rem;
+			}
+			.choice .choice_con li img{
+				width: 100%;
+			}
+			.choice .choice_con li .choice_word{
+				width: 100%;
+				text-align: left;
+				margin-top: .3rem;
+			}
+			.choice .choice_con li .choice_word .tit{
+				overflow: hidden;
+				white-space: wrap;
+				text-overflow: ellipsis;
+				color: #010101;
+				font-size: 0.8rem;
+				height: 2.5rem;
+				width: 100%;
+				margin-bottom: .3rem;
+			}
+			.choice .choice_con li .choice_word p{
+				font-size: 0.75rem;
+				line-height: 22px;
+			}
+/*优选美搭*/
+			.beauty{
+				background: #fff;
+				margin-top: 0.63rem;
+				/*height: 41rem;*/
+				width: 100%;
+				overflow: hidden;
+				padding-bottom: 1rem;
+			}
+			.beauty h2{
+				font-size: 1rem;
+				height: 3.06rem;
+				line-height: 3.6rem;
+				text-align: center;
+				font-weight: 100;
+			}
+			.beauty .beauty_con{
+				/*background: #007AFF;*/
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.beauty .beauty_con li{
+				width: 44%;
+				margin: 0.5rem;
+			}
+			.beauty .beauty_con li .img{
+				position: relative;
+			}
+			.beauty .beauty_con li img{
+				width: 100%;
+				height: 14rem;
+			}
+			.beauty .beauty_con li .shadow{
+				position: absolute;
+				right: 0;
+				width: 25%;
+				bottom:1.5rem;
+				background: rgba(0,0,0,0.6);
+				z-index: 2;
+				border-radius: 0.8rem 0 0 0.8rem;
+				font-family: icon;
+				color: #fff;
+				padding-left: 0.4rem;
+			}
+			.beauty .beauty_con li p:before{
+				content: '';
+				display: inline-block;
+				border-left: 6px solid #676767;
+				border-right: 6px solid transparent;
+				border-bottom:6px solid transparent;
+				border-top: 6px solid transparent;
+			}
+			.beauty .beauty_con li p{
+				line-height: 1rem;
+			}
+			.index_content.cur{
+				display: block;
+			}
+			.index_content{
+				display: none;
+			}
+
+/*关注*/
+/*文艺清新女装*/
+			.art{
+				/*height:15.63rem ;*/
+				background: #fff;
+				margin-top: 0.63rem;
+				padding: 0.625rem;
+			}
+			.art .art_top .art_topL{
+				float: left;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-start;
+				justify-content:flex-start;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			.art .art_top img{
+				width: 20%;
+				margin-right: 0.5rem;
+				border-radius: 50%;
+				display: block;
+			}
+			.art .art_top h3{
+				font-weight: 100;
+				font-size: 1rem;
+				width: 70%;
+			}
+			
+			.art .art_top span{
+				color: #646464;
+				float: right;
+				margin-top: 0.4rem;
+			}
+			.art .p{
+				font-size: 0.9rem;
+			}
+			.art .p span{
+				color: #FF4FA3;
+			}
+			.art .img img{
+				width: 28%;
+				margin: 0.8rem 0.4rem 0;
+				
+			}
+			.retro{
+				background: #fff;
+				margin-top: 0.63rem;
+				padding: 0.625rem;
+			}
+			.retro .retro_top .retro_topL{
+				float: left;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-start;
+				justify-content:flex-start;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			.retro .retro_top img{
+				width: 34%;
+				margin-right: 0.5rem;
+				border-radius: 50%;
+				display: block;
+			}
+			.retro .retro_top h3{
+				font-weight: 100;
+				font-size: 1rem;
+				width: 70%;
+			}
+			.retro .retro_top span{
+				color: #646464;
+				float: right;
+				margin-top: 0.4rem;
+			}
+			.retro .p{
+				font-size: 0.9rem;
+			}
+			.retro .p span{
+				color: #FF4FA3;
+			}
+			.retro .img img{
+				width: 28%;
+				margin: 0.8rem 0.4rem 0;
+			}
+			.recommend{
+				height:20.2rem ;
+				background: #fff;
+				margin-top: 0.63rem;
+				padding: 0.625rem;
+			}
+			.recommend h2{
+				font-size: 1rem;
+				height: 3.06rem;
+				line-height: 3.6rem;
+				text-align: center;
+				font-weight: 100;
+			}
+			.recommend .recommend_top .recommend_topL{
+				float: left;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-start;
+				justify-content:flex-start;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			.recommend .recommend_top img{
+				width: 40%;
+				margin-right: 0.5rem;
+				border-radius: 50%;
+				display: block;
+			}
+			.recommend .recommend_top h3{
+				font-weight: 100;
+				font-size: 1rem;
+				width: 60%;
+			}
+			.recommend .recommend_top span{
+				color: #fff;
+				display: block;
+				background:#F14DA4 ;
+				height: 1.25rem;
+				line-height: 1.25rem;
+				width: 19%;
+				text-align: center;
+				border-radius:5px ;
+				float: right;
+				margin-top: 0.8rem;
+			}
+			.recommend .p{
+				font-size: 0.9rem;
+			}
+			.recommend .p span{
+				color: #FF4FA3;
+			}
+			.recommend .img img{
+				width: 28%;
+				margin: 0.8rem 0.4rem 0;
+			}

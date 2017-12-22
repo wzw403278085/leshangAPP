@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>新人礼包</title>
+	    <script src="../js/mui.min.js"></script>
+	    <script src="../js/jquery.3.2.1.js"></script>
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/stroll/guide1.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init(); 
+	   </script>
+	</head>
+	<body id="guide1">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">明星搭配任你选</h1>
+		    <div class="right">
+		    	<div class="set">...</div>
+		    	<div class="shop mui-icon" id="shop">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+			<div class="banner clear">
+				<div class="img fl">
+					<img src="../img/stroll/banner2.png" />
+				</div>
+				<div class="character fl">
+					<h2>“我是段子手中的时髦精”</h2>
+					<p>这是Sunnie对自己的评价<br />
+						他的穿衣风格和性格如出一辙<br />
+						明朗、率性、色彩鲜明<br />
+						厌倦了性冷淡<br />
+						不如Sunnie这找找灵感<br />
+						让你的穿衣变得有趣起来<br />
+					</p>
+					<a>点击查看搭配</a>
+				</div>
+				<div class="xiao">
+					<img src="../img/stroll/icon.png" />
+				</div>
+			</div>
+			<div class="beauty">
+				<ul class="beauty_con" id="beauty">
+					<li id="bea1">
+						<div class="img">
+							<img src="../img/index/home/recommend2.png" alt="">
+							<div class="shadow">&#xe649;<span>48</span></div>
+						</div>
+						<p>T恤搭配牛仔裤 舒适简约</p>
+					</li>
+					<li id="bea2">
+						<div class="img">
+							<img src="../img/index/home/retro2.png" alt="">
+							<div class="shadow">&#xe649;<span>48</span></div>
+						</div>
+						<p>T恤搭配牛仔裤 舒适简约</p>
+					</li>
+					<li id="bea3">
+						<div class="img">
+							<img src="../img/index/manual/sty.png" alt="">
+							<div class="shadow">&#xe649;<span>48</span></div>
+						</div>
+						<p>T恤搭配牛仔裤 舒适简约</p>
+					</li>
+					<li id="bea4">
+						<div class="img">
+							<img src="../img/index/spxq/spxq_3.jpg" alt="">
+							<div class="shadow">&#xe649;<span>48</span></div>
+						</div>
+						<p>T恤搭配牛仔裤 舒适简约</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			var box3=document.getElementById("beauty");
+        		var arr_a3=box3.getElementsByTagName("li");
+        		for (var i=0;i<arr_a3.length;i++) {
+        			 var arr_id3=arr_a3[i].getAttribute("id");
+        			 document.getElementById(arr_id3).addEventListener("tap",tap_b3);
+        		}
+        		function tap_b3(){
+					mui.openWindow({
+						url:"../index/spxq.html",
+						id:"spxq",
+						createNew:true,
+						show:{
+							aniShow:"slide-in-right",
+							duration:200
+						},
+						waiting:{
+							title:"正在加载……"
+						}
+					
+					});
+        		}
+			/*document.getElementById("shop").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../list_shoppingCart.html",
+					id:"gouwuche",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});*/
+			
+			document.getElementById("shop").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+		</script>
+	</body>
+</html>

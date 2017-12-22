@@ -1,0 +1,80 @@
+body {
+	background: #F6F5FB;
+}
+
+.mui-content {
+	background: #fff;
+}
+
+
+/*头部*/
+
+.mui-bar {
+	position: relative;
+	/*height: 4rem;*/
+	background: #F14DA3;
+	box-shadow: none;
+}
+
+.mui-bar-nav.mui-bar .mui-icon {
+	margin: 0.5rem 0;
+	padding: 0;
+	color: #fff;
+	/*font-size: 2rem;*/
+}
+
+.mui-bar .mui-title {
+	/*margin-top: .7rem;*/
+	color: #fff;
+	/*font-size: 1.2rem;*/
+}
+
+.mui-bar .a1 {
+	color: #fff;
+	line-height: 2.8rem;
+	font-size: 0.9rem;
+}
+
+
+/*主体*/
+
+.mui-bar-nav~.mui-content {
+	padding: 2rem 0;
+}
+
+.mui-content .box .p1 {
+	margin-bottom: 1.5rem;
+	font-family: icon;
+	color: #F4499F;
+	text-align: center;
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+.mui-content .box .p2 {
+	text-align: center;
+	color: #000000;
+	font-size: 1rem;
+}
+
+.mui-content .box .p2 span {
+	color: #F36CAB;
+}
+
+.mui-content .box a {
+	display: block;
+	width: 35%;
+	height: 2rem;
+	margin: 1rem auto 0;
+	color: #fff;
+	text-align: center;
+	line-height: 2rem;
+	background: #F14DA3;
+	border-radius: .4rem;
+}
+
+.mui-content .box a.fh {
+	color: #000000;
+	background: transparent;
+	border: 1px solid #000000;
+}

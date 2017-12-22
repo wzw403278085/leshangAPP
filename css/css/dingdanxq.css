@@ -1,0 +1,130 @@
+
+body{
+    width: 100%;
+    background-color: #fff;
+    padding: 0 2%;
+}
+
+.mui-content{
+    background-color: #fff;
+}
+.mui-content .maijia{
+    display: flex;
+    justify-content: center;
+}
+
+.mui-content .maijia h4{
+    text-align: center;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-left: 10px;
+}
+.mui-content .maijia span{
+    display:block;
+    color: #F14DA3;
+    font-size: 2.8rem;
+    text-align: center;
+}
+.mui-content .fahuodi{
+     display: flex;
+     justify-content:flex-start;
+    margin-top: 2rem;
+}
+.mui-content .fahuodi .left{
+    color: #999999;
+    line-height: 2.5rem;
+    margin-right: 1rem;
+}
+
+.mui-content .fahuodi .right h4{
+    color:#2C2C2C ;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.mui-content .shouhuoren{
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 1rem;
+}
+
+.mui-content .shouhuoren .mui-left{
+    color: #999999;
+    line-height: 4.5rem;
+    margin-right: 1rem;
+}
+
+.mui-content .shouhuoren .mui-right p{
+    color: #2C2C2C;
+}
+.mui-content .yifu{
+    margin-top: 2rem;
+}
+.mui-content .yifu-con{
+    display: flex;
+    justify-content: flex-start;
+}
+.mui-content .yifu-con .img{
+    width: 30%;
+    margin-right: 0.5rem;
+}
+.mui-content .yifu-con .img img{
+    width: 100%;
+	height: 100%;
+}
+.mui-content .yifu-con .word{
+    margin-right: 4rem;
+
+}
+.mui-content .yifu-con .word h4{
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mui-content .yifu-con .word p{
+    color: #F14DA3;
+    font-size: 1.3rem;
+}
+
+.mui-content .yifu-con .num{
+    line-height: 6rem;
+    color: #999999;
+}
+.mui-content .yifu-word{
+    margin-top: 1.5rem;
+}
+.mui-content .yifu-word p{
+    display: flex;
+    justify-content: space-between;
+    color: #2C2C2C;
+    line-height: 1.2rem;
+}
+
+.mui-content .yifu-word h6{
+    text-align: right;
+    color: #F14DA3;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+.mui-content .yifu-word h4{
+    text-align: right;
+    color: #F14DA3;
+    font-weight: 300;
+}
+.mui-content .bianhao{
+    margin-top: 3rem;
+}
+.mui-content .bianhao p{
+    color: #2C2C2C;
+}
+.mui-content form input{
+    background-color: #F14DA3;
+    border-color: #F14DA3;
+    width: 100%;
+    margin-top: 2rem;
+}

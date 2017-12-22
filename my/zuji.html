@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的足迹</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+    <link rel="stylesheet" href="../css/css/public.css">
+    <link rel="stylesheet" href="../css/css/zuji.css">
+    <link rel="stylesheet" type="text/css" href="../css/icons-extra.css">
+    <style>
+        .clean:after{content:'';clear: both;display: block;}
+        .mui-scroll,.mui-scroll-wrapper{position: relative;top: -1%;}
+        .mui-table-view{
+            margin-top: -0.5rem;
+        }
+        .mui-content{
+        	background: #fff;
+        }
+        body{
+        	background: #fff;
+        }
+        
+    </style>
+</head>
+<body id="zuji-con">
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">我的足迹</h1>
+    <a id="gwc" class="mui-icon-extra mui-icon-extra-cart mui-icon-right-nav mui-pull-right"></a>
+</header>
+<div class="mui-content">
+    <div id="slider" class="mui-slider">
+        <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+            <a class="mui-control-item mui-active" href="#item1mobile">
+                单品
+            </a>
+            <a class="mui-control-item" href="#item2mobile">
+                搭配
+            </a>
+
+        </div>
+        <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+        <div class="mui-slider-group clean">
+            <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                <div id="scroll1" class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <div class="mui-table-view">
+                            <div class="mui-table-view-cell beauty">
+
+                                <ul class="beauty_con" id="beauty">
+                                    <li id="bea1">
+                                        <div class="img">
+                                            <img src="../img/index/home/art3.png" alt="">
+                                            <div class="shadow">&#xe649;<span>48</span></div>
+                                        </div>
+                                        <p>T恤搭配牛仔裤 舒适简约</p>
+                                    </li>
+
+                                    <li id="bea2">
+                                        <div class="img">
+                                            <img src="../img/index/home/art3.png" alt="">
+                                            <div class="shadow">&#xe649;<span>48</span></div>
+                                        </div>
+                                        <p>T恤搭配牛仔裤 舒适简约</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="item2mobile" class="mui-slider-item mui-control-content">
+                <div id="scroll2" class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <div class="mui-table-view">
+                            <div class="mui-table-view-cell beauty" >
+
+
+                                <ul class="beauty_con">
+                                    <li>
+                                        <div class="img">
+                                            <img src="../img/index/home/art3.png" alt="">
+                                            <div class="shadow">&#xe649;<span>48</span></div>
+                                        </div>
+                                        <p>T恤搭配牛仔裤 舒适简约</p>
+                                        <h4>￥169.0</h4>
+                                    </li>
+
+                                    <li >
+                                        <div class="img">
+                                            <img src="../img/index/home/art3.png" alt="">
+                                            <div class="shadow">&#xe649;<span>48</span></div>
+                                        </div>
+                                        <p>T恤搭配牛仔裤 舒适简约</p>
+                                        <h4>￥128.0</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+	var box3=document.getElementById("beauty");
+	var arr_a3=box3.getElementsByTagName("li");
+	for (var i=0;i<arr_a3.length;i++) {
+		 var arr_id3=arr_a3[i].getAttribute("id");
+		 document.getElementById(arr_id3).addEventListener("tap",tap_b3);
+	}
+	function tap_b3(){
+		mui.openWindow({
+			url:"../index/spxq.html",
+			id:"spxq",
+			createNew:true,
+			show:{
+				aniShow:"slide-in-right",
+				duration:200
+			},
+			waiting:{
+				title:"正在加载……"
+			}
+		
+		});
+	}
+	
+	document.getElementById("gwc").addEventListener("tap",function(){
+		var main=mui.openWindow({
+			url:"../index.html",
+			id:"index"			
+		});
+		mui.fire(main,'goGwc');
+	});
+
+	 /*document.getElementById("gwc").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"../list_shoppingCart.html",
+            id:"gouwuche",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });*/
+
+
+</script>
+</body>
+</html>

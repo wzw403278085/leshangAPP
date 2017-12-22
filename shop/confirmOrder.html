@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>确认订单</title>
+		<link href="../css/mui.min.css" rel="stylesheet"/>
+    	<link rel="stylesheet" type="text/css" href="../css/confirmOrder.css"/>
+    	<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+    	<script src="../js/mui.min.js" type="text/javascript" charset="UTF-8"></script>
+    	<script src="../js/jquery.3.2.1.js" type="text/javascript" charset="utf-8"></script>
+    	<script type="text/javascript" charset="utf-8">
+      		mui.init(); 
+    	</script>
+	</head>
+	<body id="confirmOrder">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">确定订单</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="address">
+		    	<span class="fl">&#xe6c9;</span>
+		    	<div class="text fl">
+		    		<p class="p1">李希 134****4428<span>默认</span></p>
+		    		<p class="p2">山西省太原市小店区平阳南路高新技术开发区旭然园小区</p>
+		    	</div>
+		    	<i class="fr">&#xe6d7;</i>
+		    </div>
+		    <div class="order">
+		    	<div class="order_dianpu">
+		    		<div class="Dimg fl"></div>
+		    		<h3 class="fl">芦苇微微文艺清新女装</h3>
+		    		<p class="fr">合计：<span>￥123.0</span></p>
+		    	</div>
+		    	<div class="order_sp">
+		    		<div class="sp_con" id="xq">
+		    			<div class="sImg fl"></div>
+		    			<div class="text fl">
+		    				<h3>芦苇微微文艺格子连衣裙</h3>
+		    				<p><span>款式：米白色</span><span>尺码：L</span><br><span>价格：<mark>￥123.0</mark></span><span>数量：1</span></p>
+		    			</div>
+		    		</div>
+		    		<div class="sp_ys">
+		    			<p class="fl">运费（0.00元）</p>
+		    			<p class="fr">韵达  包邮</p>
+		    		</div>
+		    		<div class="sp_bz">
+		    			<textarea placeholder="你对订单有特殊要求，可以在此备注！"></textarea>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="youhui">
+		    	<p class="fl p1">平台优惠券</p>
+		    	<p class="fr p2">满99减10</p>
+		    </div>
+		    <div class="footer">
+		    	<div class="text fl">
+		    		<p><span>￥123.0</span>共省10元</p>
+		    		<p>本商品正在限时抢购，请尽快付款！</p>
+		    	</div>
+		    	<button class="fr" id="confirm">确认订单</button>
+		    </div>
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById("confirm").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"confirmPay.html",
+					id:"confirmPay",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+			});
+			document.getElementById("xq").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"../index/spxq.html",
+					id:"spxq",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载..."
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

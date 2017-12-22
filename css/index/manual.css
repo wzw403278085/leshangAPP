@@ -1,0 +1,264 @@
+			.mui-bar-nav{
+	    		background: #F14DA4;
+	    		color: #fff;
+	    	}
+	    	.mui-bar-nav .mui-title,.mui-action-back{
+	    		color: #fff;
+	    	}
+	    	header .right .shop{
+	    		font-family: icon;
+	    	}
+	    	header .right{
+	    		float: right;
+	    		display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: flex-end;
+				justify-content:flex-end;
+				-webkit-align-items: center;
+				align-items: center;
+	    	}
+	    	header .right .set{
+	    		font-size: 1.3rem;
+	    		margin: -.5rem 0.3rem 0 0;
+	    	}
+	    	h2{
+	    		text-align: center;
+	    		font-size: 0.9rem;
+	    		position: relative;
+	    		padding-top: 1rem;
+	    		font-weight: 100;
+	    	}
+	    	h2:after{
+	    		content: '';
+	    		display: block;
+	    		background:#F14DA3 ;
+	    		width: 1.25rem;
+	    		height: 3px;
+	    		position: absolute;
+	    		left: 50%;
+	    		margin-left: -.625rem;
+	    		margin-top: 0.2rem;
+	    	}
+	    	/*猜你想看*/
+			.guess{
+				background: #fff;
+				width: 100%;
+			}
+			.guess .guess_con{
+				display: -webkit-flex;
+				display: flex;
+				justify-content: center;
+				-webkit-justify-content:center;
+			}
+			.guess .guess_con .img{
+				width: 5rem;
+				height: 1.875rem;
+				position: relative;
+				border-radius:5px ;
+				overflow: hidden;
+				margin: 1.4rem 0.5rem 0.4rem;
+				font-size: 0.69rem;
+			}
+			.guess .guess_con .img img{
+				width: 100%;
+				height: 1.875rem;
+			}
+			.shadow{
+				position: absolute;
+				top:0;
+				background: rgba(0,0,0,0.4);
+				width: 100%;
+				height: 100%;
+				color: #fff;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+			}
+			/*时尚八卦*/
+			.style{
+				background: #fff;
+				width: 100%;
+			}
+			.style .style_con{
+				display: -webkit-flex;
+				display: flex;
+				justify-content: center;
+				-webkit-justify-content:center;
+			}
+			.style .style_con .img{
+				width: 6.255rem;
+				height: 8.44rem;
+				position: relative;
+				overflow: hidden;
+				margin: 1.4rem 0.5rem 0.4rem;
+				font-size: 0.875rem;
+			}
+			.style .style_con .img img{
+				width: 100%;
+				height: 8.44rem;
+			}
+			/*潮流穿搭志*/
+			.tide{
+				background: #fff;
+				width: 100%;
+				/*height: 14rem;*/
+				padding-bottom: 1rem;
+			}
+			.tide .tide_con{
+				display: -webkit-flex;
+				display: flex;
+				justify-content: center;
+				-webkit-justify-content:center;
+				padding: 0 0.3rem;
+				margin: 1.25rem 0;
+			}
+			.tide .tide_con .tid_con_modules{
+				border: 1px solid #D8D8D8;
+				height: 7.2rem;
+				width: 23%;
+				border-radius: 8px;
+				text-align: center;
+				margin: 0 0.2rem;
+			}
+			.tide .tide_con .tid_con_modules .img{
+				width: 3.125rem;
+				height: 3.125rem;
+				overflow: hidden;
+				border-radius: 50%;
+				margin: 0.5rem auto 0;
+			}
+			.tide .tide_con .tid_con_modules .img img{
+				width: 100%;
+			}
+			.tide .tide_con .tid_con_modules .tid_word{
+				padding: 0.7rem 0 0;
+			}
+			.tide .tide_con .tid_con_modules .tid_word p{
+				font-size: 0.69rem;
+				line-height: 1rem;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				padding: 0 0.3rem;
+			}
+			.tide .tide_con .tid_con_modules .tid_word .tit{
+				color: #000;
+				padding: 0 0.6rem;
+			}
+			.tide .tide_see{
+				width: 25%;
+				height: 1.56rem;
+				border: 1px solid #010101;
+				text-align: center;
+				line-height: 1.56rem;
+				font-size: 0.75rem;
+				margin: 0 auto;
+			}
+			/*实用穿搭*/
+			.practical{
+				margin-top: 0.635rem;
+				background: #fff;
+			}
+			.practical .pra_con{
+				padding: 0 0.4rem;
+			}
+			.practical .pra_con .pra_conC{
+				margin-top: 0.94rem;
+				height: 10rem;
+				width: 100%;
+				/*background: #007AFF;*/
+				display: -webkit-flex;
+			    display: flex;
+			    -webkit-justify-content: center;
+			    justify-content: center;
+			    overflow: hidden;
+			}
+			.practical .pra_con .pra_conC .pra_conCL{
+				width: 7.5rem;
+				overflow: hidden;
+				position: relative;
+				font-size: 1.1rem;
+				font-weight: 800;
+				margin: 0 1.6rem 0 0;
+			}
+			.practical .pra_con .pra_conC .pra_conCL img{
+				width: 100%;
+				height: 10rem;
+			}
+			.practical .pra_con .pra_conC .pra_conCR{
+				width: 12.37rem;
+				overflow: hidden;
+				/*height: 100%;*/
+				display: -webkit-flex;
+			    display: flex;
+			    -webkit-justify-content: space-between;
+			    justify-content: space-between;
+			    -webkit-flex-wrap:wrap ;
+			    flex-wrap: wrap;
+			    font-size: 1.06rem;
+			}
+			.practical .pra_con .pra_conC .pra_conCR .img{
+				position: relative;
+				width: 5.875rem;
+				height: 2.97rem;
+			}
+			.practical .pra_con .pra_conC .pra_conCR .img img{
+				width: 100%;
+				height: 2.97rem;
+			}
+			.practical .pra_con .pra_conC .pra_conCR a{
+				display: block;
+				width: 1.4rem;
+				height: 1.4rem;
+				line-height: 1.3rem;
+				border: 2px solid #DBDBDB;
+				border-radius: 50%;
+				margin: 1rem 2rem 0 0;
+				font-family: icon;
+				text-align: center;
+				color: #DBDBDB;
+				font-weight: 800;
+			}
+			/*全部主题*/
+			.all{
+				background: #fff;
+				width: 100%;
+				padding-bottom: 1.8rem;
+			}
+			.all_see{
+				width: 35%;
+				height: 2rem;
+				border: 1px solid #010101;
+				text-align: center;
+				line-height: 2rem;
+				font-size: 0.75rem;
+				margin: 1.6rem auto 0;
+			}
+			.mui-content{
+				position: relative;
+			}
+			.top{
+			    display: block;
+			    position: absolute;
+			    bottom: 1.5rem;
+			    right: 2rem;
+			    width: 3rem;
+			    height: 3rem;
+			    border-radius: 50%;
+			    border: 1px solid #ccc;
+			    text-align: center;
+			    line-height: 4rem;
+			    font-size: 0.8rem;
+			    color: #999;
+			    font-family: icon;
+			    z-index: 99;
+			}
+			.top span{
+			    display: block;
+			    position: absolute;
+			    top: -36%;
+			    left: 1rem;			
+			}

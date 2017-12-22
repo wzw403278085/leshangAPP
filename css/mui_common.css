@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	padding: 0;
+	font: normal 14px/28px 微软雅黑;
+}
+h1,h2,h3,h4,h5,h6,p,ul,hr{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+ul, ol, li, dl, dt, dd{
+	list-style: none;
+}
+input,select,textarea{
+	outline: none;
+	border: none;
+	-webkit-appearance: none;
+	background-color: transparent;
+}
+
+
+.clear:after{content: '';clear: both;display: block}
+.fl{float: left}
+.fr{float: right}
+@font-face {
+    font-family: icon;
+    src: url("../font/iconfont.eot"),url("../font/iconfont.svg"),url("../font/iconfont.ttf"),url("../font/iconfont.woff")
+}
+    .mui-bar .mui-tab-item.mui-active{
+    	color:#F14DA3;
+    }
+    .mui-bar .mui-tab-item .mui-icon{
+    	font-family: icon;
+    	font-size: 1.4rem;
+    }   
+	.mui-bar .mui-title {
+		 width: 50%;
+		 margin: 0 auto;
+	}
+

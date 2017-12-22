@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>流行元素|通勤元素上学运动鞋</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <script src="../js/mui.min.js"></script>
+	    <script src="../js/jquery.3.2.1.js"></script> 
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/index/test6.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	  </script>
+	</head>
+	<body id="dapei6">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">搭配测试</h1>
+		    <div class="right">
+		    	<div class="shop mui-icon" id="gwc">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+			<div class="test">你喜欢的风格</div>
+			<div class="test_con">
+				<ul id="tt">
+					<li id="test">
+						<h5 class="mui-content-padded">年龄<span>(岁)</span></h5>
+						<div class="mui-numbox" data-numbox-min='1' data-numbox-max='100'>
+							<button class="mui-btn mui-btn-numbox-minus" type="button"></button>
+							<input id="test" class="mui-input-numbox" type="number" value="22" />
+							<button class="mui-btn mui-btn-numbox-plus" type="button"></button>
+						</div>
+					</li>
+					<li id="test1">
+						<h5 class="mui-content-padded">身高<span>(CM)</span></h5>
+						<div class="mui-numbox" data-numbox-min='0' data-numbox-max='200'>
+							<button class="mui-btn mui-btn-numbox-minus" type="button"></button>
+							<input id="test" class="mui-input-numbox" type="number" value="160" />
+							<button class="mui-btn mui-btn-numbox-plus" type="button"></button>
+						</div>
+					</li>
+					<li id="test2">
+						<h5 class="mui-content-padded">体重<span>(KG)</span></h5>
+						<div class="mui-numbox" data-numbox-min='0' data-numbox-max='100'>
+							<button class="mui-btn mui-btn-numbox-minus" type="button"></button>
+							<input id="test" class="mui-input-numbox" type="number" value="50" />
+							<button class="mui-btn mui-btn-numbox-plus" type="button"></button>
+						</div>
+					</li>
+				</ul>
+				<a class="next" id="next">
+					完成
+				</a>
+				<a class="mui-action-back pre">< 上一步</a>
+			</div>
+		</div>
+		
+		<script>
+
+            document.getElementById("next").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"cxcs2.html",
+					id:"wancheng",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			
+			document.getElementById("gwc").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+			
+	 /*document.getElementById("gwc").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"../list_shoppingCart.html",
+            id:"gouwuche",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });*/
+
+		</script>
+	</body>
+</html>

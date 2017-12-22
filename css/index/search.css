@@ -1,0 +1,298 @@
+body {
+	background: #fff;
+}
+
+
+/*头部*/
+
+.mui-bar {
+	/*height: 4rem;*/
+	padding: 0;
+	background: #F14DA3;
+	box-shadow: none;
+}
+.mui-bar-nav{
+	background: #F14DA3;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-justify-content:space-between;
+}
+.mui-bar-nav.mui-bar .mui-icon {
+	margin: .6rem;
+	padding: 0;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.mui-bar .input {
+	position: relative;
+	width: 65%;
+}
+
+.mui-bar .input input[type="search"] {
+	width: 100%;
+	height: 1.8rem;
+	margin: 0.5rem 0 0;
+	padding: .7rem 2.6rem;
+	background: rgba(255, 255, 255, .5);
+	border: none;
+	border-radius: 1.3rem;
+}
+
+.mui-bar .input .searchText {
+	position: absolute;
+	top: 0.7rem;
+	left: .5rem;
+	width: 30%;
+	height: 1.4rem;
+	color: #fff;
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+	text-align: center;
+	background: #F14DA4;
+	border-radius: 1.3rem;
+}
+
+.mui-bar .input .searchText span {
+	margin-left: .5rem;
+	font-family: icon;
+}
+
+.mui-bar .Search {
+	margin-right: 1rem;
+	color: #fff;
+	font-size: 1rem;
+	line-height:3rem;
+}
+
+
+/*主体内容*/
+
+.mui-bar-nav~.mui-content {
+	background: #fff;
+}
+
+
+/*搜索选项*/
+
+.searchTitle {
+	padding: 0 3rem;
+	border-bottom: 1px solid #EEEEEE;
+	background: #fff;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+
+.searchTitle a {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	height: 3rem;
+	color: #000;
+	line-height: 3rem;
+	font-size: 1.1rem;
+}
+
+.searchTitle a.cur {
+	color: #F250A3;
+	border-bottom: 2px solid #F250A3;
+}
+.searchTitle a:last-child{
+	margin-left: 1rem;
+}
+
+
+.searchTitle a i {
+	position: absolute;
+	top: .1rem;
+	font-family: icon;
+	font-style: normal;
+}
+
+
+/*搜索内容*/
+
+.boxCon {
+	position: relative;
+}
+
+.boxCon ul {
+	display: flex;
+	justify-content: space-around;
+	align-content: space-between;
+	flex-wrap: wrap;
+	margin: .5rem 0 2rem;
+	padding: 0 1rem;
+}
+
+.boxCon ul li {
+	width: 45%;
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
+
+.boxCon ul li img {
+	width: 100%;
+}
+
+.boxCon ul li .p1 {
+	width: 80%;
+	margin: .4rem 0 0;
+	color: #303030;
+	font-size: 1rem;
+	line-height: 1rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.boxCon ul li .p2 {
+	margin: 0;
+	color: #F749A8;
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1.7rem;
+}
+
+.boxCon .zz {
+	z-index: 100;
+	position: absolute;
+	top: -7.6rem;
+	width: 100%;
+	height: 113%;
+	background: rgba(46, 37, 38, .8);
+}
+
+.boxCon .zz .select_options {
+	position: absolute;
+	right: 0;
+	width: 80%;
+	height: 100%;
+	padding-top: 2rem;
+	background: #fff;
+}
+
+.boxCon .zz .select_options .one,
+.boxCon .zz .select_options .two,
+.boxCon .zz .select_options .three {
+	width: 100%;
+	padding: 0 1.4rem;
+}
+
+.select_options .one .one_con,
+.select_options .two .two_con,
+.select_options .three .three_con {
+	width: 100%;
+	border-bottom: 1px solid #EFEFEF;
+}
+
+.select_options .one .one_con p {
+	width: 44%;
+	text-align: center;
+	padding: 0 .8rem;
+	margin-bottom: 1rem;
+	color: #000;
+	line-height: 2rem;
+	letter-spacing: 3px;
+	font-size: 1rem;
+	border: 1px solid #DCDCDC;
+	border-radius: .5rem;
+}
+
+.select_options .one .one_con p:last-child {
+	width: 86%;
+}
+
+.boxCon .zz .select_options .two,
+.boxCon .zz .select_options .three {
+	margin-top: 1.4rem;
+}
+
+.select_options .two .two_con p,
+.select_options .three .three_con p {
+	color: #6B6B6B;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.select_options .two .two_con input {
+	width: 40%;
+	height: 1.5rem;
+	padding: 0;
+	margin: 1rem 0;
+	text-align: center;
+	color: #000;
+	line-height: 1.6rem;
+	font-size: 1rem;
+}
+
+.select_options .two .two_con input.minPrice {
+	margin-left: 1.3rem;
+}
+
+.select_options .two .two_con span {
+	margin: 0 .2rem;
+	font-size: 1rem;
+}
+
+.select_options .three .three_con {
+	border: none;
+}
+
+.select_options .three .three_con ul {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-content: space-between;
+	margin: 1rem 0 0 0;
+	padding: 0;
+}
+
+.select_options .three .three_con ul li {
+	width: 30%;
+	height: 1.7rem;
+	margin-right: .4rem;
+	text-align: center;
+	font-size: 1rem;
+	color: #080808;
+	line-height: 1.7rem;
+	border: 1px solid #DDDDDD;
+	border-radius: .7rem;
+}
+
+.select_options .three .three_con ul li.curr{
+	background: #F14DA3;
+	color: #fff;
+	border: none;
+}
+
+.boxCon .zz .select_options .bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 2.7rem;
+	border-top: 1px solid #EFEFEF;
+	background: #fff;
+}
+
+.boxCon .zz .select_options .bottom button {
+	width: 40%;
+	height: 100%;
+	padding: 0;
+	text-align: center;
+	line-height: 2.7rem;
+	color: #000;
+	font-size: 1.3rem;
+	letter-spacing: .2rem;
+	font-weight: normal;
+	border: none;
+	background: #fff;
+}
+
+.boxCon .zz .select_options .bottom button.qd {
+	color: #fff;
+	background: #FF339A;
+}

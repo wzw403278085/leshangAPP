@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title>流行元素|通勤元素上学运动鞋</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <script src="../js/mui.min.js"></script>
+	    <script src="../js/jquery.3.2.1.js"></script> 
+	    <link href="../css/mui.min.css" rel="stylesheet"/>
+	    <link href="../css/mui_common.css" rel="stylesheet"/>
+	    <link href="../css/index/test4.css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	  </script>
+	</head>
+	<body id="dapei4">
+		<header class="mui-bar mui-bar-nav fl">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">搭配测试</h1>
+		    <div class="right">
+		    	<div class="shop mui-icon" id="gwc">&#xe6b9;</div>
+		    </div>
+		</header>
+		<div class="mui-content">
+			<div class="test">希望搭配能解决什么(多选)</div>
+			<div class="test_con">
+				<div class="img">
+					<img src="../img/index/test/img4.png" />
+					<ul id="tt" class="tt">
+						<li id="test">
+							 <span></span>脖子粗
+						</li>
+						<li id="test1">
+							 <span></span>平胸
+						</li>
+						<li id="test2">
+							 <span></span>大胸
+						</li>
+						<li id="test3">
+							 <span></span>pp大
+						</li>
+						<li id="test4">
+							 <span></span>小短腿
+						</li>
+						<li id="test5">
+							 <span></span>胳膊粗
+						</li>
+						<li id="test6">
+							 <span></span>小肚腩
+						</li>
+						<li id="test7">
+							 <span></span>小粗腿
+						</li>
+					</ul>
+				</div>
+				<a class="next" id="next">
+					下一步 >
+				</a>
+				<a class="mui-action-back pre">< 上一步</a>
+			</div>
+		</div>
+		
+		<script>
+			$(document).ready(function(){
+				var  i=0;
+				$(".test_con .img ul li").click(function(){
+		            $(this).toggleClass("selected");
+		            var selected=$(this).attr("class");
+		            if(selected=="selected"){
+		                i++;
+		            }else{
+		                i--;
+		            }
+				})
+			})
+//			
+            document.getElementById("next").addEventListener("tap",function(){
+				mui.openWindow({
+					url:"test5.html",
+					id:"dapei5",
+					createNew:true,
+					show:{
+						aniShow:"slide-in-right",
+						duration:200
+					},
+					waiting:{
+						title:"正在加载……"
+					}
+				});
+			});
+			
+			document.getElementById("gwc").addEventListener("tap",function(){
+				var main=mui.openWindow({
+					url:"../index.html",
+					id:"index"
+					
+				});
+				mui.fire(main,'goGwc');
+			});
+		
+	 /*document.getElementById("gwc").addEventListener("tap",function(){
+        mui.openWindow({
+            url:"../list_shoppingCart.html",
+            id:"gouwuche",
+            createNew:true,
+            show:{
+                autoShow:true,
+                aniShow:"slide-in-right",
+                duration:200
+            },
+            waiting:{
+                autoShow:true,
+                title:"正在加载..."
+            }
+        });
+    });*/
+
+		</script>
+	</body>
+</html>
